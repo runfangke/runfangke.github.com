@@ -16,7 +16,7 @@ ul,dl,li{list-style-type: none;}
 .ie6fixedBR{position:fixed;right:0;bottom:0}
 *{margin: 0;padding: 0;}
 body {
-    font: 14px/1.4 "方正兰亭中黑",verdana;
+    font: 14px/1.4 "Microsoft Yahei",verdana;
     font-weight: 100;
     position: relative;
     z-index: 1;
@@ -87,7 +87,6 @@ nav.toggle .meizu-header-log {
 }
 .meizu-header,.meizu-header-sub {
     font-size: 16px;
-    overflow-x: hidden;
 }
 .meizu-header a,
 .meizu-header-sub a {
@@ -114,7 +113,6 @@ nav.toggle .meizu-header-log {
 .meizu-header-wrap {
     width: 1100px;
     margin: 0 auto;
-    overflow: hidden;
     position:relative;
     height:79px
 }
@@ -175,14 +173,40 @@ nav.toggle .meizu-header-fdj{ width:19px; height:19px; background:url(../images/
 nav.toggle a.meizu-header-fdj:hover{background:url(../images/sousuo-jin.png) no-repeat;}
 .meizu-header-link {
     display: inline;
-    overflow: hidden;
 }
 .meizu-header-link li {
     display: inline;
     float: left;
+    position: relative;
 }
-
-.meizu-header-link a {
+.meizu-header-link li:hover{
+    background: #fff;
+}
+.meizu-header-link li>ul{
+    display: none;
+    position: absolute;
+    top: 80%;
+    left: 0;
+    background: #fff;
+    width: 100%;
+}
+.meizu-header-link li>ul li{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    color: #000;
+    display: block;
+    padding-left: 10px;
+    border-top: 1px solid #c99e2a;
+}
+.meizu-header-link li>ul li a:hover{
+    color: #000;
+}
+.meizu-header-link li:hover>ul{
+    display: block;
+    color: #000;
+}
+.meizu-header-link>li>a {
     display: block;
     padding: 0px 10px;
     font-size:16px;
@@ -219,7 +243,6 @@ nav.toggle .meizu-header-link a {
     line-height:55px;
     color:#c49664
 }
-
 .meizu-header-log {
     display: inline;
     float: right;
@@ -284,32 +307,33 @@ nav.toggle .meizu-header-link a {
     position: relative;
     z-index: 2;
 
-    /* -webkit-transition: background-color .5s ease-in-out;
+    -webkit-transition: background-color .5s ease-in-out;
      -o-transition: background-color .5s ease-in-out;
-     transition: background-color .5s ease-in-out;*/
+     transition: background-color .5s ease-in-out;
 }
 nav {
     position: relative;
     z-index: 2;
 
-    /*  -webkit-transition: background-color .5s ease-in-out;
+    -webkit-transition: background-color .5s ease-in-out;
     -o-transition: background-color .5s ease-in-out;
-    transition: background-color .5s ease-in-out;*/
+    transition: background-color .5s ease-in-out;
 
 }
 .down nav.toggle1 {
     background:#fff;
-    /*                  background-color: rgba(255, 255, 255, 0.95);
+    background-color: rgba(255, 255, 255, 0.95);
 
       -webkit-transition: background-color .5s ease-in-out;
       -o-transition: background-color .5s ease-in-out;
-      transition: background-color .5s ease-in-out;*/
+      transition: background-color .5s ease-in-out;
 }
-nav.toggle1 { background:#fff;
-    /* background-color: rgba(255, 255, 255, 0.95);
+nav.toggle1 {
+     background:#fff;
+     background-color: rgba(255, 255, 255, 0.95);
       -webkit-transition: background-color .5s ease-in-out;
       -o-transition: background-color .5s ease-in-out;
-      transition: background-color .5s ease-in-out;*/
+      transition: background-color .5s ease-in-out;
 }
 nav.toggle1 .meizu-header a,
 nav.toggle1 .meizu-header-sub a,
@@ -322,14 +346,9 @@ nav.toggle1 .meizu-header-log {
     color:#898989; text-decoration:none;
 }
 
-
-
-
-
-
 /*版权*/
-.meizu-header-link .hover a.meizu-header-link-product-a{ height:79px;background:url(../images/nav-hover.png) center center no-repeat; color:#898989; background:#fff}
-nav.toggle1 .meizu-header-link .hover a.meizu-header-link-product-a{ height:79px;background:url(../images/nav-hover.png) center center no-repeat; color:#898989; background:#fff}
+/*.meizu-header-link .hover a.meizu-header-link-product-a{ height:79px;background:url(../images/nav-hover.png) center center no-repeat; color:#898989; background:#fff}*/
+/*nav.toggle1 .meizu-header-link .hover a.meizu-header-link-product-a{ height:79px;background:url(../images/nav-hover.png) center center no-repeat; color:#898989; background:#fff}*/
 
 .down .meizu-header{ width:100%;  height:79px;background:url(../images/banner_bai.png) center center no-repeat;}
 .down nav.toggle1 .meizu-header{ width:100%;  height:79px; background:none}
@@ -369,89 +388,6 @@ nav.toggle1 .meizu-header-link .hover a.meizu-header-link-product-a{ height:79px
 .xiangmunr li.bbp a .ppjs3{ background-position:-206px 0;}
 .xiangmunr li.bbp a .ppjs4{ background-position:0 0;}
 
-
-.sy_smallicon ul{margin:0 auto;width:372px;}
-.sy_smallicon ul li{position:relative; float:left; display:inline}
-.sy_smallicon ul li a{display:inline-block;width:41px;height:41px;float:left;margin:10px 6px;}
-.sy_smallicon ul li a.sy_smallicon_1{background:url(../images/zx-hui.png) no-repeat;}
-.sy_smallicon ul li a.sy_smallicon_2{background:url(../images/hdsy-hui.png) no-repeat;}
-.sy_smallicon ul li a.sy_smallicon_3{background:url(../images/yysj.png) no-repeat;}
-.sy_smallicon ul li a.sy_smallicon_4{background:url(../images/wb-hui.png) no-repeat;}
-.sy_smallicon ul li a.sy_smallicon_5{background:url(../images/wx--hui.png) no-repeat;}
-.sy_smallicon ul li a.sy_smallicon_6{background:url(../images/lylx-hui.png) no-repeat;}
-.sy_smallicon ul li a.sy_smallicon_7{background:url(../images/sm-hui.png) no-repeat;}
-.sy_smallicon ul li.sy_smallicon_hover a.sy_smallicon_1{background:url(../images/zx-jin.png) no-repeat;}
-.sy_smallicon ul li.sy_smallicon_hover a.sy_smallicon_2{background:url(../images/hdsy-jin.png) no-repeat;}
-.sy_smallicon ul li.sy_smallicon_hover a.sy_smallicon_3{background:url(../images/yysj-jin.png) no-repeat;}
-.sy_smallicon ul li.sy_smallicon_hover a.sy_smallicon_4{background:url(../images/wb-jin.png) no-repeat;}
-.sy_smallicon ul li.sy_smallicon_hover a.sy_smallicon_5{background:url(../images/wx--jin.png) no-repeat;}
-.sy_smallicon ul li.sy_smallicon_hover a.sy_smallicon_6{background:url(../images/lylx-jin.png) no-repeat;}
-.sy_smallicon ul li.sy_smallicon_hover a.sy_smallicon_7{background:url(../images/sm-jin.png) no-repeat;}
-.sy_smallicon ul li a.sy_smallicon_5,.sy_smallicon ul li.sy_smallicon_hover a.sy_smallicon_5,.sy_smallicon ul li a.sy_smallicon_3,.sy_smallicon ul li.sy_smallicon_hover a.sy_smallicon_3,.sy_smallicon ul li a.sy_smallicon_7,.sy_smallicon ul li.sy_smallicon_hover a.sy_smallicon_7{position:relative;}
-.sy_smallicon_3pb{position:absolute;left:-118px;top:-315px;}
-.sy_smallicon_7pb{position:absolute;left:-118px;top:-315px;}
-.sy_smallicon_5pb{position:absolute;left:-118px;top:-350px;}
-
-
-.sy_smallnav{position:absolute;top:-145px;width:100%;background:#fff;text-align:center; display:none; left:0;filter:alpha(opacity=9); -moz-opacity:0.9; -khtml-opacity: 0.9; opacity: 0.9;}
-#js_nav{width:1100px; margin:0 auto}
-#js_nav li{float:left;width:275px;}
-
-/*外加*/
-#js_nav123{height:115px; width:1100px; margin:0 auto; padding-top:30px;}
-#js_nav123 li{float:left;width:90px; text-align:center}
-#js_nav123 li span{ color:#666; font-size:16px;display:inline-block; line-height:32px;}
-#js_nav123 li a:hover span{ color:#be9e7f}
-i.xbzx,i.ybzx,i.bbzx,i.lxlk,i.mbcz,i.xzsx,i.ztzf,i.smzx,i.mfzz,i.qtzx,i.hyjf,i.yxlf,i.wttm,i.wlmj,i.yswx,i.mbnqh,i.mblk,i.xtlk,i.qt,i.ycmb,i.mxxf,i.aqzz{ background:url(../images/xm-bs-211.png) no-repeat; width:60px; height:60px;display:inline-block;}
-a i.xbzx:hover,a i.ybzx:hover,a i.bbzx:hover,a i.lxlk:hover,a i.mbcz:hover,a i.xzsx:hover,a i.ztzf:hover,a i.smzx:hover,a i.mfzz:hover,a i.qtzx:hover,a i.hyjf:hover,a i.yxlf:hover,a i.wttm:hover,a i.wlmj:hover,a i.yswx:hover,a i.mbnqh:hover,a i.mblk:hover,a i.xtlk:hover,a i.qt:hover,a i.ycmb:hover,a i.mxxf:hover,a i.aqzz:hover{ background:url(../images/xm-js-211.png) no-repeat; width:60px; height:60px;display:inline-block;}
-
-
-i.xbzx{ background-position:0px 0px;}
-i.ybzx{ background-position:-61px 0px;}
-i.bbzx{ background-position:-122px 0px;}
-i.lxlk{ background-position:-183px 0px;}
-i.mbcz{ background-position:-244px 0px;}
-i.xzsx{ background-position:-305px 0px;}
-i.ztzf{ background-position:-366px 0px;}
-i.smzx{ background-position:-427px 0px;}
-i.mfzz{ background-position:-488px 0px;}
-i.qtzx{ background-position:-549px 0px;}
-i.hyjf{ background-position:-610px 0px;}
-i.yxlf{ background-position:-671px 0px;}
-i.wttm{ background-position:-732px 0px;}
-i.wlmj{ background-position:-793px 0px;}
-i.yswx{ background-position:-854px 0px;}
-i.mbnqh{ background-position:-915px 0px;}
-i.mblk{ background-position:-976px 0px;}
-i.xtlk{ background-position:-1037px 0px;}
-i.qt{ background-position:-1098px 0px;}
-i.ycmb{ background-position:-1159px 0px;}
-i.mxxf{ background-position:-1220px 0px;}
-i.aqzz{ background-position:-1281px 0px;}
-
-
-a i.xbzx:hover{ background-position:0px 0px;}
-a i.ybzx:hover{ background-position:-61px 0px;}
-a i.bbzx:hover{ background-position:-122px 0px;}
-a i.lxlk:hover{ background-position:-183px 0px;}
-a i.mbcz:hover{ background-position:-244px 0px;}
-a i.xzsx:hover{ background-position:-305px 0px;}
-a i.ztzf:hover{ background-position:-366px 0px;}
-a i.smzx:hover{ background-position:-427px 0px;}
-a i.mfzz:hover{ background-position:-488px 0px;}
-a i.qtzx:hover{ background-position:-549px 0px;}
-a i.hyjf:hover{ background-position:-610px 0px;}
-a i.yxlf:hover{ background-position:-671px 0px;}
-a i.wttm:hover{ background-position:-732px 0px;}
-a i.wlmj:hover{ background-position:-793px 0px;}
-a i.yswx:hover{ background-position:-854px 0px;}
-a i.mbnqh:hover{ background-position:-915px 0px;}
-a i.mblk:hover{ background-position:-976px 0px;}
-a i.xtlk:hover{ background-position:-1037px 0px;}
-a i.qt:hover{ background-position:-1098px 0px;}
-a i.ycmb:hover{ background-position:-1159px 0px;}
-a i.mxxf:hover{ background-position:-1220px 0px;}
-a i.aqzz:hover{ background-position:-1281px 0px;}
 /**侧栏跟随效果**/
 #sidebar{position:absolute;z-index:999;}
 #sidebar ul li{ width:62px; height:62px; line-height:62px; background:#875f50; margin-top:2px; text-align:center;position: relative;}
