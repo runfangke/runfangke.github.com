@@ -163,13 +163,19 @@
     background-color: #fff;
     min-width: 1200px;
 }
-.slide-box,.show-box{
+.slide-box{
     padding-top: 120px;
     text-align: center;
-    color: #a18977;
 }
 .slide-box .title,.show-box .title{
     margin: 0 auto;
+}
+.show-box{
+    margin-top: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #eee;
+    text-align: center;
 }
 .show-box .title{
     width: 60%;

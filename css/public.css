@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td,figure{margin:0;padding:0;}
-body { font: 14px/1.8 "Microsoft Yahei",verdana; font-weight:100; position:relative}
+body { font: 14px/1.8 "Microsoft Yahei"; font-weight:100; position:relative}
 div{margin:0;padding:0;background-position:0;}
 form{margin: 0px; padding:0px;}
 a{ text-decoration:none}
@@ -24,6 +24,13 @@ body {
 .clearfix:after{visibility:hidden;display:block;font-size:0;content:".";clear:both;height:0;}
 *html.clearfix{zoom:1;}/*IE6*/
 *:first-child+html.clearfix{zoom:1;}/*IE7*/
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.font-en{
+    font-family: sans-serif;
+}
 /*头部menu*/
 #header{z-index:999;}
 .logo_div{ width:100%; height:46px;position:absolute;padding-top:25px;}
@@ -135,7 +142,6 @@ nav.toggle .meizu-header-log {
 .down nav.meizu-header-logo {
     display: inline;
     float: left;
-
 }
 .meizu-header-logo h1 a {
     font-size:0px;
@@ -146,7 +152,7 @@ nav.toggle .meizu-header-log {
     height: 20px;
     background:url(../images/logo.png) no-repeat;background-size:158px 20px; margin-top:20px;}
 .down .meizu-header-logo h1 a {
-    font-size:0px;
+    font-size:0;
     overflow:hidden;
     text-indent:-1200px;
     display: block;
@@ -154,10 +160,10 @@ nav.toggle .meizu-header-log {
     height: 46px;
     background:url(../images/logo.png) no-repeat;background-size:158px 20px; margin-top:8px;}
 nav.toggle .meizu-header-logo h1 a {
-    font-size:0px;overflow:hidden;text-indent:-1200px;background:url(../images/logo.png) no-repeat;background-size:158px 20px;
+    font-size:0;overflow:hidden;text-indent:-1200px;background:url(../images/logo.png) no-repeat;background-size:158px 20px;
 }
 .down .meizu-header-logo h1 a {
-    font-size:0px;overflow:hidden;text-indent:-1200px;background: transparent url(../images/logo.png) no-repeat;background-size:158px 20px;
+    font-size:0;overflow:hidden;text-indent:-1200px;background: transparent url(../images/logo.png) no-repeat;background-size:158px 20px;
 }
 .meizu-header-fdj{ width:19px; height:19px; background:url(../images/sousuo-bai.png) no-repeat; display:inline-block;padding-left:10px; position:relative; top:3px; border:0}
 a.meizu-header-fdj:hover{background:url(../images/sousuo-jin.png) no-repeat;}
@@ -180,7 +186,8 @@ nav.toggle a.meizu-header-fdj:hover{background:url(../images/sousuo-jin.png) no-
     position: relative;
 }
 .meizu-header-link li:hover{
-    background: #fff;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
 }
 .meizu-header-link li>ul{
     display: none;
@@ -189,23 +196,25 @@ nav.toggle a.meizu-header-fdj:hover{background:url(../images/sousuo-jin.png) no-
     left: 0;
     background: #fff;
     width: 100%;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
 }
 .meizu-header-link li>ul li{
-    width: 100%;
-    height: 30px;
-    line-height: 30px;
+    width: 78px;
+    height: 38px;
+    line-height: 37px;
     color: #000;
     display: block;
     padding-left: 10px;
     border-top: 1px solid #c99e2a;
 }
+.meizu-header-link li>ul li:hover{
+    background-color: #eee;
+}
 .meizu-header-link li>ul li a:hover{
-    color: #000;
+    color: #795d1d;
 }
-.meizu-header-link li:hover>ul{
-    display: block;
-    color: #000;
-}
+
 .meizu-header-link>li>a {
     display: block;
     padding: 0px 10px;
@@ -386,7 +395,7 @@ nav.toggle1 .meizu-header-log {
 .xiangmunr li.bbp a .ppjs1{background-position:-100px 0;}
 .xiangmunr li.bbp a .ppjs2{ background-position:0 0;}
 .xiangmunr li.bbp a .ppjs3{ background-position:-206px 0;}
-.xiangmunr li.bbp a .ppjs4{ background-position:0 0;}
+.xiangmunr li.bbp a .ppjs4{ background-position:-322px 0;}
 
 /**侧栏跟随效果**/
 #sidebar{position:absolute;z-index:999;}

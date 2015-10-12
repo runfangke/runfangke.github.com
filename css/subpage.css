@@ -1,0 +1,190 @@
+
+/*head*/
+#header{z-index:999;background:url(../images/banner_bai.png) center center no-repeat; height:69px;}
+.logo_div{ width:100%; height:49px;position:absolute;padding-top:25px;}
+.logo{  width:1101px; height:49px; margin:0 auto}
+.logo_a{ background:url(../images/logo.png) no-repeat; display:block;background-size:260px 49px; float:left}
+.logo_r{ float:right; display:inline; padding-top:10px;}
+.logo_r li{ float:left}
+.logo_r a{ margin-right:20px; font-size:16px; color:#fff; letter-spacing:2px;}
+.logo_r a:hover{color:#be9e7f;}
+
+
+.daohang img{ padding-top:20px; float:left; margin:0 auto; }
+.daohang{ width:127px; margin:0 auto;display:block; line-height:74px; font-size:18px;letter-spacing:2px;}
+a.daohang_a{ width:275px; height:74px; display:block; float:left;text-align:center }
+/*banner*/
+.sub-banner{
+    min-width: 1200px;
+    height: 711px;
+    background: url("../images/sub-tanli-banner.jpg") no-repeat center top;
+    background-attachment: fixed;
+}
+
+.sub-banner img{
+    margin: 200px 0 0 400px;
+}
+.sub-logo{
+    margin-left: 0;
+}
+.meizu-header-logo h1 a {
+    font-size:0;
+    overflow:hidden;
+    text-indent:-1200px;
+    display: block;
+    width: 316px;
+    height: 27px;
+    background:url(../images/sub-logo.png) no-repeat;background-size:316px 27px; margin-top:10px;
+}
+/*ÄÚÈÝ²¿·Ö*/
+.sub-section{
+    min-width: 1200px;
+    background: center top no-repeat;
+}
+.sub-section1{
+    padding-top: 120px;
+    background-image: url("../images/tanli-img1.jpg");
+    height: 882px;
+}
+.sub-section2{
+    padding-top: 120px;
+    background-image: url("../images/tanli-img2.jpg");
+    height: 960px;
+}
+.sub-section3{
+    padding-top: 80px;
+    background-image: url("../images/tanli-img3.jpg");
+    height: 1015px;
+}
+.sub-section4{
+    padding-top: 80px;
+    background-image: url("../images/tanli-img4.jpg");
+    height: 1221px;
+}
+.sub-section5{
+    padding-top: 50px;
+    background-image: url("../images/tanli-img5.jpg");
+    height: 344px;
+    z-index: 2;
+}
+.sub-section6{
+    margin-top: -15px;
+    padding-top: 75px;
+    background-image: url("../images/tanli-img6.jpg");
+    height: 433px;
+    z-index: 1;
+}
+.sub-section7{
+    padding-top: 150px;
+    background-image: url("../images/tanli-img7.jpg");
+    height: 1967px;
+}
+.sub-title{
+    margin: 0 auto ;
+    width: 1105px;
+    height: 84px;
+    background: url("../images/sub-title.png") no-repeat;
+}
+.sub-title1{
+    background-position: 0 0;
+}
+.sub-title2{
+    background-position: 0 -489px;
+}
+.sub-title3{
+    background-position: 0 -600px;
+}
+.sub-title4{
+    background-position: 0 -392px;
+}
+.sub-title5{
+    background-position: 0 -198px;
+}
+.sub-title6{
+    background-position: 0 -101px;
+}
+.sub-title7{
+    background-position: 0 -295px;
+}
+.sub-section{
+    color: #a47c59;
+}
+.sub-section1 .section-content{
+    width: 500px;
+    margin: 150px 0 0 410px;
+}
+.sub-section1 .section-content h3{
+    font-size: 48px;
+    font-weight: 500;
+}
+.sub-section1 .section-content h4{
+    font-size: 24px;
+    font-weight: 500;
+}
+.sub-section1 .section-content div{
+    margin-top: 50px;
+}
+.sub-section1 .section-content div p{
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.sub-section2 .section-content {
+    margin: 39px 0 0 550px;
+    width: 550px;
+    font-size: 18px;
+}
+.sub-section2 .section-content>p{
+    width: 460px;
+    text-indent: 35px;
+    margin-left: 150px;
+}
+.sub-section2 .section-content>div{
+    margin: 300px 0 0 -50px;
+    width: 600px;
+}
+.sub-section2 .section-content>div p{
+    margin-bottom: 20px;
+}
+.sub-section3 .section-content .left{
+    float: left;
+    margin: 160px 0 0 30px;
+}
+.sub-section3 .section-content .right{
+    float: left;
+    margin: 145px 0 0 30px;
+}
+.sub-section3 .section-content .right .box{
+    margin-bottom: 73px;
+}
+.sub-section3 .section-content .right .box p{
+    font-size: 30px;
+}
+.sub-section3 .section-content .right .box h4{
+    font-size: 48px;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*footer*/
+.sub-footer{
+    min-width: 1200px;
+    height: 86px;
+    margin-top: 30px;
+    background: url("../images/sub-foot.jpg") no-repeat center top;
+}
+
+
+
+
