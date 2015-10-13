@@ -189,7 +189,7 @@ nav.toggle a.runfangke-header-fdj:hover{background:url(../images/sousuo-jin.png)
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
 }
-.runfangke-header-link li>ul{
+.runfangke-header-link>li>ul{
     display: none;
     position: absolute;
     top: 80%;
@@ -199,7 +199,7 @@ nav.toggle a.runfangke-header-fdj:hover{background:url(../images/sousuo-jin.png)
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
 }
-.runfangke-header-link li>ul>li{
+.runfangke-header-link>li>ul>li{
     width: 78px;
     height: 38px;
     line-height: 37px;
@@ -209,20 +209,29 @@ nav.toggle a.runfangke-header-fdj:hover{background:url(../images/sousuo-jin.png)
     border-top: 1px solid #c99e2a;
     position: relative;
 }
-.runfangke-header-link li>ul>li:hover{
+.runfangke-header-link>li>ul>li:hover{
     background-color: #eee;
 }
-.runfangke-header-link li>ul>li a:hover{
+.runfangke-header-link>li>ul>li a:hover{
     color: #795d1d;
 }
-.runfangke-header-link li>ul>li>ul{
+.runfangke-header-link>li>ul>li>ul{
     position: absolute;
     left: 100%;
     top: -1px;
     display: none;
+    border-radius: 3px;
+    width: 125px;
+    background-color: #fff;
+    border-top: 1px solid #c99e2a;
+    overflow: hidden;
 }
-.runfangke-header-link li>ul>li:hover>ul{
-    display: block;
+.runfangke-header-link li>ul>li>ul>li{
+    height: 38px;
+    line-height: 37px;
+    border-bottom: 1px solid #c99e2a;
+    width: 100%;
+    padding-left: 10px;
 }
 .runfangke-header-link>li>a {
     display: block;
