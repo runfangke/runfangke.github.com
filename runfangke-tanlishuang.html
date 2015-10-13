@@ -24,9 +24,19 @@
                 </div>
                 <div class="nav_menu">
                     <ul class="runfangke-header-link clearfix fl nav" id="menu">
-                        <li><a href="index.html">首页</a></li>
-                        <li id="runfangke-header-link-product1" class="runfangke-header-link-product"><a href="#">探索润芳可</a></li>
-                        <li> <a href="#">产品中心</a>
+                        <li><a href="index.html">首页</a>
+                        <li class="first-menu"><a href="#">探索润芳可</a>
+                            <ul>
+                                <li><a href="#">企业简介</a></li>
+                                <li><a href="#">企业背景</a></li>
+                                <li><a href="#">企业信条</a></li>
+                                <li><a href="#">品牌诞生</a></li>
+                                <li><a href="#">品牌传承</a></li>
+                                <li><a href="#">行业贡献</a></li>
+                                <li><a href="#">经营理念</a></li>
+                            </ul>
+                        </li>
+                        <li class="first-menu"> <a href="#">产品中心</a>
                             <ul class="clearfix">
                                 <li><a href="#">源之素</a></li>
                                 <li><a href="#">凝时系列</a>
@@ -64,7 +74,7 @@
                                         <li><a href="#">柔和洁面乳</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="#">弹力系列</a>
+                                <li><a href="runkefang-tanli.html">弹力系列</a>
                                     <ul>
                                         <li><a href="runkefang-tanli.html">弹力水分乳</a></li>
                                         <li><a href="runfangke-tanlishuang.html">弹力水分乳霜</a></li>
@@ -105,13 +115,13 @@
                                 </li>
                             </ul>
                         </li>
-                        <li><a href="#">专家团队</a>
+                        <li class="first-menu"><a href="#">专家团队</a>
                             <ul class="clearfix">
                                 <li><a href="#">专家介绍</a></li>
                                 <li><a href="#">专家咨询</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">战略合作</a>
+                        <li class="first-menu"><a href="#">战略合作</a>
                             <ul class="clearfix">
                                 <li><a href="#">店家分享</a></li>
                                 <li><a href="#">店面展示</a></li>
@@ -124,14 +134,14 @@
                                 <li><a href="#">加盟咨询</a></li>
                             </ul>
                         </li>
-                        <li><a href="#" rel="nofollow">护肤分享</a>
+                        <li class="first-menu"><a href="#" rel="nofollow">护肤分享</a>
                             <ul class="clearfix">
                                 <li><a href="#">护肤讲堂</a></li>
                                 <li><a href="#">店家分享</a></li>
                                 <li><a href="#">顾客分享</a></li>
                             </ul>
                         </li>
-                        <li><a href="#" rel="nofollow">加入我们</a>
+                        <li class="first-menu"><a href="#" rel="nofollow">加入我们</a>
                             <ul class="clearfix">
                                 <li><a href="#">联系方式</a></li>
                                 <li><a href="#">校园招聘</a></li>
@@ -141,57 +151,19 @@
                     </ul>
                     <div class="clear"></div>
                 </div>
+
             </div>
         </div>
-
-        <div id="runfangke-header-sub1" class="runfangke-header-sub">
-            <div class="xiangmunr_div">
-                <ul class="xiangmunr">
-                    <li id="dhsj1" onmouseover="box(&#39;dhsj&#39;,&#39;dhsjBoxs&#39;,1,4);">
-                        <a href="#">
-                            <i class="ppjs1"></i>
-                            <p>企业简介</p>
-                        </a>
-                    </li>
-                    <li id="dhsj2" onmouseover="box(&#39;dhsj&#39;,&#39;dhsjBoxs&#39;,2,4);">
-                        <a href="#">
-                            <i class="ppjs2"></i>
-                            <p>品牌理念</p>
-                        </a>
-                    </li>
-                    <li id="dhsj3" onmouseover="box(&#39;dhsj&#39;,&#39;dhsjBoxs&#39;,3,4);">
-                        <a href="#">
-                            <i class="ppjs3"></i>
-                            <p>企业荣誉</p>
-                        </a>
-                    </li>
-                    <li id="dhsj4" onmouseover="box(&#39;dhsj&#39;,&#39;dhsjBoxs&#39;,4,4);">
-                        <a href="#">
-                            <i class="ppjs4"></i>
-                            <p>企业文化</p>
-                        </a>
-                    </li>
-
-                    <div id="dhsjBoxs1"></div>
-                    <div id="dhsjBoxs2" class="disnone"></div>
-                    <div id="dhsjBoxs3" class="disnone"></div>
-                    <div id="dhsjBoxs4" class="disnone"></div>
-
-                </ul>
-            </div>
-        </div>
-
     </nav>
 </div>
 
 <div class="sub-banner tanli2-banner">
     <div class="container">
         <img src="images/tanli2-bannertxt.png" class="left" data-sr="enter bottom over 0.5s and move 200px"/>
-        <img src="images/tanli2-bannerpro.png" class="right" data-sr="enter bottom over 0.5s and move 200px"/>
     </div>
 </div>
 
-<div class="sub-section sub-section1">
+<div class="sub-section tanli2-section1">
     <div class="container">
         <div class="sub-title sub-title1"></div>
         <div class="section-content">
@@ -353,25 +325,37 @@
     </ul>
 </div>
 <!--右侧导航 end-->
-<script src="js/jquery.min.js" type="text/javascript"></script>
-<script src="js/scrollReveal.js" type="text/javascript"></script>
-<script>
-    (function($) {
-        'use strict';
-        window.sr= new scrollReveal({
-            reset: true,
-            move: '50px',
-            mobile: true
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/scrollReveal.js" type="text/javascript"></script>
+    <script>
+        (function($) {
+            'use strict';
+            window.sr= new scrollReveal({
+                reset: true,
+                move: '50px',
+                mobile: true
+            });
+        })();
+    </script>
+    <script type="text/javascript" language="javascript" src="js/public.js"></script>
+    <script type="text/javascript" language="javascript" src="js/jquery.hhService.js"></script>
+    <script type="text/javascript">$(function(){$("#sidebar").fix({float:'right',minStatue:false,skin:'green',durationTime:1000})});</script>
+    <!--head下拉框和第一个滚动-->
+    <script type="text/javascript" src="js/tab.js"></script>
+    <!--banner start-->
+    <script type="text/javascript">
+        var anquan = new Object();
+        anquan.index = new Object();
+        anquan.zt = new Object();
+        var _hmt = _hmt || [];
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            anquan.index.init();
         });
-    })();
-</script>
-<script type="text/javascript" language="javascript" src="js/public.js"></script>
-<script type="text/javascript" language="javascript" src="js/jquery.hhService.js"></script>
-<script type="text/javascript">$(function(){$("#sidebar").fix({float:'right',minStatue:false,skin:'green',durationTime:1000})});</script>
-<!--head下拉框和第一个滚动-->
-<script type="text/javascript" src="js/slider1.js"></script>
-<script type="text/javascript" src="js/pre-index1.js"></script>
-<script type="text/javascript" src="js/tab.js"></script>
-<!--end head下拉框-->
+    </script>
+    <script type="text/javascript" src="js/anquan.js"></script>
+    <!--end banner-->
+    <!--end head下拉框-->
 </body>
 </html>

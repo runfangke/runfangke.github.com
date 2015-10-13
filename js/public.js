@@ -66,10 +66,8 @@ $(function(){
 	//二级菜单
 	$("#menu>li").hover(function(){
 		$(this).children("ul").slideDown(100);
-		$(this).css("background-color","#fff");
 	},function(){
 		$(this).children("ul").slideUp(100);
-		$(this).css("background-color","");
 	});
 	//三级菜单
 	$("#menu>li>ul>li").hover(function(){

@@ -1,3 +1,4 @@
+
 @charset "utf-8";
 /* CSS Document */
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td,figure{margin:0;padding:0;}
@@ -46,50 +47,11 @@ body {
 a.daohang_a{ width:275px; height:74px; display:block; float:left;text-align:center }
 
 
-/*head下拉*/
 
-.down nav {
-    position: relative;
-    z-index: 2;
-    -webkit-transition: background-color .5s ease-in-out;
-    -o-transition: background-color .5s ease-in-out;
-    transition: background-color .5s ease-in-out;
-}
-nav {
-    position: relative;
-    z-index: 2;
-    -webkit-transition: background-color .5s ease-in-out;
-    -o-transition: background-color .5s ease-in-out;
-    transition: background-color .5s ease-in-out;
-}
-.down nav.toggle {
-    background:#fff;
-    background-color: rgba(255, 255, 255, 0.95);
-    -webkit-transition: background-color .5s ease-in-out;
-    -o-transition: background-color .5s ease-in-out;
-    transition: background-color .5s ease-in-out;
-}
-nav.toggle {
-    background:#fff;
-    background-color: rgba(255, 255, 255, 0.95);
-    -webkit-transition: background-color .5s ease-in-out;
-    -o-transition: background-color .5s ease-in-out;
-    transition: background-color .5s ease-in-out;
-}
-nav.toggle .runfangke-header a,
-nav.toggle .runfangke-header-sub a,
-nav.toggle .runfangke-header-log {
-    color:#666;
-}
-nav.toggle .runfangke-header a:hover,
-nav.toggle .runfangke-header-sub a:hover,
-nav.toggle .runfangke-header-log {
-    color:#c49664; text-decoration:none;
-}
 .runfangke-header-log {
     color: #fff;
 }
-.runfangke-header,.runfangke-header-sub {
+.runfangke-header {
     font-size: 16px;
 }
 .runfangke-header a,
@@ -97,7 +59,6 @@ nav.toggle .runfangke-header-log {
     color: #c49664;
     text-decoration: none;
 }
-.down .runfangke-header a,
 .runfangke-header-sub a {
     color:#666;
     text-decoration: none;
@@ -118,7 +79,7 @@ nav.toggle .runfangke-header-log {
     width: 1100px;
     margin: 0 auto;
     position:relative;
-    height:79px
+    height:69px
 }
 .runfangke-header-wrap-sub {
     width: 1100px;
@@ -147,20 +108,9 @@ nav.toggle .runfangke-header-log {
     display: block;
     width: 158px;
     height: 20px;
-    background:url(../images/logo.png) no-repeat;background-size:158px 20px; margin-top:20px;}
-.down .runfangke-header-logo h1 a {
-    font-size:0;
-    overflow:hidden;
-    text-indent:-1200px;
-    display: block;
-    width: 285px;
-    height: 46px;
-    background:url(../images/logo.png) no-repeat;background-size:158px 20px; margin-top:8px;}
-nav.toggle .runfangke-header-logo h1 a {
-    font-size:0;overflow:hidden;text-indent:-1200px;background:url(../images/logo.png) no-repeat;background-size:158px 20px;
-}
-.down .runfangke-header-logo h1 a {
-    font-size:0;overflow:hidden;text-indent:-1200px;background: transparent url(../images/logo.png) no-repeat;background-size:158px 20px;
+    background:url(../images/logo.png) no-repeat;background-size:158px 20px; margin-top:15px;}
+.down .runfangke-header-logo h1 a{
+    margin-top: 8px;
 }
 .runfangke-header-fdj{ width:19px; height:19px; background:url(../images/sousuo-bai.png) no-repeat; display:inline-block;padding-left:10px; position:relative; top:3px; border:0}
 a.runfangke-header-fdj:hover{background:url(../images/sousuo-jin.png) no-repeat;}
@@ -182,7 +132,8 @@ nav.toggle a.runfangke-header-fdj:hover{background:url(../images/sousuo-jin.png)
     float: left;
     position: relative;
 }
-.runfangke-header-link li:hover{
+.runfangke-header-link li.first-menu:hover{
+    background-color: #fff;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
 }
@@ -197,10 +148,10 @@ nav.toggle a.runfangke-header-fdj:hover{background:url(../images/sousuo-jin.png)
     border-bottom-right-radius: 3px;
 }
 .runfangke-header-link>li>ul>li{
-    width: 78px;
+    width: 100%;
     height: 38px;
+    box-sizing: border-box;
     line-height: 37px;
-    color: #000;
     display: block;
     padding-left: 10px;
     border-top: 1px solid #c99e2a;
@@ -228,6 +179,7 @@ nav.toggle a.runfangke-header-fdj:hover{background:url(../images/sousuo-jin.png)
     line-height: 37px;
     border-bottom: 1px solid #c99e2a;
     width: 100%;
+    box-sizing: border-box;
     padding-left: 10px;
 }
 .runfangke-header-link>li>a {
@@ -235,36 +187,38 @@ nav.toggle a.runfangke-header-fdj:hover{background:url(../images/sousuo-jin.png)
     padding: 0px 10px;
     font-size:16px;
     letter-spacing:1px;
-    height:79px;
-    line-height:75px;
+    height:69px;
+    line-height:65px;
     color:#c99e2a
 }
-nav.toggle .runfangke-header-link a {
+nav.toggle .runfangke-header-link>li>a {
     display: block;
     padding: 0px 10px;
     font-size:16px;
     letter-spacing:1px;
-    height:79px;
-    line-height:75px;
+    height:69px;
+    line-height:65px;
     color:#c49664
 }
 
-.down .runfangke-header-link a {
+.down .runfangke-header-link>li>a {
     display: block;
     padding: 0px 10px 0px 10px;
     font-size:16px;
     letter-spacing:1px;
-    height:79px;
+    height:69px;
     line-height:55px;
     color:#c49664
 }
-.down nav.toggle .runfangke-header-link a {
+.down nav.toggle .runfangke-header-link>li>a {
     display: block;
     padding: 0px 10px 0px 10px;
     font-size:16px;
     letter-spacing:1px;
-    height:79px;
+    height:69px;
     line-height:55px;
+}
+.down nav.toggle .runfangke-header-link a{
     color:#c49664
 }
 .runfangke-header-log {
@@ -274,143 +228,12 @@ nav.toggle .runfangke-header-link a {
     text-align: right;
     font-size: 12px;
 }
-.runfangke-header-sub {
-    z-index: 100;
-    display: none;
-    width: 100%;
-    background:url(../images/bj.png) bottom repeat-x;
-}
-.down nav.toggle .runfangke-header-sub {
-    z-index: 100;
-    display: none;
-    width: 100%;
-
-}
-.down nav.toggle .runfangke-header-sub {
-    overflow: hidden; margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px;
-}
-
-.down nav.toggle .runfangke-header-sub-product {
-    display: inline;
-    float: left;
-    text-align: center;
-    padding: 0 5px;
-    width: 176px;
-
-}
-.down .runfangke-header-sub-product {
-    display: inline;
-    float: left;
-    text-align: center;
-    padding: 0 5px;
-    width: 176px;
-
-}
-.runfangke-header-sub-product {
-    display: inline;
-    float: left;
-    text-align: center;
-    padding: 0 5px;
-    width: 176px;
-
-}
-.runfangke-header-sub-product a {
-    display: block;
-    padding: 1px 0 7px 0;
-}
-.runfangke-header-sub-product a.hover {
-    color:#be9e7f;
-}
 /*.runfangke-header-link .hover a.runfangke-header-link-product-a{ background:#f00}*/
 .runfangke-header-link .hover a.runfangke-header-link-product-a{ height:79px;background:url(../images/nav-hover.png) center center no-repeat; color:#c49664}
 
-.down .runfangke-header{ width:100%;  height:79px;background:url(../images/banner_bai.png) center center no-repeat;}
-.down nav.toggle .runfangke-header{ width:100%;  height:79px; background:none}
-/*head第二个下拉*/
-.down nav {
-    position: relative;
-    z-index: 2;
+.down .runfangke-header{ width:100%;  height:69px;background:url(../images/banner_bai.png) center center no-repeat;}
+.down nav.toggle .runfangke-header{ width:100%;  height:69px; background:none}
 
-    -webkit-transition: background-color .5s ease-in-out;
-     -o-transition: background-color .5s ease-in-out;
-     transition: background-color .5s ease-in-out;
-}
-nav {
-    position: relative;
-    z-index: 2;
-
-    -webkit-transition: background-color .5s ease-in-out;
-    -o-transition: background-color .5s ease-in-out;
-    transition: background-color .5s ease-in-out;
-
-}
-.down nav.toggle1 {
-    background:#fff;
-    background-color: rgba(255, 255, 255, 0.95);
-
-      -webkit-transition: background-color .5s ease-in-out;
-      -o-transition: background-color .5s ease-in-out;
-      transition: background-color .5s ease-in-out;
-}
-nav.toggle1 {
-     background:#fff;
-     background-color: rgba(255, 255, 255, 0.95);
-      -webkit-transition: background-color .5s ease-in-out;
-      -o-transition: background-color .5s ease-in-out;
-      transition: background-color .5s ease-in-out;
-}
-nav.toggle1 .runfangke-header a,
-nav.toggle1 .runfangke-header-sub a,
-nav.toggle1 .runfangke-header-log {
-    color:#666;
-}
-nav.toggle1 .runfangke-header a:hover,
-nav.toggle1 .runfangke-header-sub a:hover,
-nav.toggle1 .runfangke-header-log {
-    color:#898989; text-decoration:none;
-}
-
-/*版权*/
-/*.runfangke-header-link .hover a.runfangke-header-link-product-a{ height:79px;background:url(../images/nav-hover.png) center center no-repeat; color:#898989; background:#fff}*/
-/*nav.toggle1 .runfangke-header-link .hover a.runfangke-header-link-product-a{ height:79px;background:url(../images/nav-hover.png) center center no-repeat; color:#898989; background:#fff}*/
-
-.down .runfangke-header{ width:100%;  height:79px;background:url(../images/banner_bai.png) center center no-repeat;}
-.down nav.toggle1 .runfangke-header{ width:100%;  height:79px; background:none}
-
-.sub_nav{ width:1100px; display: block;height:49px; background:url(../images/shuxian.png) repeat-x;}
-.sub_nav li{ float:left;display:block ;width:89px; height:49px; margin:0 90px;}
-.sub_nav li a{width:89px; height:49px; display:block; font-size:18px; text-align:center; line-height:30px; font-weight:600;color:#666;letter-spacing:1px;}
-.sub_nav li a.bbp{ color:#be9e7f; background:url(../images/sanjiao.png) center center no-repeat; font-size:18px;font-weight:600;}
-
-.sub_nav_div_h3{ font-size:16px; color:#666; font-weight:bold; padding-top:18px;letter-spacing:2px; line-height:28px;}
-.sub_nav_ul a:hover .sub_nav_div_h3{color:#c49664;}
-.sub_nav_ul{ font-size:14px; float:left; padding-right:15px;padding-bottom:50px;}
-#skinBoxs2 .sub_nav_ul{ font-size:14px; float:left; padding-right:20px;padding-bottom:50px;}
-#skinBoxs4 .sub_nav_ul{ font-size:14px; float:left; padding-right:34px;padding-bottom:50px;}
-.sub_nav_ul li{ padding-top:0px; line-height:24px;}
-.sub_nav_ul li a{ color:#727171; font-size:14px;letter-spacing:1px;}
-.sub_nav_ul li a:hover{ color:#be9e7f;text-decoration:none}
-
-.xiangmunr_div{width:1100px; margin:0 auto; margin-top:20px;background:url(../images/ppdhtb-xbj.png) repeat-x;}
-.xiangmunr{  height:200px; margin-bottom:48px;margin-top:15px; width:1000px; margin:0 auto; }
-.xiangmunr h3{ font-size:18px; padding-bottom:15px; font-weight:100; color:#666464}
-.xiangmunr h3 a{ font-size:16px; color:#898989}
-.xiangmunr li{ width:73px; text-align:center; float:left; margin-right:40px;}
-.xiangmunr li a{ width:73px; height:180px; display:block; padding-top:33px;}
-.xiangmunr li.bbp a{background:url(../images/ppdhtb-sj.png) center top no-repeat;width:73px; display:block; }
-.xiangmunr li p{ font-size:18px; color:#666464;}
-.xiangmunr li.bbp a p{ color:#be9e7f}
-.xiangmunr li i{margin-left: 5px}
-.ppjs1,.ppjs2,.ppjs3,.ppjs4,.ppjs5,.ppjs6,.ppjs7,.ppjs8{ background:url(../images/ppdhtb.png) no-repeat; display:block;width:65px; height:65px;}
-.xiangmunr li.bbp a .ppjs1,.xiangmunr li.bbp a .ppjs2,.xiangmunr li.bbp a .ppjs3,.xiangmunr li.bbp a .ppjs4,.xiangmunr li.bbp a .ppjs5,.xiangmunr li.bbp a .ppjs6,.xiangmunr li.bbp a .ppjs7,.xiangmunr li.bbp a .ppjs8{ background:url(../images/ppdhtb.png) no-repeat; display:block;width:65px; height:65px;}
-.ppjs1{ background-position:-102px -85px;}
-.ppjs2{ background-position:0 -89px;}
-.ppjs3{ background-position:-209px -84px;}
-.ppjs4{ background-position:-310px -86px;}
-.xiangmunr li.bbp a .ppjs1{background-position:-100px 0;}
-.xiangmunr li.bbp a .ppjs2{ background-position:0 0;}
-.xiangmunr li.bbp a .ppjs3{ background-position:-206px 0;}
-.xiangmunr li.bbp a .ppjs4{ background-position:-322px 0;}
 
 /**侧栏跟随效果**/
 #sidebar{position:absolute;z-index:999;}
@@ -423,13 +246,9 @@ nav.toggle1 .runfangke-header-log {
 #sidebar ul li .ht_iphone{ background:url(../images/menu/dhh.png) no-repeat}
 #sidebar ul li .ht_weixin{ background:url(../images/menu/wxh.png) no-repeat; top:-83px}
 .top{ background:url(../images/menu/top.png) no-repeat;}
-.dx{ background:url(../images/menu/dx.png) no-repeat center center;}
 .dh{ background:url(../images/menu/dh.png) no-repeat center center;}
-.dt{ background:url(../images/menu/dt.png) no-repeat center center}
 .wx{ background:url(../images/menu/wx.png) no-repeat center center}
 .wb{ background:url(../images/menu/wb.png) no-repeat center center}
-.dt_s{ background:url(../images/menu/dt_s.png) no-repeat center center; width:31px; height:41px}
-.dx_s{ background:url(../images/menu/dx_s.png) no-repeat center center; width:44px; height:38px}
 .wb_s{ background:url(../images/menu/wb_s.png) no-repeat center center; width:44px; height:36px}
 /**滑动**/
 #sidebar ul li .sidebox{position:absolute;width:62px;height:62px;top:0;right:0;transition:all 0.3s;background:#875f50;opacity:1;filter:Alpha(opacity=100);color:#fff;font:14px/62px "Microsoft YaHei";overflow:hidden;}

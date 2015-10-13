@@ -17,14 +17,14 @@ a.daohang_a{ width:275px; height:74px; display:block; float:left;text-align:cent
 .sub-banner{
     min-width: 1200px;
     height: 711px;
-    background:  no-repeat center top fixed;
+    background:  no-repeat center top;
 }
 .tanli1-banner{
     background-image: url("../images/sub-tanli-banner.jpg");
 }
 .tanli2-banner{
     background-image: url("../images/tanli2-bannerbg.jpg");
-    height: 728px;
+    height: 811px;
 }
 .tanli1-banner img{
     margin: 200px 0 0 400px;
@@ -56,6 +56,11 @@ a.daohang_a{ width:275px; height:74px; display:block; float:left;text-align:cent
     padding-top: 120px;
     background-image: url("../images/tanli-img1.jpg");
     height: 882px;
+}
+.tanli2-section1{
+    padding-top: 120px;
+    background-image: url("../images/tanli2-img1.jpg");
+    height: 959px;
 }
 .sub-section2{
     padding-top: 120px;

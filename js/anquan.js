@@ -432,13 +432,13 @@ anquan.index = {
         var stop_len = $(window).scrollTop() - 80;
         var that = anquan.index;
         var s_T = 500;
-        if (scroll_len >= (that.win_height - 80) && $(window).width() < that.min_width) {
+        if (scroll_len >= 10 && $(window).width() < that.min_width) {
             $("#header").addClass("down");
             $("#header").css({
                 "position": "absolute",
                 "top": scroll_len + "px"
             });
-        } else if (scroll_len >= (that.win_height - 80) && $(window).width() >= that.min_width) {
+        } else if (scroll_len >= 10 && $(window).width() >= that.min_width) {
             if ($("#header").hasClass("down")) {
                 return;
             }
