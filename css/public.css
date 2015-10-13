@@ -1,7 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td,figure{margin:0;padding:0;}
-body { font: 14px/1.8 "Microsoft Yahei"; font-weight:100; position:relative}
 div{margin:0;padding:0;background-position:0;}
 form{margin: 0px; padding:0px;}
 a{ text-decoration:none}
@@ -45,8 +44,6 @@ body {
 .daohang img{ padding-top:20px; float:left; margin:0 auto; }
 .daohang{ width:127px; margin:0 auto;display:block; line-height:74px; font-size:18px;letter-spacing:2px;}
 a.daohang_a{ width:275px; height:74px; display:block; float:left;text-align:center }
-a.daohang_a:hover{width:275px; height:74px;display:block; background:url(../images/b30.png) repeat-x;}
-a.daohanghover{background:url(../images/b30.png) repeat-x;}
 
 
 /*head下拉*/

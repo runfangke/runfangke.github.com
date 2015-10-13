@@ -17,12 +17,23 @@ a.daohang_a{ width:275px; height:74px; display:block; float:left;text-align:cent
 .sub-banner{
     min-width: 1200px;
     height: 711px;
-    background: url("../images/sub-tanli-banner.jpg") no-repeat center top;
-    background-attachment: fixed;
+    background:  no-repeat center top fixed;
 }
-
-.sub-banner img{
+.tanli1-banner{
+    background-image: url("../images/sub-tanli-banner.jpg");
+}
+.tanli2-banner{
+    background-image: url("../images/tanli2-bannerbg.jpg");
+    height: 728px;
+}
+.tanli1-banner img{
     margin: 200px 0 0 400px;
+}
+.tanli2-banner img.left{
+    margin: 200px 0 0 0px;
+}
+.tanli2-banner img.right{
+    margin: 200px 0 0 0px;
 }
 .sub-logo{
     margin-left: 0;
@@ -164,16 +175,61 @@ a.daohang_a{ width:275px; height:74px; display:block; float:left;text-align:cent
     font-size: 48px;
     font-weight: 500;
 }
-
-
-
-
-
-
-
-
-
-
+.sub-section4 .section-content .box h4{
+    font-weight: 500;
+    font-size: 30px;
+}
+.sub-section4 .section-content .box p{
+    font-weight: 400;
+    color: #8c8c8c;
+    font-size: 18px;
+}
+.sub-section4 .section-content .box1{
+    padding-left: 450px;
+    margin-top: 0;
+    width: 666px;
+}
+.sub-section4 .section-content .box2{
+    padding-left: 108px;
+    margin-top: 80px;
+    width: 700px;
+}
+.sub-section4 .section-content .box3{
+    padding-left: 390px;
+    margin-top: 115px;
+    width: 725px;
+}
+.sub-section4 .section-content .box4{
+    padding-left: 108px;
+    margin-top: 115px;
+    width: 700px;
+}
+.sub-section4 .section-content .box5{
+    padding-left: 390px;
+    margin-top: 108px;
+    width: 420px;
+}
+.sub-section5 .section-content div p{
+    margin-top: 100px;
+    width: 460px;
+    margin-left: 585px;
+    font-size: 18px;
+}
+.sub-section6 .section-content>div{
+    margin: 20px auto 0;
+    width: 800px;
+}
+.sub-section6 .section-content>div .box{
+    margin-bottom: 20px;
+}
+.sub-section6 .section-content>div .box .right{
+    margin-left: 30px;
+    margin-top: 10px;
+    font-size: 18px;
+}
+.sub-section6 .section-content>div .box .right p{
+    width: 680px;
+}
 
 
 

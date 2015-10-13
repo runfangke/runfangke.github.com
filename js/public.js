@@ -62,4 +62,19 @@ $(function(){
 		$(".row1",this).hide().animate({top: "0%"},200);
 		$(".row2",this).hide().animate({bottom: "0%"},200);
 	});
+
+	//二级菜单
+	$("#menu>li").hover(function(){
+		$(this).children("ul").slideDown(100);
+		$(this).css("background-color","#fff");
+	},function(){
+		$(this).children("ul").slideUp(100);
+		$(this).css("background-color","");
+	});
+	//三级菜单
+	$("#menu>li>ul>li").hover(function(){
+		$(this).children("ul").slideDown(100);
+	},function(){
+		$(this).children("ul").slideUp(100);
+	});
 });
