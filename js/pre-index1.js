@@ -1,6 +1,6 @@
 (function (w, d) {
-  var sub = d.getElementById('meizu-header-sub1'),
-      product = d.getElementById('meizu-header-link-product1'),
+  var sub = d.getElementById('runfangke-header-sub1'),
+      product = d.getElementById('runfangke-header-link-product1'),
       addHandle = function (element, type, handler) {
         if (element.addEventListener) {
           element.addEventListener(type, handler, false);
@@ -53,8 +53,8 @@
   addHandle(product, 'mouseleave', clear);
 })(window, document);
 $(function () {
-  var product = $('#meizu-header-link-product1'),
-      subnav = $('#meizu-header-sub1'),
+  var product = $('#runfangke-header-link-product1'),
+      subnav = $('#runfangke-header-sub1'),
       nav = $('nav');
       show = function () {
         product.addClass('hover');
@@ -73,8 +73,8 @@ $(function () {
   subnav.mouseout(hide);
 });
 //(function (w, d) {
-//    var sub = d.getElementById('meizu-header-sub'),
-//        product = d.getElementById('meizu-header-link-product'),
+//    var sub = d.getElementById('runfangke-header-sub'),
+//        product = d.getElementById('runfangke-header-link-product'),
 //        addHandle = function (element, type, handler) {
 //            if (element.addEventListener) {
 //                element.addEventListener(type, handler, false);
@@ -127,8 +127,8 @@ $(function () {
 //    addHandle(product, 'mouseleave', clear);
 //})(window, document);
 $(function () {
-    var product = $('#meizu-header-link-product'),
-        subnav = $('#meizu-header-sub'),
+    var product = $('#runfangke-header-link-product'),
+        subnav = $('#runfangke-header-sub'),
         nav = $('nav');
     show = function () {
         product.addClass('hover');
