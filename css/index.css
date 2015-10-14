@@ -67,9 +67,9 @@
 #banner a{color:#fff}
 #sub-nav{z-index:11;position:absolute;bottom:15%;width:100%;}
 #sub-nav .sub-nav-wrap{width:1200px;overflow:hidden;margin:auto}
-#sub-nav ul{width:150px;line-height:80px; margin:0 auto;}
+#sub-nav ul{width:160px;line-height:80px; margin:0 auto;}
 #sub-nav ul li{float:left}
-#sub-nav ul li a{display:block;width:10px;height:10px;color:#fff; margin-right:20px;}
+#sub-nav ul li a{display:block;width:12px;height:12px;color:#fff; margin-right:20px;}
 #sub-nav ul li a.active span,#sub-nav ul li a:hover span{opacity:1;filter:alpha(opacity=100)}
 #sub-nav ul li a span{display:inline-block;vertical-align:top;*display:inline;zoom:1;*vertical-align:middle;width:44px;height:44px;margin:20px 26px 16px 77px;opacity:0.8;filter:alpha(opacity=80)}
 #sub-nav .weishi span{background-position:-268px -283px;margin:20px 20px 16px 97px}
@@ -82,7 +82,7 @@
     background-color:black;
     background-position:center top;
     background-repeat: no-repeat;
-    background-size: cover;
+    /*background-size: cover;*/
 }
 #banner .bg li.llq{background-image:url(../images/banner3.jpg);background-position:center top;background-color:black}
 #banner .bg li.huodong{background-image:url(../images/banner2.jpg);background-position:center top;background-color:black}
@@ -125,7 +125,7 @@
     width: 760px;
 }
 .show-box{
-    margin-top: 100px;
+    margin-top: 140px;
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: #eee;
@@ -133,7 +133,7 @@
 }
 .show-box .title{
     width: 900px;
-    margin-top: 80px;
+    margin-top: 40px;
     margin-bottom: 60px;
 }
 /*¹ö¶¯*/

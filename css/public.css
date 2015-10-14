@@ -35,7 +35,9 @@ body {
 #header{z-index:999;}
 .logo_div{ width:100%; height:46px;position:absolute;padding-top:25px;}
 .logo{  width:1101px; height:46px; margin:0 auto}
-.logo_a{ background:url(../images/logo.png) no-repeat; display:block;background-size:258px 46px; float:left}
+.logo_a{
+    /*background:url(../images/logo.png) no-repeat;background-size:258px 46px; display:block; float:left;*/
+    background:url(../images/sub-logo.png) no-repeat;background-size:316px 27px; margin-top:10px}
 .logo_r{ float:right; display:inline; padding-top:10px;}
 .logo_r li{ float:left}
 .logo_r a{ margin-right:20px; font-size:16px; color:#fff; letter-spacing:2px;}
@@ -56,7 +58,7 @@ a.daohang_a{ width:275px; height:74px; display:block; float:left;text-align:cent
 }
 .runfangke-header a,
 .runfangke-header-sub a {
-    color: #c49664;
+    color: #a47c59;
     text-decoration: none;
 }
 .runfangke-header-sub a {
@@ -89,7 +91,7 @@ a.daohang_a{ width:275px; height:74px; display:block; float:left;text-align:cent
     display: inline;
     float: left;
     height:69px;
-    margin-left: 290px;
+    margin-left: 150px;
     margin-top: 7px;
 }
 .down .runfangke-header-logo {
@@ -106,11 +108,15 @@ a.daohang_a{ width:275px; height:74px; display:block; float:left;text-align:cent
     overflow:hidden;
     text-indent:-1200px;
     display: block;
-    width: 158px;
-    height: 20px;
-    background:url(../images/logo.png) no-repeat;background-size:158px 20px; margin-top:15px;}
+    /*width: 158px;*/
+    /*height: 20px;*/
+    /*background:url(../images/logo.png) no-repeat;background-size:158px 20px; margin-top:15px;*/
+    width: 316px;
+    height: 27px;
+    background:url(../images/sub-logo.png) no-repeat;background-size:316px 27px; margin-top:10px;
+}
 .down .runfangke-header-logo h1 a{
-    margin-top: 8px;
+    margin-top: 3px;
 }
 .runfangke-header-fdj{ width:19px; height:19px; background:url(../images/sousuo-bai.png) no-repeat; display:inline-block;padding-left:10px; position:relative; top:3px; border:0}
 a.runfangke-header-fdj:hover{background:url(../images/sousuo-jin.png) no-repeat;}
@@ -154,7 +160,7 @@ nav.toggle a.runfangke-header-fdj:hover{background:url(../images/sousuo-jin.png)
     line-height: 37px;
     display: block;
     padding-left: 10px;
-    border-top: 1px solid #c99e2a;
+    border-top: 1px solid #a47c59;
     position: relative;
 }
 .runfangke-header-link>li>ul>li:hover{
@@ -171,13 +177,13 @@ nav.toggle a.runfangke-header-fdj:hover{background:url(../images/sousuo-jin.png)
     border-radius: 3px;
     width: 125px;
     background-color: #fff;
-    border-top: 1px solid #c99e2a;
+    border-top: 1px solid #a47c59;
     overflow: hidden;
 }
 .runfangke-header-link li>ul>li>ul>li{
     height: 38px;
     line-height: 37px;
-    border-bottom: 1px solid #c99e2a;
+    border-bottom: 1px solid #a47c59;
     width: 100%;
     box-sizing: border-box;
     padding-left: 10px;
@@ -189,7 +195,7 @@ nav.toggle a.runfangke-header-fdj:hover{background:url(../images/sousuo-jin.png)
     letter-spacing:1px;
     height:69px;
     line-height:65px;
-    color:#c99e2a
+    color:#a47c59
 }
 nav.toggle .runfangke-header-link>li>a {
     display: block;
@@ -198,7 +204,7 @@ nav.toggle .runfangke-header-link>li>a {
     letter-spacing:1px;
     height:69px;
     line-height:65px;
-    color:#c49664
+    color:#a47c59
 }
 
 .down .runfangke-header-link>li>a {
@@ -208,7 +214,7 @@ nav.toggle .runfangke-header-link>li>a {
     letter-spacing:1px;
     height:69px;
     line-height:55px;
-    color:#c49664
+    color:#a47c59
 }
 .down nav.toggle .runfangke-header-link>li>a {
     display: block;
@@ -219,7 +225,7 @@ nav.toggle .runfangke-header-link>li>a {
     line-height:55px;
 }
 .down nav.toggle .runfangke-header-link a{
-    color:#c49664
+    color:#a47c59
 }
 .runfangke-header-log {
     display: inline;
