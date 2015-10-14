@@ -120,8 +120,9 @@
     padding-top: 120px;
     text-align: center;
 }
-.slide-box .title,.show-box .title{
+.slide-box .title{
     margin: 40px auto;
+    width: 760px;
 }
 .show-box{
     margin-top: 100px;
@@ -131,9 +132,9 @@
     text-align: center;
 }
 .show-box .title{
-    width: 40%;
+    width: 900px;
     margin-top: 80px;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
 }
 /*¹ö¶¯*/
 
@@ -237,21 +238,24 @@ a.agrayright{cursor:default;background:url(../images/syztrgiht1222.png) no-repea
 .footer{
     width: 100%;
     margin: 40px auto 0;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
+    text-align: center;
 }
-.footer ul{
-    width: 780px;
-    margin: 0 auto;
-    color: #c39663;
-    font-size: 17px;
+.footer .p1{
+    color: #be9e7f;
+    font-size: 28px;
+    margin-bottom: 10px;
 }
-.footer ul li{
-    float: left;
-    margin-right: 15px;
+.footer .p2{
+    font-size: 44px;
+    color: #be9e7f;
+    margin-bottom: 5px;
 }
-
-
-
+.footer .p3,.footer .p4{
+    font-size: 12px;
+    color: #939392;
+    line-height: 20px;
+}
 
 
 
