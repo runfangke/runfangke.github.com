@@ -30,10 +30,7 @@ a.daohang_a{ width:275px; height:74px; display:block; float:left;text-align:cent
     margin: 200px 0 0 400px;
 }
 .tanli2-banner img.left{
-    margin: 200px 0 0 0px;
-}
-.tanli2-banner img.right{
-    margin: 200px 0 0 0px;
+    margin: 280px 0 0 0;
 }
 .sub-logo{
     margin-left: 0;
@@ -67,6 +64,11 @@ a.daohang_a{ width:275px; height:74px; display:block; float:left;text-align:cent
     background-image: url("../images/tanli-img2.jpg");
     height: 960px;
 }
+.tanli2-section2{
+    padding-top: 120px;
+    background-image: url("../images/tanli2-img2.jpg");
+    height: 1083px;
+}
 .sub-section3{
     padding-top: 80px;
     background-image: url("../images/tanli-img3.jpg");
@@ -77,11 +79,19 @@ a.daohang_a{ width:275px; height:74px; display:block; float:left;text-align:cent
     background-image: url("../images/tanli-img4.jpg");
     height: 1221px;
 }
+.tanli2-section4{
+    padding-top: 140px;
+    background-image: url("../images/tanli2-img4.jpg");
+    height: 1391px;
+}
 .sub-section5{
     padding-top: 50px;
     background-image: url("../images/tanli-img5.jpg");
     height: 344px;
     z-index: 2;
+}
+.tanli5-section5{
+    margin-top: -140px;
 }
 .sub-section6{
     margin-top: -15px;
@@ -90,10 +100,19 @@ a.daohang_a{ width:275px; height:74px; display:block; float:left;text-align:cent
     height: 433px;
     z-index: 1;
 }
+.tanli6-section6{
+    background: no-repeat center top;
+    height: 500px;
+}
 .sub-section7{
     padding-top: 150px;
     background-image: url("../images/tanli-img7.jpg");
     height: 1967px;
+}
+.tanli2-section7{
+    padding-top: 150px;
+    background-image: url("../images/tanli2-img7.jpg");
+    height: 2189px;
 }
 .sub-title{
     margin: 0 auto ;
@@ -125,41 +144,53 @@ a.daohang_a{ width:275px; height:74px; display:block; float:left;text-align:cent
 .sub-section{
     color: #a47c59;
 }
-.sub-section1 .section-content{
+.sub-section1 .section-content,.tanli2-section1 .section-content{
     width: 500px;
     margin: 150px 0 0 410px;
 }
-.sub-section1 .section-content h3{
+.sub-section1 .section-content h3,.tanli2-section1 .section-content h3{
     font-size: 48px;
     font-weight: 500;
 }
-.sub-section1 .section-content h4{
+.sub-section1 .section-content h4,.tanli2-section1 .section-content h4{
     font-size: 24px;
     font-weight: 500;
 }
-.sub-section1 .section-content div{
+.sub-section1 .section-content div,.tanli2-section1 .section-content div{
     margin-top: 50px;
 }
-.sub-section1 .section-content div p{
+.sub-section1 .section-content div p,.tanli2-section1 .section-content div p{
     margin-bottom: 10px;
     font-size: 18px;
     font-weight: 500;
 }
-.sub-section2 .section-content {
+.tanli2-section1 .section-content{
+    margin: 150px 0 0 620px;
+}
+.sub-section2 .section-content,.tanli2-section2 .section-content {
     margin: 39px 0 0 550px;
     width: 550px;
     font-size: 18px;
+}
+.tanli2-section2 .section-content{
+    width: 600px;
 }
 .sub-section2 .section-content>p{
     width: 460px;
     text-indent: 35px;
     margin-left: 150px;
 }
+.tanli2-section2 .section-content>p{
+    text-indent: 35px;
+}
 .sub-section2 .section-content>div{
     margin: 300px 0 0 -50px;
     width: 600px;
 }
-.sub-section2 .section-content>div p{
+.tanli2-section2 .section-content >div{
+    margin-top: 330px;
+}
+.sub-section2 .section-content>div p,.tanli2-section2 .section-content >div p{
     margin-bottom: 20px;
 }
 .sub-section3 .section-content .left{
@@ -204,15 +235,24 @@ a.daohang_a{ width:275px; height:74px; display:block; float:left;text-align:cent
     margin-top: 115px;
     width: 725px;
 }
+.tanli2-section4 .section-content .box3{
+    margin-top: 90px;
+}
 .sub-section4 .section-content .box4{
     padding-left: 108px;
     margin-top: 115px;
     width: 700px;
 }
+.tanli2-section4 .section-content .box4{
+    margin-top: 112px;
+}
 .sub-section4 .section-content .box5{
     padding-left: 390px;
     margin-top: 108px;
     width: 420px;
+}
+.tanli2-section4 .section-content .box5{
+    margin-top: 92px;
 }
 .sub-section5 .section-content div p{
     margin-top: 100px;
