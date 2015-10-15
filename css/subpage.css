@@ -1,7 +1,7 @@
 
 /*head*/
 #header{z-index:999;background:url(../images/banner_bai.png) center center no-repeat; height:69px;}
-.logo_div{ width:100%; height:49px;position:absolute;padding-top:25px;}
+.logo_div{ width:100%; height:49px;position:absolute;padding-top:26px;}
 .logo{  width:1101px; height:49px; margin:0 auto}
 .logo_a{ background:url(../images/logo.png) no-repeat; display:block;background-size:260px 49px; float:left}
 .logo_r{ float:right; display:inline; padding-top:10px;}
@@ -19,6 +19,10 @@ a.daohang_a{ width:275px; height:74px; display:block; float:left;text-align:cent
     height: 711px;
     background:  no-repeat center top;
 }
+.fanghu-banner{
+    background-image: url("../images/fanghu-banner.jpg");
+    height: 771px;
+}
 .tanli1-banner{
     background-image: url("../images/sub-tanli-banner.jpg");
 }
@@ -31,6 +35,9 @@ a.daohang_a{ width:275px; height:74px; display:block; float:left;text-align:cent
 }
 .tanli2-banner img.left{
     margin: 280px 0 0 0;
+}
+.fanghu-banner img{
+    margin-top: 250px;
 }
 .sub-logo{
     margin-left: 0;
@@ -54,6 +61,11 @@ a.daohang_a{ width:275px; height:74px; display:block; float:left;text-align:cent
     background-image: url("../images/tanli-img1.jpg");
     height: 882px;
 }
+.fanghu-section1{
+    padding-top: 80px;
+    background-image: url("../images/fanghu-img1.jpg");
+    height: 722px;
+}
 .tanli2-section1{
     padding-top: 120px;
     background-image: url("../images/tanli2-img1.jpg");
@@ -63,6 +75,11 @@ a.daohang_a{ width:275px; height:74px; display:block; float:left;text-align:cent
     padding-top: 120px;
     background-image: url("../images/tanli-img2.jpg");
     height: 960px;
+}
+.fanghu-section2{
+    padding-top: 120px;
+    background-image: url("../images/fanghu-img2.jpg");
+    height: 963px;
 }
 .tanli2-section2{
     padding-top: 120px;
@@ -78,6 +95,11 @@ a.daohang_a{ width:275px; height:74px; display:block; float:left;text-align:cent
     padding-top: 80px;
     background-image: url("../images/tanli-img4.jpg");
     height: 1221px;
+}
+.fanghu-section4{
+    padding-top: 40px;
+    height: 1276px;
+    background-image: url("../images/fanghu-img4.jpg");
 }
 .tanli2-section4{
     padding-top: 140px;
@@ -108,6 +130,10 @@ a.daohang_a{ width:275px; height:74px; display:block; float:left;text-align:cent
     padding-top: 150px;
     background-image: url("../images/tanli-img7.jpg");
     height: 1967px;
+}
+.fanghu-section7{
+    background-image: url("../images/fanghu-img7.jpg");
+    height: 1176px;
 }
 .tanli2-section7{
     padding-top: 150px;
@@ -187,6 +213,9 @@ a.daohang_a{ width:275px; height:74px; display:block; float:left;text-align:cent
     margin: 300px 0 0 -50px;
     width: 600px;
 }
+.fanghu-section2 .section-content div{
+    margin-left: 0;
+}
 .tanli2-section2 .section-content >div{
     margin-top: 330px;
 }
@@ -225,15 +254,27 @@ a.daohang_a{ width:275px; height:74px; display:block; float:left;text-align:cent
     margin-top: 0;
     width: 666px;
 }
+.fanghu-section4 .section-content .box1{
+    padding-left: 112px;
+    margin-top: -8px;
+}
 .sub-section4 .section-content .box2{
     padding-left: 108px;
     margin-top: 80px;
     width: 700px;
 }
+.fanghu-section4 .section-content .box2{
+    padding-left: 380px;
+    margin-top: 93px;
+}
 .sub-section4 .section-content .box3{
     padding-left: 390px;
     margin-top: 115px;
     width: 725px;
+}
+.fanghu-section4 .section-content .box3{
+    padding-left: 112px;
+    margin-top: 115px;
 }
 .tanli2-section4 .section-content .box3{
     margin-top: 90px;
@@ -243,12 +284,26 @@ a.daohang_a{ width:275px; height:74px; display:block; float:left;text-align:cent
     margin-top: 115px;
     width: 700px;
 }
+.fanghu-section4 .section-content .box4{
+    padding-left: 390px;
+    margin-top: 115px;
+}
 .tanli2-section4 .section-content .box4{
     margin-top: 112px;
 }
 .sub-section4 .section-content .box5{
     padding-left: 390px;
     margin-top: 108px;
+    width: 420px;
+}
+.fanghu-section4 .section-content .box5{
+    padding-left: 390px;
+    margin-top: 93px;
+    width: 420px;
+}
+.fanghu-section4 .section-content .box6{
+    padding-left: 390px;
+    margin-top: 52px;
     width: 420px;
 }
 .tanli2-section4 .section-content .box5{
