@@ -23,6 +23,10 @@ a.daohang_a{ width:275px; height:74px; display:block; float:left;text-align:cent
     background-image: url("../images/fanghu-banner.jpg");
     height: 771px;
 }
+.fanghu2-banner{
+    background-image: url("../images/fanghu2-banner.jpg");
+    height: 775px;
+}
 .tanli1-banner{
     background-image: url("../images/sub-tanli-banner.jpg");
 }
@@ -36,7 +40,7 @@ a.daohang_a{ width:275px; height:74px; display:block; float:left;text-align:cent
 .tanli2-banner img.left{
     margin: 280px 0 0 0;
 }
-.fanghu-banner img{
+.fanghu-banner img,.fanghu2-banner img{
     margin-top: 250px;
 }
 .sub-logo{
@@ -101,6 +105,11 @@ a.daohang_a{ width:275px; height:74px; display:block; float:left;text-align:cent
     height: 1276px;
     background-image: url("../images/fanghu-img4.jpg");
 }
+.fanghu2-section4{
+    background-image: url("../images/fanghu2-img4.jpg");
+    padding-top: 40px;
+    height: 1292px;
+}
 .tanli2-section4{
     padding-top: 140px;
     background-image: url("../images/tanli2-img4.jpg");
@@ -134,6 +143,10 @@ a.daohang_a{ width:275px; height:74px; display:block; float:left;text-align:cent
 .fanghu-section7{
     background-image: url("../images/fanghu-img7.jpg");
     height: 1176px;
+}
+.fanghu2-section7{
+    background-image: url("../images/fanghu2-img7.jpg");
+    height: 1219px;
 }
 .tanli2-section7{
     padding-top: 150px;
@@ -254,6 +267,11 @@ a.daohang_a{ width:275px; height:74px; display:block; float:left;text-align:cent
     margin-top: 0;
     width: 666px;
 }
+.fanghu2-section4 .section-content .box1{
+    padding-left: 450px;
+    margin-top: 36px;
+    width: 666px;
+}
 .fanghu-section4 .section-content .box1{
     padding-left: 112px;
     margin-top: -8px;
@@ -272,6 +290,9 @@ a.daohang_a{ width:275px; height:74px; display:block; float:left;text-align:cent
     margin-top: 115px;
     width: 725px;
 }
+.fanghu2-section4 .section-content .box3{
+    margin-top: 92px;
+}
 .fanghu-section4 .section-content .box3{
     padding-left: 112px;
     margin-top: 115px;
@@ -284,6 +305,9 @@ a.daohang_a{ width:275px; height:74px; display:block; float:left;text-align:cent
     margin-top: 115px;
     width: 700px;
 }
+.fanghu2-section4 .section-content .box4{
+    margin-top: 92px;
+}
 .fanghu-section4 .section-content .box4{
     padding-left: 390px;
     margin-top: 115px;
@@ -295,6 +319,9 @@ a.daohang_a{ width:275px; height:74px; display:block; float:left;text-align:cent
     padding-left: 390px;
     margin-top: 108px;
     width: 420px;
+}
+.fanghu2-section4 .section-content .box5{
+    margin-top: 123px;
 }
 .fanghu-section4 .section-content .box5{
     padding-left: 390px;
