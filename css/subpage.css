@@ -30,12 +30,26 @@ a.daohang_a{ width:275px; height:74px; display:block; float:left;text-align:cent
 .tanli1-banner{
     background-image: url("../images/sub-tanli-banner.jpg");
 }
+.jiemian2-banner{
+    background-image: url("../images/jiemian2-banner.jpg");
+    height: 795px;
+}
+.jiemian-banner{
+    height: 794px;
+    background-image: url("../images/jiemian-banner.jpg");
+}
 .tanli2-banner{
     background-image: url("../images/tanli2-bannerbg.jpg");
     height: 811px;
 }
 .tanli1-banner img{
     margin: 200px 0 0 400px;
+}
+.jiemian2-banner img{
+    margin: 270px 0 0 260px;
+}
+.jiemian-banner img{
+    margin: 270px 0 0 300px;
 }
 .tanli2-banner img.left{
     margin: 280px 0 0 0;
@@ -61,9 +75,19 @@ a.daohang_a{ width:275px; height:74px; display:block; float:left;text-align:cent
     background: center top no-repeat;
 }
 .sub-section1{
+    color: #a47c59;
     padding-top: 120px;
     background-image: url("../images/tanli-img1.jpg");
     height: 882px;
+}
+.jiemian2-section1{
+    padding-top: 90px;
+    background-image: url("../images/jiemian2-img1.jpg");
+    height: 758px;
+}
+.jiemian-section1{
+    background-image: url("../images/jiemian-img1.jpg");
+    height: 738px;
 }
 .fanghu-section1{
     padding-top: 80px;
@@ -71,14 +95,27 @@ a.daohang_a{ width:275px; height:74px; display:block; float:left;text-align:cent
     height: 722px;
 }
 .tanli2-section1{
+    color: #a47c59;
     padding-top: 120px;
     background-image: url("../images/tanli2-img1.jpg");
     height: 959px;
 }
 .sub-section2{
+    color: #a47c59;
+    font-weight: 400;
     padding-top: 120px;
     background-image: url("../images/tanli-img2.jpg");
     height: 960px;
+}
+.jiemian2-section2{
+    padding-top: 100px;
+    background-image: url("../images/jiemian2-img2.jpg");
+    height: 983px;
+}
+.jiemian-section2{
+    padding-top: 80px;
+    background-image: url("../images/jiemian-img2.jpg");
+    height: 1003px;
 }
 .fanghu-section2{
     padding-top: 120px;
@@ -86,19 +123,32 @@ a.daohang_a{ width:275px; height:74px; display:block; float:left;text-align:cent
     height: 963px;
 }
 .tanli2-section2{
+    color: #a47c59;
     padding-top: 120px;
     background-image: url("../images/tanli2-img2.jpg");
     height: 1083px;
 }
 .sub-section3{
+    color: #a47c59;
     padding-top: 80px;
     background-image: url("../images/tanli-img3.jpg");
     height: 1015px;
 }
 .sub-section4{
+    color: #8c8c8c;
     padding-top: 80px;
     background-image: url("../images/tanli-img4.jpg");
     height: 1221px;
+}
+.jiemian2-section4{
+    padding-top: 20px;
+    background-image: url("../images/jiemian2-img4.jpg");
+    height: 1309px;
+}
+.jiemian-section4{
+    padding-top: 80px;
+    background-image: url("../images/jiemian-img4.jpg");
+    height: 1334px;
 }
 .fanghu-section4{
     padding-top: 40px;
@@ -116,29 +166,45 @@ a.daohang_a{ width:275px; height:74px; display:block; float:left;text-align:cent
     height: 1391px;
 }
 .sub-section5{
+    color: #8c8c8c;
+    font-weight: 400;
     padding-top: 50px;
     background-image: url("../images/tanli-img5.jpg");
     height: 344px;
     z-index: 2;
 }
+.jiemian-section5{
+    margin-top: -110px;
+}
 .tanli5-section5{
     margin-top: -140px;
 }
 .sub-section6{
-    margin-top: -15px;
+    color: #8c8c8c;
+    margin-top: 15px;
     padding-top: 75px;
-    background-image: url("../images/tanli-img6.jpg");
+    background-image: url("../images/sectionbg.jpg");
+    background-repeat: repeat-x;
     height: 433px;
     z-index: 1;
 }
 .tanli6-section6{
-    background: no-repeat center top;
     height: 500px;
 }
 .sub-section7{
     padding-top: 150px;
     background-image: url("../images/tanli-img7.jpg");
     height: 1967px;
+}
+.jiemian2-section7{
+    padding-top: 150px;
+    background-image: url("../images/jiemian2-img7.jpg");
+    height: 1020px;
+}
+.jiemian-section7{
+    padding-top: 90px;
+    background-image: url("../images/jiemian-img7.jpg");
+    height: 1395px;
 }
 .fanghu-section7{
     background-image: url("../images/fanghu-img7.jpg");
@@ -152,6 +218,15 @@ a.daohang_a{ width:275px; height:74px; display:block; float:left;text-align:cent
     padding-top: 150px;
     background-image: url("../images/tanli2-img7.jpg");
     height: 2189px;
+}
+.jiemian-section8{
+    padding-top: 90px;
+    height: 470px;
+    background: url("../images/sectionbg.jpg") repeat-x;
+}
+.jiemian-section8 .section-content{
+    margin-top: 80px;
+    text-align: center;
 }
 .sub-title{
     margin: 0 auto ;
@@ -180,12 +255,21 @@ a.daohang_a{ width:275px; height:74px; display:block; float:left;text-align:cent
 .sub-title7{
     background-position: 0 -295px;
 }
-.sub-section{
-    color: #a47c59;
+.jiemian-title8{
+    margin: 0 auto ;
+    width: 1105px;
+    height: 84px;
+    background: url("../images/title-8.png") no-repeat;
 }
 .sub-section1 .section-content,.tanli2-section1 .section-content{
     width: 500px;
     margin: 150px 0 0 410px;
+}
+.jiemian2-section1 .section-content{
+    margin: 100px 0 0 200px;
+}
+.jiemian-section1 .section-content{
+    margin: 100px 0 0 200px;
 }
 .sub-section1 .section-content h3,.tanli2-section1 .section-content h3{
     font-size: 48px;
@@ -256,16 +340,26 @@ a.daohang_a{ width:275px; height:74px; display:block; float:left;text-align:cent
 .sub-section4 .section-content .box h4{
     font-weight: 500;
     font-size: 30px;
+    color: #9e7858;
 }
 .sub-section4 .section-content .box p{
     font-weight: 400;
     color: #8c8c8c;
     font-size: 18px;
+    line-height: 166%;
 }
 .sub-section4 .section-content .box1{
     padding-left: 450px;
     margin-top: 0;
     width: 666px;
+}
+.jiemian2-section4 .section-content .box1{
+    padding-left: 430px;
+    margin-top: 37px;
+    width: 666px;
+}
+.jiemian-section4 .section-content .box1{
+    padding-left: 420px;
 }
 .fanghu2-section4 .section-content .box1{
     padding-left: 450px;
@@ -278,69 +372,106 @@ a.daohang_a{ width:275px; height:74px; display:block; float:left;text-align:cent
 }
 .sub-section4 .section-content .box2{
     padding-left: 108px;
-    margin-top: 80px;
+    margin-top: 62px;
     width: 700px;
+}
+.jiemian2-section4 .section-content .box2{
+    padding-left: 109px;
+    margin-top: 70px;
+    width: 700px;
+}
+.jiemian-section4 .section-content .box2{
+    margin-top: 106px;
+    padding-left: 113px;
 }
 .fanghu-section4 .section-content .box2{
     padding-left: 380px;
-    margin-top: 93px;
+    margin-top: 82px;
 }
 .sub-section4 .section-content .box3{
     padding-left: 390px;
-    margin-top: 115px;
+    margin-top: 102px;
     width: 725px;
 }
+.jiemian-section4 .section-content .box3{
+    padding-left: 113px;
+    margin-top: 100px;
+}
+.jiemian2-section4 .section-content .box3{
+    padding-left: 430px;
+    margin-top: 66px;
+    width: 370px;
+}
 .fanghu2-section4 .section-content .box3{
-    margin-top: 92px;
+    margin-top: 80px;
 }
 .fanghu-section4 .section-content .box3{
     padding-left: 112px;
-    margin-top: 115px;
+    margin-top: 102px;
 }
 .tanli2-section4 .section-content .box3{
-    margin-top: 90px;
+    margin-top: 73px;
 }
 .sub-section4 .section-content .box4{
     padding-left: 108px;
-    margin-top: 115px;
+    margin-top: 95px;
     width: 700px;
 }
+.jiemian2-section4 .section-content .box4{
+    padding-left: 108px;
+    margin-top: 55px;
+    width: 700px;
+}
+.jiemian-section4 .section-content .box4{
+    padding-left: 422px;
+    margin-top: 100px;
+}
 .fanghu2-section4 .section-content .box4{
-    margin-top: 92px;
+    margin-top: 100px;
 }
 .fanghu-section4 .section-content .box4{
     padding-left: 390px;
-    margin-top: 115px;
+    margin-top: 100px;
 }
 .tanli2-section4 .section-content .box4{
-    margin-top: 112px;
+    margin-top: 95px;
 }
 .sub-section4 .section-content .box5{
     padding-left: 390px;
-    margin-top: 108px;
+    margin-top: 100px;
     width: 420px;
 }
+.jiemian2-section4 .section-content .box5{
+    padding-left: 430px;
+    margin-top: 92px;
+    width: 420px;
+}
+.jiemian-section4 .section-content .box5{
+    margin-top: 100px;
+    padding-left: 422px;
+}
 .fanghu2-section4 .section-content .box5{
-    margin-top: 123px;
+    margin-top: 115px;
 }
 .fanghu-section4 .section-content .box5{
     padding-left: 390px;
-    margin-top: 93px;
+    margin-top: 86px;
     width: 420px;
 }
 .fanghu-section4 .section-content .box6{
     padding-left: 390px;
-    margin-top: 52px;
+    margin-top: 49px;
     width: 420px;
 }
 .tanli2-section4 .section-content .box5{
-    margin-top: 92px;
+    margin-top: 85px;
 }
 .sub-section5 .section-content div p{
     margin-top: 100px;
     width: 460px;
     margin-left: 585px;
     font-size: 18px;
+    font-weight: 300;
 }
 .sub-section6 .section-content>div{
     margin: 20px auto 0;
@@ -356,9 +487,8 @@ a.daohang_a{ width:275px; height:74px; display:block; float:left;text-align:cent
 }
 .sub-section6 .section-content>div .box .right p{
     width: 680px;
+    font-weight: 400;
 }
-
-
 
 /*footer*/
 .sub-footer{
