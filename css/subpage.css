@@ -34,6 +34,10 @@ a.daohang_a{ width:275px; height:74px; display:block; float:left;text-align:cent
 .tanli1-banner{
     background-image: url("../images/sub-tanli-banner.jpg");
 }
+.jichu5-banner{
+    background-image: url("../images/jichu5-banner.jpg");
+    height: 701px;
+}
 .jichu2-banner{
     background-image: url("../images/jichu2-banner.jpg");
     height: 701px;
@@ -280,7 +284,7 @@ a.daohang_a{ width:275px; height:74px; display:block; float:left;text-align:cent
     background-position: 0 -600px;
 }
 .sub-title4{
-    background-position: 0 -392px;
+    background: url("../images/title-4.png") no-repeat;
 }
 .sub-title5{
     background-position: 0 -198px;
@@ -638,6 +642,11 @@ p.yu{
     height: 393px;
     padding-top: 30px;
 }
+.jichu5-section5{
+    background: url("../images/jichu5-img5.jpg") no-repeat center top;
+    height: 395px;
+    padding-top: 30px;
+}
 .jichu4-section5{
     background: url("../images/jichu4-img5.jpg") no-repeat center top;
     height: 507px;
@@ -656,9 +665,18 @@ p.yu{
     height: 613px;
     padding-top: 30px;
 }
+.jichu4-section6{
+    background: url("../images/jichu4-img6.jpg") no-repeat center top;
+    height: 495px;
+    padding-top: 30px;
+}
 .jichu1-section6 .section-content{
     padding-left: 540px;
     margin-top: 74px;
+}
+.jichu4-section6 .section-content{
+    padding-left: 540px;
+    margin-top: 34px;
 }
 .jichu1-section6 .section-content .box p{
     width: 500px;
@@ -666,13 +684,14 @@ p.yu{
 .jichu1-section6 .section-content .box{
     margin-bottom: 43px;
 }
-.jichu6-section6{
-    background: url("../images/jichu4-img6.jpg") no-repeat center top;
+.jichu5-section6{
+    background: url("../images/jichu5-img6.jpg") no-repeat center top;
     height: 495px;
     padding-top: 30px;
 }
-.jichu6-section6 .section-content{
-    margin-top: 30px;
+.jichu5-section6 .section-content{
+    margin-top: 78px;
+    padding-left: 550px;
 }
 .jichu1-section7{
     background: url("../images/jichu1-img8.jpg") no-repeat center top;
@@ -688,6 +707,10 @@ p.yu{
     height: 824px;
     padding-top: 30px;
 }
+.jichu5-section1{
+    background: url("../images/jichu5-img1.jpg") no-repeat center top;
+    height: 614px;
+}
 .jichu4-section1{
     background: url("../images/jichu4-img1.jpg") no-repeat center top;
     height: 826px;
@@ -700,6 +723,9 @@ p.yu{
 .jichu2-section1 .section-content{
     padding-left: 650px;
     margin-top: 115px;
+}
+.jichu5-section1 .section-content{
+    margin-top: 40px;
 }
 .jichu4-section1 .section-content{
     padding-left: 680px;
@@ -723,6 +749,18 @@ p.yu{
     background: url("../images/jichu2-img2.jpg") no-repeat center top;
     height: 612px;
     padding-top: 30px;
+}
+.jichu5-section2{
+    background: url("../images/jichu5-img2.jpg") no-repeat center top;
+    height: 830px;
+    padding-top: 30px;
+}
+.jichu5-section2 .section-content{
+    padding-left: 130px;
+    margin-top: 70px;
+}
+.jichu5-section2 .section-content .box{
+    margin-bottom: 54px;
 }
 .jichu4-section2{
     background: url("../images/jichu4-img2.jpg") no-repeat center top;
@@ -765,6 +803,21 @@ p.yu{
     height: 621px;
     padding-top: 30px;
 }
+.jichu5-section4{
+    background: url("../images/jichu5-img4.jpg") no-repeat center top;
+    height: 813px;
+    padding-top: 30px;
+}
+.jichu5-section4 .section-content{
+    padding-left: 140px;
+    margin-top: 50px;
+}
+.jichu5-section4 .section-content .left-box{
+    width: 580px;
+}
+.jichu5-section4 .section-content .box1{
+    margin-bottom: 50px;
+}
 .jichu4-section4{
     background: url("../images/jichu4-img4.jpg") no-repeat center top;
     height: 605px;
@@ -804,6 +857,16 @@ p.yu{
 .jichu2-section7{
     background: url("../images/jichu2-img7.jpg") no-repeat center top;
     height: 829px;
+    padding-top: 30px;
+}
+.jichu3-section7{
+    background: url("../images/jichu3-img7.jpg") no-repeat center top;
+    height: 826px;
+    padding-top: 30px;
+}
+.jichu5-section7{
+    background: url("../images/jichu5-img7.jpg") no-repeat center top;
+    height: 830px;
     padding-top: 30px;
 }
 .jichu3-section8{
