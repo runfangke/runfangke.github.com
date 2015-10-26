@@ -669,7 +669,7 @@ p.yu{
     margin-bottom: 32px;
 }
 .yinpin1-section4{
-    background: url("../images/yinpin1-img4.jpg") no-repeat center top;
+    background-image: url("../images/yinpin1-img4.jpg");
     height: 830px;
     padding-top: 30px;
 }
@@ -876,7 +876,7 @@ p.yu{
     padding-top: 30px;
 }
 .yinpin1-section3{
-    background: url("../images/yinpin1-img3.jpg") no-repeat center top;
+    background-image: url("../images/yinpin1-img3.jpg");
     height: 1035px;
     padding-top: 30px;
 }
@@ -979,7 +979,7 @@ p.yu{
     margin-top: 130px;
 }
 .yinpin1-section10{
-    background: url("../images/yinpin1-img2.jpg") no-repeat center top;
+    background-image: url("../images/yinpin1-img2.jpg");
     padding: 30px;
     height: 2331px;
 }
