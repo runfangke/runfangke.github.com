@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="renderer" content="webkit"/>
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <link rel="shortcut icon" href="favicon.png">
+    <meta name="keywords" content="润芳可,北京润芳可,华辰,华辰美容,北京华辰,护肤品,美容机构,美容产品,化妆品研发">
+    <meta name="description" content="中美合资华辰美容化妆品有限公司，成立于1988年，作为‘中国美容美发协会’副会长单位的华辰公司，是一家集美容、化妆品研发、生产、专业美容教育、品牌连锁、品牌加盟为一体的综合性企业。">
+    <link href="css/public.css" type="text/css" rel="stylesheet">
+    <link href="css/index.css" type="text/css" rel="stylesheet">
+    <link href="css/subpage.css" type="text/css" rel="stylesheet">
+    <style>
+        .flexslider {
+            margin: 0px auto 20px;
+            position: relative;
+            width: 100%;
+            height: 648px;
+            overflow: hidden;
+            zoom: 1;
+        }
+
+        .flexslider .slides li {
+            width: 100%;
+            height: 100%;
+        }
+
+        .flex-direction-nav a {
+            width: 70px;
+            height: 70px;
+            line-height: 99em;
+            overflow: hidden;
+            margin: -35px 0 0;
+            display: block;
+            background: url(images/ad_ctr.png) no-repeat;
+            position: absolute;
+            top: 50%;
+            z-index: 10;
+            cursor: pointer;
+            opacity: 0;
+            filter: alpha(opacity=0);
+            -webkit-transition: all .3s ease;
+            border-radius: 35px;
+        }
+
+        .flex-direction-nav .flex-next {
+            background-position: 0 -70px;
+            right: 0;
+        }
+
+        .flex-direction-nav .flex-prev {
+            left: 0;
+        }
+
+        .flexslider:hover .flex-next {
+            opacity: 0.8;
+            filter: alpha(opacity=25);
+        }
+
+        .flexslider:hover .flex-prev {
+            opacity: 0.8;
+            filter: alpha(opacity=25);
+        }
+
+        .flexslider:hover .flex-next:hover,
+        .flexslider:hover .flex-prev:hover {
+            opacity: 1;
+            filter: alpha(opacity=50);
+        }
+
+        .flex-control-nav {
+            width: 100%;
+            position: absolute;
+            bottom: 10px;
+            text-align: center;
+        }
+
+        .flex-control-nav li {
+            margin: 0 2px;
+            display: inline-block;
+            zoom: 1;
+            *display: inline;
+        }
+
+        .flex-control-paging li a {
+            background: url(images/dot.png) no-repeat 0 -16px;
+            display: block;
+            height: 16px;
+            overflow: hidden;
+            text-indent: -99em;
+            width: 16px;
+            cursor: pointer;
+        }
+
+        .flex-control-paging li a.flex-active,
+        .flex-control-paging li.active a {
+            background-position: 0 0;
+        }
+
+        .flexslider .slides a img {
+            width: 100%;
+            height: 648px;
+            display: block;
+        }
+    </style>
+    <title>REVACL润芳可-您的私人护肤专家</title>
+</head>
+<body id="home">
+<div id="header" class="group">
+    <nav>
+        <div class="runfangke-header">
+            <div class="runfangke-header-wrap">
+                <div class="runfangke-header-logo fl">
+                    <h1><a href="#">润芳可，您的私人护肤专家</a> </h1>
+                </div>
+                <div class="nav_menu">
+                    <ul class="runfangke-header-link clearfix fl nav" id="menu">
+                        <li><a href="index.html">首页</a>
+                        <li class="first-menu"><a href="#">探索润芳可</a>
+                            <ul>
+                                <li><a href="#">企业简介</a></li>
+                                <li><a href="#">品牌理念</a></li>
+                                <li><a href="#">企业文化</a></li>
+                                <li><a href="#">企业荣誉</a></li>
+                            </ul>
+                        </li>
+                        <li class="first-menu"> <a href="runfangke-product.html">产品中心</a>
+                            <ul class="clearfix">
+                                <li><a href="#">源之素</a></li>
+                                <li><a href="#">凝时系列</a>
+                                    <ul>
+                                        <li><a href="runfangke-ningshi2.html">凝时活力霜</a></li>
+                                        <li><a href="runfangke-ningshi3.html">凝时活力乳</a></li>
+                                        <li><a href="runfangke-ningshi4.html">凝时活力精华</a></li>
+                                        <li><a href="runfangke-ningshi1.html">凝时贵妃霜</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">水润系列</a>
+                                    <ul>
+                                        <li><a href="runfangke-shuirun2.html">水润赋活霜</a></li>
+                                        <li><a href="runfangke-shuirun1.html">水润赋活凝露</a></li>
+                                        <li><a href="runfangke-shuirun3.html">水润素颜霜</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">悠然系列</a>
+                                    <ul>
+                                        <li><a href="runfangke-youran1.html">悠然丽泽液</a></li>
+                                        <li><a href="runfangke-youran2.html">悠然丽泽霜A1A2</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">莹润系列</a>
+                                    <ul>
+                                        <li><a href="runfangke-yingrun2.html">莹润再生乳霜</a></li>
+                                        <li><a href="runfangke-yingrun1.html">莹润精华</a></li>
+                                        <li><a href="runfangke-yanshuang2.html">莹润眼霜</a></li>
+                                        <li><a href="runfangke-yingrun3.html">莹润乳液</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">洁面系列</a>
+                                    <ul>
+                                        <li><a href="runfangke-jiemian.html">保湿洁面啫喱</a></li>
+                                        <li><a href="runfangke-jiemian2.html">柔和洁面乳</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">眼部系列</a>
+                                    <ul>
+                                        <li><a href="runfangke-yanshuang2.html">莹润眼霜</a></li>
+                                        <li><a href="runfangke-yanshuang1.html">修护眼霜</a></li>
+                                        <li><a href="runfangke-mianmo2.html">眼膜</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">弹力系列</a>
+                                    <ul>
+                                        <li><a href="runkefang-tanli.html">弹力水分乳</a></li>
+                                        <li><a href="runfangke-tanlishuang.html">弹力水分乳霜</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">防护系列</a>
+                                    <ul>
+                                        <li><a href="runfangke-fanghu.html">防护美颜乳</a></li>
+                                        <li><a href="runfangke-fanghu2.html">防护隔离乳</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">基础系列</a>
+                                    <ul>
+                                        <li><a href="runfangke-jichu2.html">晶体脂质凝露</a></li>
+                                        <li><a href="runfangke-jichu3.html">柔体脂质乳</a></li>
+                                        <li><a href="runfangke-jichu1.html">润肤滋养霜</a></li>
+                                        <li><a href="runfangke-jichu4.html">护肤霜</a></li>
+                                        <li><a href="runfangke-jichu5.html">长效水分保湿霜</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">身体护理</a>
+                                    <ul>
+                                        <li><a href="runfangke-shenti1.html">新生紧肤身体乳</a></li>
+                                        <li><a href="runfangke-shenti2.html">新生紧肤身体霜 </a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">护发系列</a>
+                                    <ul>
+                                        <li><a href="runfangke-hufa2.html">生姜洗发水</a></li>
+                                        <li><a href="runfangke-hufa1.html">生姜护发素</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">饮品系列</a>
+                                    <ul>
+                                        <li><a href="runfangke-yinpin1.html">果白骨胶原饮品</a></li>
+                                        <li><a href="runfangke-yinpin2.html">果白沙棘饮品</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">面膜系列</a>
+                                    <ul>
+                                        <li><a href="runfangke-mianmo2.html">金维素亮采眼膜</a></li>
+                                        <li><a href="runfangke-mianmo.html">金维素补水面膜</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="first-menu"><a href="#">明星项目</a></li>
+                        <li class="first-menu"><a href="#">经典项目</a></li>
+                        <li class="first-menu"><a href="#">招商加盟</a>
+                            <ul class="clearfix">
+                                <li><a href="#">店面展示</a></li>
+                                <li><a href="#">店家分享</a></li>
+                                <li><a href="#">加盟优势</a></li>
+                                <li><a href="#">加盟政策</a></li>
+                                <li><a href="#">我要加盟</a></li>
+                            </ul>
+                        </li>
+                        <li class="first-menu"><a href="#" rel="nofollow">皮肤管理中心</a>
+                            <ul class="clearfix">
+                                <li><a href="#">功能区展示</a></li>
+                                <li><a href="#">顾客分享</a></li>
+                                <li><a href="#">在线皮肤测评</a></li>
+                            </ul>
+                        </li>
+                        <li class="first-menu"><a href="#" rel="nofollow" style="width: 90px">美肤学院</a>
+                            <ul class="clearfix">
+                                <li><a href="#">专家团队</a></li>
+                                <li><a href="#">美肤课堂</a></li>
+                                <li><a href="#">院线管理课堂</a></li>
+                                <li><a href="#">美容师课堂</a></li>
+                                <li><a href="#">培训师课堂</a></li>
+                            </ul>
+                        </li>
+                        <li class="first-menu"><a href="#" rel="nofollow">加入我们</a>
+                            <ul class="clearfix">
+                                <li><a href="#">联系方式</a></li>
+                                <li><a href="#">校园招聘</a></li>
+                                <li><a href="#">社会招聘</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+<div id="banner_tabs" class="flexslider">
+    <ul class="slides">
+        <li>
+            <a title="" target="_blank" href="#">
+                <img width="1920" height="648" alt="" style="background: url(images/product-banner1.jpg) no-repeat center;" >
+            </a>
+        </li>
+        <li>
+            <a title="" href="#">
+                <img width="1920" height="648" alt="" style="background: url(images/product-banner2.jpg) no-repeat center;" >
+            </a>
+        </li>
+        <li>
+            <a title="" href="#">
+                <img width="1920" height="648" alt="" style="background: url(images/product-banner3.jpg) no-repeat center;" >
+            </a>
+        </li>
+        <li>
+            <a title="" href="#">
+                <img width="1920" height="648" alt="" style="background: url(images/product-banner4.jpg) no-repeat center;">
+            </a>
+        </li>
+        <li>
+            <a title="" href="#">
+                <img width="1920" height="648" alt="" style="background: url(images/product-banner5.jpg) no-repeat center;" >
+            </a>
+        </li>
+        <li>
+            <a title="" href="#">
+                <img width="1920" height="648" alt="" style="background: url(images/product-banner6.jpg) no-repeat center;" >
+            </a>
+        </li>
+    </ul>
+    <ul class="flex-direction-nav">
+        <li><a class="flex-prev" href="javascript:;">Previous</a></li>
+        <li><a class="flex-next" href="javascript:;">Next</a></li>
+    </ul>
+    <ol id="bannerCtrl" class="flex-control-nav flex-control-paging">
+        <li><a>1</a></li>
+        <li><a>2</a></li>
+        <li><a>3</a></li>
+        <li><a>4</a></li>
+        <li><a>5</a></li>
+        <li><a>6</a></li>
+    </ol>
+</div>
+
+<div class="container product-body clearfix">
+    <div class="left fl">
+        <ul>
+            <li class="li1"><a href="#">源之素套装</a> </li>
+            <li class="li2">
+                <a href="#">凝时系列</a>
+                <ul>
+                    <li><a href="runfangke-ningshi2.html">凝时活力霜</a> </li>
+                    <li><a href="runfangke-ningshi3.html">凝时活力乳</a> </li>
+                    <li><a href="runfangke-ningshi4.html">凝时活力精华</a> </li>
+                    <li><a href="runfangke-ningshi1.html">凝时贵妃霜</a> </li>
+                    <li><a href="#"></a> </li>
+                    <li><a href="#"></a> </li>
+                    <li><a href="#"></a> </li>
+                    <li><a href="#"></a> </li>
+                    <li><a href="#"></a> </li>
+                    <li><a href="#"></a> </li>
+                </ul>
+            </li>
+            <li class="li1"><a>水润系列</a> </li>
+            <li class="li2">
+                <a href="#">莹润系列</a>
+                <ul>
+                    <li><a href="runfangke-shuirun2.html">水润赋活霜</a> </li>
+                    <li><a href="runfangke-shuirun3.html">水润素颜霜</a> </li>
+                    <li><a href="runfangke-shuirun1.html">水润赋活凝露</a> </li>
+                    <li><a href="runfangke-yingrun2.html">莹润乳霜</a> </li>
+                    <li><a href="runfangke-yingrun3.html">莹润乳液</a> </li>
+                    <li><a href="runfangke-yanshuang2.html">莹润眼霜</a> </li>
+                    <li><a href="runfangke-yingrun1.html">莹润精华</a> </li>
+                    <li><a href="#"></a> </li>
+                    <li><a href="#"></a> </li>
+                    <li><a href="#"></a> </li>
+                </ul>
+            </li>
+            <li class="li1"><a>悠然系列</a> </li>
+            <li class="li2">
+                <a href="#">弹力系列</a>
+                <ul>
+                    <li><a href="runfangke-youran2.html">悠然丽泽霜</a> </li>
+                    <li><a href="runfangke-youran1.html">悠然丽泽液</a> </li>
+                    <li><a href="#">弹力乳</a> </li>
+                    <li><a href="#">弹力霜</a> </li>
+                    <li><a href="#"></a> </li>
+                    <li><a href="#"></a> </li>
+                    <li><a href="#"></a> </li>
+                    <li><a href="#"></a> </li>
+                    <li><a href="#"></a> </li>
+                    <li><a href="#"></a> </li>
+                </ul>
+            </li>
+            <li class="li1"><a>防护系列</a> </li>
+            <li class="li2">
+                <a href="#">基础护肤系列</a>
+                <ul>
+                    <li><a href="runfangke-fanghu.html">防护美颜霜</a> </li>
+                    <li><a href="runfangke-fanghu2.html">防护隔离乳</a> </li>
+                    <li><a href="runfangke-jichu2.html">晶体脂质凝露</a> </li>
+                    <li><a href="runfangke-jichu3.html">柔体脂质乳</a> </li>
+                    <li><a href="runfangke-jichu4.html">护肤霜</a> </li>
+                    <li><a href="runfangke-jichu1.html">润肤滋养霜</a> </li>
+                    <li><a href="runfangke-jichu5.html">长效水分保湿霜</a> </li>
+                    <li><a href="#"></a> </li>
+                    <li><a href="#"></a> </li>
+                    <li><a href="#"></a> </li>
+                </ul>
+            </li>
+            <li class="li1"><a>护发系列</a> </li>
+            <li class="li2">
+                <a href="#">身体护理系列</a>
+                <ul>
+                    <li><a href="runfangke-hufa2.html">生姜修护洗发水</a> </li>
+                    <li><a href="runfangke-hufa1.html">生姜修护护发素</a> </li>
+                    <li><a href="runfangke-shenti2.html">新生紧肤身体霜</a> </li>
+                    <li><a href="runfangke-shenti1.html">新生紧肤身体精华乳</a> </li>
+                    <li><a href="#"></a> </li>
+                    <li><a href="#"></a> </li>
+                    <li><a href="#"></a> </li>
+                    <li><a href="#"></a> </li>
+                    <li><a href="#"></a> </li>
+                    <li><a href="#"></a> </li>
+                </ul>
+            </li>
+            <li class="li1"><a>面膜系列</a> </li>
+            <li class="li2">
+                <a href="#">饮品系列</a>
+                <ul>
+                    <li><a href="runfangke-mianmo.html">金维素亮彩面膜</a> </li>
+                    <li><a href="runfangke-mianmo2.html">金维素亮彩眼膜</a> </li>
+                    <li><a href="runfangke-yinpin1.html">果白骨胶原饮品</a> </li>
+                    <li><a href="runfangke-yinpin2.html">果白沙棘饮品</a> </li>
+                    <li><a href="#"></a> </li>
+                    <li><a href="#"></a> </li>
+                    <li><a href="#"></a> </li>
+                    <li><a href="#"></a> </li>
+                    <li><a href="#"></a> </li>
+                    <li><a href="#"></a> </li>
+                </ul>
+            </li>
+            <li class="li1"><a>洁面系列</a> </li>
+            <li class="li2">
+                <a href="#">眼部系列</a>
+                <ul>
+                    <li><a href="runfangke-jiemian.html">洁面啫喱</a> </li>
+                    <li><a href="runfangke-jiemian2.html">柔和洁面乳</a> </li>
+                    <li><a href="runfangke-mianmo2.html">眼膜</a> </li>
+                    <li><a href="runfangke-yanshuang1.html">修护眼霜</a> </li>
+                    <li><a href="runfangke-yanshuang2.html">莹润眼霜</a> </li>
+                    <li><a href="#"></a> </li>
+                    <li><a href="#"></a> </li>
+                    <li><a href="#"></a> </li>
+                    <li><a href="#"></a> </li>
+                    <li><a href="#"></a> </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="right fl">
+        <div class="pro-box">
+            <div class="title">
+                <div class="left fl">
+                    源之素
+                </div>
+                <div class="right">
+                    <p>年轻之源</p>
+                    <p>带你体验穿越时空的感觉</p>
+                </div>
+            </div>
+            <div class="body">
+                <img src="images/pro-yuan-one.jpg">
+                <div class="body-zz"></div>
+                <div class="hover-left left">
+                    <img src="images/pro-yuan-two1.jpg">
+                    <a class="body-zz-left" href="#">源之素</a>
+                </div>
+                <div class="hover-right right">
+                    <img src="images/pro-yuan-two2.jpg">
+                    <a class="body-zz-right" href="#">科恩医生</a>
+                </div>
+            </div>
+        </div><!--pro-box end-->
+
+        <div class="pro-box">
+            <div class="title">
+                <div class="left fl">
+                    凝时系列
+                </div>
+                <div class="right">
+                    <p>巩固时光<span style="margin-left: 15px">活力绽放</span> </p>
+                    <p>肌肤活现新生光彩</p>
+                </div>
+            </div>
+            <div class="body">
+                <img src="images/pro-yuan-one.jpg">
+                <div class="body-zz"></div>
+                <div class="hover-left">
+                    <div class="box box-top">
+                        <img src="images/pro-ningshi-two1.jpg">
+                        <a class="body-zz-11" href="#">凝时活力霜</a>
+                    </div>
+                    <div class="box box-bottom">
+                        <img src="images/pro-ningshi-two2.jpg">
+                        <a class="body-zz-11" href="#">凝时活力精华</a>
+                    </div>
+                </div>
+                <div class="hover-right">
+                    <div class="box box-top">
+                        <img src="images/pro-ningshi-two3.jpg">
+                        <a class="body-zz-11" href="#">凝时活力乳</a>
+                    </div>
+                    <div class="box box-bottom">
+                        <img src="images/pro-ningshi-two4.jpg">
+                        <a class="body-zz-11" href="#">凝时贵妃霜</a>
+                    </div>
+                </div>
+            </div>
+        </div><!--pro-box end-->
+
+        <div class="pro-box">
+            <div class="title">
+                <div class="left fl">
+                    水润系列
+                </div>
+                <div class="right">
+                    <p>24小时持久补水<span style="margin-left: 15px">肌肤恢复弹性水润</span> </p>
+                    <p>平衡肌肤分泌系统<span style="margin-left: 15px">修复肌肤防御功能</span> </p>
+                </div>
+            </div>
+            <div class="body">
+                <img src="images/pro-yuan-one.jpg">
+                <div class="body-zz"></div>
+                <div class="hover-left">
+                    <div class="box box-top">
+                        <img src="images/pro-shuirun-two1.jpg">
+                        <a class="body-zz-11" href="#">水润赋活霜</a>
+                    </div>
+                    <div class="box box-bottom">
+                        <img src="images/pro-shuirun-two2.jpg">
+                        <a class="body-zz-11" href="#">水润素颜霜</a>
+                    </div>
+                </div>
+                <div class="hover-right right">
+                    <img src="images/pro-shuirun-two3.jpg">
+                    <a class="body-zz-right" href="#">水润赋活凝露</a>
+                </div>
+            </div>
+        </div><!--pro-box end-->
+
+        <div class="pro-box">
+            <div class="title">
+                <div class="left fl">
+                    莹润系列
+                </div>
+                <div class="right">
+                    <p>高效抗衰老<span style="margin-left: 15px">还原肌肤年轻态</span> </p>
+                    <p>补水保湿抗衰老<span style="margin-left: 15px">解救受损肌肤</span></p>
+                </div>
+            </div>
+            <div class="body">
+                <img src="images/pro-yuan-one.jpg">
+                <div class="body-zz"></div>
+                <div class="hover-left">
+                    <div class="box box-top">
+                        <img src="images/pro-yingrun-two1.jpg">
+                        <a class="body-zz-11" href="#">莹润乳霜</a>
+                    </div>
+                    <div class="box box-bottom">
+                        <img src="images/pro-yingrun-two2.jpg">
+                        <a class="body-zz-11" href="#">莹润眼霜</a>
+                    </div>
+                </div>
+                <div class="hover-right">
+                    <div class="box box-top">
+                        <img src="images/pro-yingrun-two3.jpg">
+                        <a class="body-zz-11" href="#">莹润乳液</a>
+                    </div>
+                    <div class="box box-bottom">
+                        <img src="images/pro-yingrun-two4.jpg">
+                        <a class="body-zz-11" href="#">莹润精华</a>
+                    </div>
+                </div>
+            </div>
+        </div><!--pro-box end-->
+
+        <div class="pro-box">
+            <div class="title">
+                <div class="left fl">
+                    悠然系列
+                </div>
+                <div class="right">
+                    <p>莹透沁白<span style="margin-left: 15px">悠然自得</span></p>
+                    <p>给肌肤纯净白皙的水嫩盛宴</p>
+                </div>
+            </div>
+            <div class="body">
+                <img src="images/pro-yuan-one.jpg">
+                <div class="body-zz"></div>
+                <div class="hover-left left">
+                    <img src="images/pro-youran-two1.jpg">
+                    <a class="body-zz-left" href="#">悠然丽泽霜A1/A2</a>
+                </div>
+                <div class="hover-right right">
+                    <img src="images/pro-youran-two2.jpg">
+                    <a class="body-zz-right" href="#">悠然丽泽液</a>
+                </div>
+            </div>
+        </div><!--pro-box end-->
+
+        <div class="pro-box">
+            <div class="title">
+                <div class="left fl">
+                    弹力系列
+                </div>
+                <div class="right">
+                    <p>大量补充水分<span style="margin-left: 15px">提高肌肤防御功能</span></p>
+                    <p>改善肌肤滋润程度<span style="margin-left: 15px">肌肤水润有弹性</span></p>
+                </div>
+            </div>
+            <div class="body">
+                <img src="images/pro-yuan-one.jpg">
+                <div class="body-zz"></div>
+                <div class="hover-left left">
+                    <img src="images/pro-tanli-two1.jpg">
+                    <a class="body-zz-left" href="#">弹力乳</a>
+                </div>
+                <div class="hover-right right">
+                    <img src="images/pro-tanli-two2.jpg">
+                    <a class="body-zz-right" href="#">弹力双</a>
+                </div>
+            </div>
+        </div><!--pro-box end-->
+    </div>
+</div>
+
+<div class="footer">
+    <p class="p1">美丽热线</p>
+    <p class="p2">010-85173925</p>
+    <p class="p3">Copyright © 2015 REVACL润芳可</p>
+    <p class="p4">本站文字及图片内容版权归华辰美容化妆品有限公司所有，任何单位及个人未经许可，不得擅自转载使用。</p>
+</div>
+
+<!--右侧导航 start-->
+<div id="sidebar" class="side_green" style="top: 297px; right: 0px;">
+    <ul>
+        <li class="first" style="display: none;"><a href="Javascript:void(0)" target="_self"><i class="top"></i></a></li>
+        <li>
+            <a href="Javascript:void(0)" target="_self"><i class="dh js_ht"></i>
+                <div class="ht ht_iphone"></div>
+            </a>
+        </li>
+        <li>
+            <a href="Javascript:void(0)" target="_self"><i class="wx js_ht"></i>
+                <div class="ht ht_weixin"></div>
+            </a>
+        </li>
+        <li>
+            <a href="http://weibo.com/u/3206829190/home?topnav=1&wvr=6" target="_blank">
+                <div class="sidebox"><i class="wb" name="wb"></i><span style="font-size:16px">官方微博</span></div>
+            </a>
+        </li>
+    </ul>
+</div>
+<!--右侧导航 end-->
+
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script src="js/slider.js"></script>
+<script src="js/scrollReveal.js" type="text/javascript"></script>
+<script>
+    (function($) {
+        'use strict';
+        window.sr= new scrollReveal({
+            reset: true,
+            move: '50px',
+            mobile: true
+        });
+    })();
+    $(function(){
+        $(".pro-box>.title").hover(function(){
+            $(".left",this).animate({left: "-10px"},200);
+            $(".right",this).animate({left: "0"},200);
+        },function(){
+            $(".left",this).animate({left: "0"},200);
+            $(".right",this).animate({left: "-10px"},200);
+        })
+
+        $(".pro-box>.body").hover(function(){
+            $(".body-zz",this).show();
+            $(".hover-left",this).animate({left: "0"},200);
+            $(".hover-right",this).animate({right: "0"},200);
+        },function(){
+            $(".body-zz",this).hide();
+            $(".hover-left",this).animate({left: "-49%"},200);
+            $(".hover-right",this).animate({right: "-49%"},200);
+        })
+
+        $(".pro-box>.body>.left,.pro-box>.body>.right,.pro-box>.body>div>.box").hover(function(){
+           // $("a",this).css("display","block");
+            $("a",this).show(300);
+        },function(){
+            $("a",this).css("display","none");
+        })
+    })
+</script>
+<script type="text/javascript" language="javascript" src="js/public.js"></script>
+<script type="text/javascript" language="javascript" src="js/jquery.hhService.js"></script>
+<script type="text/javascript">$(function(){$("#sidebar").fix({float:'right',minStatue:false,skin:'green',durationTime:1000})});</script>
+<!--head下拉框和第一个滚动-->
+<script type="text/javascript" src="js/slider1.js"></script>
+<script type="text/javascript" src="js/tab.js"></script>
+<!--end head下拉框-->
+
+<!--banner1 start-->
+<script type="text/javascript">
+    var anquan = new Object();
+    anquan.index = new Object();
+    anquan.zt = new Object();
+    var _hmt = _hmt || [];
+</script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        anquan.index.init();
+    });
+    $(function() {
+        var bannerSlider = new Slider($('#banner_tabs'), {
+            time: 5000,
+            delay: 400,
+            event: 'hover',
+            auto: true,
+            mode: 'fade',
+            controller: $('#bannerCtrl'),
+            activeControllerCls: 'active'
+        });
+        $('#banner_tabs .flex-prev').click(function() {
+            bannerSlider.prev()
+        });
+        $('#banner_tabs .flex-next').click(function() {
+            bannerSlider.next()
+        });
+    })
+
+</script>
+<script type="text/javascript" src="js/anquan.js"></script>
+<!--end banner1-->
+
+</body>
+</html>
