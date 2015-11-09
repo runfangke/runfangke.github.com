@@ -2539,6 +2539,7 @@ p.yu{
 .product-body .left ul ul>li a{
     color: #8c8c8c;
     font-size: 20px;
+    font-weight: 100;
 }
 .product-body .left>ul>li{
     display: block;
@@ -2550,6 +2551,9 @@ p.yu{
     background-color: #78570a;
     margin-bottom: 5px;
 }
+.product-body .left>ul>.li1 a{
+    text-shadow: 0 0 1px #fff;
+}
 .product-body .left>ul>.li1:hover{
     background-color: #422e07;
     margin-bottom: 5px;
@@ -2557,6 +2561,7 @@ p.yu{
 .product-body .left>ul>.li2>a{
     background-color: #a08953;
     margin-bottom: 9px;
+    text-shadow: 0 0 1px #fff;
 }
 .product-body .left>ul>.li2>a:hover{
     background-color: #d6b975;
@@ -2657,6 +2662,19 @@ p.yu{
     width: 49%;
     height: 100%;
 }
+.pro-box .body>.hover-top{
+    position: relative;
+    top: -212px;
+    width: 100%;
+    height: 212px;
+}
+.pro-box .body>.hover-bottom{
+    position: relative;
+    bottom: -212px;
+    margin-top: 9px;
+    width: 100%;
+    height: 212px;
+}
 .pro-box .body img{
     width: 100%;
     height: 100%;
@@ -2693,6 +2711,9 @@ p.yu{
     text-align: center;
     line-height: 433px;
 }
+.body-zz-top-bottom{
+    line-height: 212px;
+}
 .body-zz-11{
     display: none;
     position: absolute;
@@ -2712,10 +2733,30 @@ p.yu{
 .pro-box .body .box{
     position: relative;
     width: 100%;
-    height: 205px;
+    height: 212px;
+}
+.pro-box .body .bottom-box{
+    display: inline-block;
+    position: relative;
+    width: 218.3333333px;
+    height: 100%;
+    overflow: hidden;
+}
+.pro-box .body .hover-top .top-box{
+    display: inline-block;
+    position: relative;
+    width: 144px;
+    height: 100%;
+    overflow: hidden;
+}
+.pro-box .body .hover-top .top-box1{
+    margin-left: 4.6666px;
+}
+.pro-box .body .bottom-box1{
+    margin-left: 9.1px;
 }
 .pro-box .body .box-bottom{
-    margin-top: 23px;
+    margin-top: 9px;
 }
     /*footer*/
 .sub-footer{
