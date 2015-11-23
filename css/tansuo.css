@@ -1,0 +1,262 @@
+.tansuo-banner{
+    min-width: 1200px;
+    height: 992px;
+    background: url("../images/tansuo-banner.jpg") no-repeat center top fixed;
+    background-size: cover;
+    position: relative;
+}
+.tansuo-banner .img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -31px 0 0 -425px;
+    -webkit-animation: tansuoBanner 0.8s;
+    -o-animation: tansuoBanner 0.8s;
+    animation: tansuoBanner 0.8s;
+}
+@keyframes tansuoBanner {
+    from {top: 30%}
+    to{top: 50%;}
+}
+.tansuo-banner .jiantou{
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    margin-left: -18px;
+    cursor: pointer;
+    -webkit-animation: jiantou 1s infinite;
+    -o-animation: jiantou 1s infinite;
+    animation: jiantou 2s infinite;
+}
+@keyframes jiantou {
+    0% {opacity: 0;}
+    25% {opacity: 1;}
+    50% {opacity: 1;}
+    75% {opacity: 0;}
+    100% {opacity: 0}
+}
+.tansuo-jianjie{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.tansuo-jianjie h2,.tansuo-beijing h2,.tansuo-licheng h2,.tansuo-xintiao h2{
+    font-size: 48px;
+    margin: 30px 0 18px;
+    color: #a47c59;
+    text-shadow: 0 0 .1px #c7966c;
+    font-weight: 300;
+}
+.tansuo-jianjie .tansuo-content{
+    color: #a47c59;
+    font-size: 18px;
+    text-shadow: 0 0 .1px #ba8d65;
+    line-height: 180%;
+    margin-top: 30px;
+}
+.tansuo-beijing{
+    min-width: 1200px;
+    height: 992px;
+    background: url("../images/tansuo-beijing.jpg") no-repeat center top;
+    position: relative;
+}
+.tansuo-beijing h2 {
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 .1px #fff;
+    padding-top: 30px;
+}
+.tansuo-beijing .beijing-content{
+    text-indent: 35px;
+    color: #fff;
+    font-size: 18px;
+    width: 1100px;
+    margin: 50px auto 0;
+    line-height: 180%;
+}
+.tansuo-beijing .beijing-content1{
+    text-indent: 35px;
+    color: #fff;
+    font-size: 14px;
+    width: 1000px;
+    margin: 50px auto 0;
+    line-height: 180%;
+}
+.tansuo-beijing .beijing-img{
+    margin: 50px auto 0;
+}
+.tansuo-beijing .beijing-img img{
+    margin: 0 100px 0 50px;
+    border: 1px solid #fff;
+    width: 260px;
+    height: 260px;
+}
+.tansuo-beijing .beijing-img img:last-child{
+    margin-right: 0;
+}
+.tansuo-licheng .right{
+    color: #a47c59;
+    font-size: 18px;
+    margin-top: 15px;
+    margin-left: 8px;
+    text-shadow: 0 0 .1px #d19e71;
+}
+.tansuo-licheng .right p{
+    margin-bottom: 15px;
+}
+.text-center{
+    text-align: center;
+}
+.tansuo-licheng .clearfix{
+    margin: 50px 0 0 300px;
+}
+.licheng-img{
+    width: 1180px;
+    margin: 50px auto 100px;
+}
+.licheng-img img{
+    width: 360px;
+    height: 270px;
+    border: 1px solid #a47c59;
+    margin-left: 30px;
+}
+.licheng-img img:first-child{
+    margin-left: 0;
+}
+.tansuo-xintiao{
+    background-color: #fff;
+    margin-top: 200px;
+}
+.margin-left{
+    margin-left: 15px;
+}
+.tansuo-xintiao .clearfix{
+    margin-top: 80px;
+}
+.tansuo-xintiao .clearfix .left{
+    margin-left: 250px;
+}
+.tansuo-xintiao .clearfix .right{
+    width: 860px;
+    color: #a47c59;
+    font-size: 23px;
+    margin-top: 8px;
+}
+.tansuo-xintiao .clearfix .right .box{
+    margin-bottom: 40px;
+}
+.tansuo-dansheng{
+    height: 954px;
+    background: url("../images/tansuo-dansheng.jpg") center top no-repeat;
+}
+.dansheng-content{
+    width: 968px;
+    text-indent: 35px;
+    font-size: 18px;
+    color: #544e48;
+    text-shadow: 0 0 .1px #bbaea0;
+    padding-top: 600px;
+    margin-left: -100px;
+}
+.tansuo-chuancheng{
+    height: 954px;
+    background: url("../images/tansuo-chuancheng.jpg") center top no-repeat;
+}
+.chuancheng-content{
+    width: 975px;
+    padding: 540px 0 0 350px;
+    color: #544e48;
+    text-indent: 35px;
+    text-shadow: 0 0 .1px #9d9287;
+    font-size: 18px;
+    line-height: 200%;
+}
+.tansuo-gongxian{
+    height: 954px;
+    background-color: #f7f7f7;
+}
+.tansuo-gongxian p{
+    width: 960px;
+    text-indent: 35px;
+    margin: 20px auto 0;
+    font-size: 18px;
+    color: #544e48;
+    text-shadow: 0 0 .1px #ada194;
+}
+.tansuo-gongxian2 .top-content{
+    width: 1110px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+.tansuo-gongxian2 .top-content .right{
+    width: 690px;
+    margin-left: 40px;
+}
+.tansuo-gongxian2 h2{
+    font-size: 48px;
+    color: #a47c59;
+    text-shadow: 0 0 .1px #c6966b;
+    margin-bottom: 25px;
+    font-weight: 300;
+}
+.tansuo-gongxian2 p{
+    text-indent: 35px;
+    font-size: 18px;
+    color: #514c46;
+    text-shadow: 0 0 .1px #ada296;
+    line-height: 160%;
+}
+.tansuo-gongxian2 .top-content .right .box{
+    margin-bottom: 45px;
+}
+.tansuo-gongxian2 .bottom-content p{
+    width: 670px;
+    margin-right: 60px;
+}
+.tansuo-gongxian2 .bottom-content{
+    width: 1110px;
+    margin: 0 auto;
+}
+.tansuo-gongxian2 .bottom-content .box{
+    margin-bottom: 30px;
+}
+.tansuo-linian{
+    height: 1119px;
+    background: url("../images/tansuo-linian.jpg") no-repeat center top;
+}
+.linian-content{
+    padding: 460px 0 0 53px;
+    width: 970px;
+}
+.linian-content p{
+    color: #544e48;
+    font-size: 18px;
+    text-shadow: 0 0 .1px #90867b;
+    margin-bottom: 38px;
+    line-height: 160%;
+}
+.linian-content h4{
+    color: #544e48;
+    font-size: 18px;
+}
+.tansuo-linian2{
+    background: #d1cadd;
+    padding: 60px 0;
+}
+.tansuo-linian2 img{
+    width: 355px;
+    height: 265px;
+    margin-left: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
