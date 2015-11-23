@@ -329,7 +329,7 @@
     <div class="container">
         <img src="images/tansuo-gongxian.png" data-sr="enter bottom over 0.3s and move 30px"/>
         <p data-sr="enter bottom over 0.3s and move 30px">润芳可的技术，不是手法，也不是仪器，是像医生一样来分析、辨别和调理皮肤，提供专业护理和家居护理解决方案，并教会顾客认识自己的肌肤和正确保养皮肤的一系列过程。</p>
-        <div class="slide-box" style="padding-top: 50px">
+        <div class="slide-box" style="padding-top: 0">
             <div class="scrolllist" id="s4" data-sr="enter bottom over 0.5s and move 50px">
                 <a class="abtn aleft agrayleft" href="javascript:void (0)" title="左移"></a>
                 <div class="imglist_w clearfix">
@@ -488,8 +488,24 @@
     });
     function aa(){
         var wHeight = $(window).height();
+        var wWidth = $(window).width();
+        var imgHeight = wWidth * 0.4948;
 
         $(".tansuo-banner").height(wHeight);
+        if(wWidth < 1500 && wWidth >= 1200){
+            $(".tansuo-dansheng").addClass("dansheng");
+            $(".tansuo-dansheng").height(imgHeight);
+            $(".tansuo-chuancheng").height(imgHeight);
+            $(".tansuo-chuancheng").addClass("chuancheng");
+        } else if(wWidth < 1200){
+            $(".tansuo-dansheng").removeClass("dansheng");
+            $(".tansuo-chuancheng").removeClass("chuancheng");
+            $(".tansuo-dansheng,.tansuo-chuancheng").height("954px")
+        } else {
+            $(".tansuo-dansheng").removeClass("dansheng");
+            $(".tansuo-chuancheng").removeClass("chuancheng");
+            $(".tansuo-dansheng,.tansuo-chuancheng").height("954px")
+        }
     }
     window.onload = function(){
        aa();

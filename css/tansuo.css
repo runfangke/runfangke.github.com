@@ -124,7 +124,7 @@
 }
 .tansuo-xintiao{
     background-color: #fff;
-    margin-top: 200px;
+    margin-top: 100px;
 }
 .margin-left{
     margin-left: 15px;
@@ -148,6 +148,20 @@
     height: 954px;
     background: url("../images/tansuo-dansheng.jpg") center top no-repeat;
 }
+.dansheng{
+    background-size: contain;
+    position: relative;
+    min-width: 1200px;
+}
+.dansheng .dansheng-content{
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    top: 65%;
+    left: 10%;
+    zoom: .9;
+}
+
 .dansheng-content{
     width: 968px;
     text-indent: 35px;
@@ -171,7 +185,7 @@
     line-height: 200%;
 }
 .tansuo-gongxian{
-    height: 954px;
+    height: 700px;
     background-color: #f7f7f7;
 }
 .tansuo-gongxian p{
@@ -211,6 +225,7 @@
 .tansuo-gongxian2 .bottom-content p{
     width: 670px;
     margin-right: 60px;
+    line-height: 200%;
 }
 .tansuo-gongxian2 .bottom-content{
     width: 1110px;
@@ -247,7 +262,31 @@
     height: 265px;
     margin-left: 40px;
 }
+.chuancheng{
+    background-size: contain;
+    position: relative;
+    min-width: 1200px;
+}
+.chuancheng .chuancheng-content{
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    top: 55%;
+    zoom: .9;
+    left: 30%;
 
+}
+@media (min-width: 1200px) and (max-width: 1368px){
+    .dansheng .dansheng-content{
+        top: 60%;
+        zoom: .85
+    }
+    .chuancheng .chuancheng-content{
+        top: 55%;
+        left: 30%;
+        zoom: .85;
+    }
+}
 
 
 
