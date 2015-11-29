@@ -315,7 +315,7 @@
             <img src="images/pifuguanli-img3.jpg" width="1200" height="90" class="fenxiang-img"/>
             <div class="pifu-test-row clearfix">
                 <div class="left fl">
-                    <div class="yuyue-btn"></div>
+                    <div class="yuyue-btn" id="testBtn"></div>
                 </div>
                 <div class="right fr">
                     <div class="yuyue-btn"></div>
@@ -421,6 +421,12 @@
 
 <script src="js/jquery.min.js" type="text/javascript"></script>
 <script>
+    $(function(){
+        $("#testBtn").click(function(){
+            $(".pup-pifu-test").show();
+        })
+
+    });
     var ques1,ques2,ques3,ques4,ques5,ques6,ques7;
     function pupTest(ques,nub){
         $(".pup-test-body ul").animate({left: "-=1200"},300);
