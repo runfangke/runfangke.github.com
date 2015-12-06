@@ -13,6 +13,131 @@
     <link href="css/public.css" type="text/css" rel="stylesheet">
     <link href="css/index.css" type="text/css" rel="stylesheet">
     <link href="css/pifuguanli.css" type="text/css" rel="stylesheet">
+    <style type="text/css">
+        /* CSS Document */
+        body, h1, h2, h3, h4, h5, h6, hr, p,
+        blockquote, /* structural elements 结构元素 */
+        dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+        pre, /* text formatting elements 文本格式元素 */
+        form, fieldset, legend, button, /* form elements 表单元素 */
+        th, td, /* table elements 表格元素 */
+        img {
+            border: medium none;
+            margin: 0;
+            padding: 0;
+        }
+        li, ol {
+            list-style: none;
+            vertical-align: bottom;
+        }
+        em {
+            font-style: normal;
+        }
+        img {
+            vertical-align: middle;
+        }
+        a, input, textarea, select, option, button, .logo, #icon_num li, #icon_num_top li, .blk_29 .LeftBotton, .blk_29 .RightBotton, #cal #cm .cell, .work_lcontent img, .work_detail img, .brow img {
+            cursor: pointer;
+        }
+        .clearfix:after {
+            content: ".";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+        *html .clearfix {
+            height: 1%;
+        }
+        * + html .clearfix {
+            height: 1%;
+        }
+        .clearfix {
+            display: inline-block;
+        }
+        /* Hide from IE Mac */
+        .clearfix {
+            display: block;
+        }
+        #playerlist a {
+            text-decoration: none;
+            outline: none;
+            color: #FFF;
+        }
+        #a1 {
+            width: 770px;
+            height: 480px;
+            margin-left: 105px;
+            float: left;
+        }
+        #a2, #a3 {
+            width: 20px;
+            height: 480px;
+            float: left;
+            background: #262626;
+        }
+
+        #playerlist {
+            width: 190px;
+            height: 480px;
+            overflow: auto;
+            float: left;
+            background: #262626;
+            font-size: 12px;
+        }
+        #playerlist li {
+            list-style: none;
+            height: 40px;
+            line-height: 40px;
+            padding-bottom: 2px;
+            border-bottom: 1px solid #333;
+            overflow: hidden;
+            padding-left: 5px;
+        }
+        #playerlist li:last-child {
+            border-bottom: none;
+        }
+        #playerlist li.crent {
+            background: #1C1C1C;
+        }
+        #playerlist li.crent a {
+            color: #FF7900;
+        }
+        #playerlist li a {
+            display: block;
+            color: #fff;
+        }
+        #playerlist li font{
+            cursor: pointer;
+        }
+        #playerlist li img {
+            vertical-align: middle;
+            height: 14px;
+            width: 15px;
+            padding: 0;;
+            margin: -5px 5px 0 0;
+        }
+    </style>
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        var currentShowCity=0;
+
+        $(document).ready(function(){
+            $("#province").change(function(){
+                $("#province option").each(function(i,o){
+                    if($(this).attr("selected"))
+                    {
+
+                        $(".city").hide();
+                        $(".city").eq(i).show();
+                        currentShowCity=i;
+                    }
+                });
+            });
+            $("#province").change();
+        });
+    </script>
+
     <title>REVACL润芳可-您的私人护肤专家</title>
 </head>
 <body id="home">
@@ -141,11 +266,11 @@
                                 <li><a href="#">我要加盟</a></li>
                             </ul>
                         </li>
-                        <li class="first-menu"><a href="#" rel="nofollow">皮肤管理中心</a>
+                        <li class="first-menu"><a href="pifuguanli.html" rel="nofollow">皮肤管理中心</a>
                             <ul class="clearfix">
-                                <li><a href="#">功能区展示</a></li>
-                                <li><a href="#">顾客分享</a></li>
-                                <li><a href="#">在线皮肤测评</a></li>
+                                <li><a href="#bannerCtrl1">功能区展示</a></li>
+                                <li><a href="#guke">顾客分享</a></li>
+                                <li><a href="#zaixian">在线皮肤测评</a></li>
                             </ul>
                         </li>
                         <li class="first-menu"><a href="#" rel="nofollow" style="width: 90px">美肤学院</a>
@@ -248,9 +373,9 @@
         </div>
         <div class="gongneng-row clearfix">
             <div class="gongneng-box fl">
-                <div class="box-top">
+                <div class="box-top" style="background-color: #9a3f12;">
                     <img src="images/pifuguanli-gongneng1.jpg" width="393" height="221"/>
-                    <div class="box-zz"><a href="#">痤疮暗疮看诊区</a></div>
+                    <div><a href="#">痤疮暗疮看诊区</a></div>
                 </div>
                 <div class="box-bottom">
                     <div class="title">痤疮暗疮看诊区</div>
@@ -263,11 +388,11 @@
                         年后，持续保持肌肤的美丽状态。
                     </div>
                 </div>
-            </div>
+            </div><!--gongneng-box end-->
             <div class="gongneng-box fl">
-                <div class="box-top">
+                <div class="box-top"  style="background: #e9b965">
                     <img src="images/pifuguanli-gongneng2.jpg" width="393" height="221"/>
-                    <div class="box-zz"><a href="#">嫩肤净白看诊区</a></div>
+                    <div><a href="#">嫩肤净白看诊区</a></div>
                 </div>
                 <div class="box-bottom">
                     <div class="title">嫩肤净白看诊区</div>
@@ -280,11 +405,11 @@
                         年后，持续保持肌肤的美丽状态。
                     </div>
                 </div>
-            </div>
+            </div><!--gongneng-box end-->
             <div class="gongneng-box fl">
-                <div class="box-top">
+                <div class="box-top" style="background: #86643f">
                     <img src="images/pifuguanli-gongneng3.jpg" width="393" height="221"/>
-                    <div class="box-zz"><a href="#">衰老逆龄看诊区</a></div>
+                    <div><a href="#">衰老逆龄看诊区</a></div>
                 </div>
                 <div class="box-bottom">
                     <div class="title">衰老逆龄看诊区</div>
@@ -297,28 +422,87 @@
                         年后，持续保持肌肤的美丽状态。
                     </div>
                 </div>
-            </div>
+            </div><!--gongneng-box end-->
+            <div class="gongneng-box fl">
+                <div class="box-top" style="background: #c2a67e">
+                    <img src="images/pifuguanli-gongneng4.jpg" width="393" height="221"/>
+                    <div><a href="#">敏感肌肤看诊区</a></div>
+                </div>
+                <div class="box-bottom">
+                    <div class="title">敏感肌肤看诊区</div>
+                    <div class="body">
+                        润芳可的护肤顾问均具有专业的皮肤学知识
+                        和丰富的美容护肤临床经验，能为顾客准确
+                        辩诊皮肤问题，提供最佳产品组合搭配和一
+                        对一的个性化皮肤修护方案，并教导顾客科
+                        学地护理肌肤，确保顾客在一年、五年至数
+                        年后，持续保持肌肤的美丽状态。
+                    </div>
+                </div>
+            </div><!--gongneng-box end-->
+            <div class="gongneng-box fl">
+                <div class="box-top" style="background: #888188">
+                    <img src="images/pifuguanli-gongneng5.jpg" width="393" height="221"/>
+                    <div><a href="#">缺水肌肤看诊区</a></div>
+                </div>
+                <div class="box-bottom">
+                    <div class="title">缺水肌肤看诊区</div>
+                    <div class="body">
+                        润芳可的护肤顾问均具有专业的皮肤学知识
+                        和丰富的美容护肤临床经验，能为顾客准确
+                        辩诊皮肤问题，提供最佳产品组合搭配和一
+                        对一的个性化皮肤修护方案，并教导顾客科
+                        学地护理肌肤，确保顾客在一年、五年至数
+                        年后，持续保持肌肤的美丽状态。
+                    </div>
+                </div>
+            </div><!--gongneng-box end-->
+            <div class="gongneng-box fl">
+                <div class="box-top" style="background: #cea786">
+                    <img src="images/pifuguanli-gongneng6.jpg" width="393" height="221"/>
+                    <div><a href="#">眼周肌肤看诊区</a></div>
+                </div>
+                <div class="box-bottom">
+                    <div class="title">眼周肌肤看诊区</div>
+                    <div class="body">
+                        润芳可的护肤顾问均具有专业的皮肤学知识
+                        和丰富的美容护肤临床经验，能为顾客准确
+                        辩诊皮肤问题，提供最佳产品组合搭配和一
+                        对一的个性化皮肤修护方案，并教导顾客科
+                        学地护理肌肤，确保顾客在一年、五年至数
+                        年后，持续保持肌肤的美丽状态。
+                    </div>
+                </div>
+            </div><!--gongneng-box end-->
         </div>
 
+
+
         <div class="pifu-fenxiang">
-            <img src="images/pifuguanli-img2.jpg" width="1200" height="90" class="fenxiang-img"/>
-            <video width="1200" height="735" controls src="video/test.mp4" id="vdoMain">
-                您的浏览器不支持video标签，请使用IE9以上版本或者谷歌浏览器、360浏览器等
-            </video>
-            <!--<p id="pTool">-->
-                <!--<span onClick="v_load();">加载</span>-->
-                <!--<span id="spnPlay"onClick="v_jplay(this);">播放</span>-->
-            <!--</p>-->
+            <img src="images/pifuguanli-img2.jpg" width="1200" height="90" class="fenxiang-img" id="guke"/>
+
+            <div id="a1"></div>
+
+            <div id="a2" onclick="Close();" title="收起列表"><img src="images/iconfont-shouqi.png" width="20" height="20"/> </div>
+            <div id="a3" onclick="Open();"  title="展开列表"><img src="images/iconfont-zhankai.png" width="20" height="20"/></div>
+            <ul id="playerlist">
+                <li id="vli_0" onclick="playvideo(0)"><img src="images/no.png"><font size="3" color="skyblue">霍比特人</font></li>
+                <li id="vli_1" onclick="playvideo(1)"><img src="images/no.png"><font size="3" color="skyblue">海洋</font></li>
+                <li id="vli_2" onclick="playvideo(2)"><img src="images/no.png"><font size="3" color="skyblue">快乐的大脚</font></li>
+                <li id="vli_3" onclick="playvideo(3)"><img src="images/no.png"><font size="3" color="skyblue">超凡蜘蛛侠2</font></li>
+
+            </ul>
+
         </div>
 
         <div class="pifu-test">
-            <img src="images/pifuguanli-img3.jpg" width="1200" height="90" class="fenxiang-img"/>
+            <img src="images/pifuguanli-img3.jpg" width="1200" height="90" class="fenxiang-img" id="zaixian"/>
             <div class="pifu-test-row clearfix">
                 <div class="left fl">
                     <div class="yuyue-btn" id="testBtn"></div>
                 </div>
                 <div class="right fr">
-                    <div class="yuyue-btn"></div>
+                    <div class="yuyue-btn" id="yuyueBtn"></div>
                 </div>
             </div>
         </div>
@@ -356,8 +540,9 @@
 </div>
 <!--右侧导航 end-->
 
-<div class="pup-pifu-test">
+<div class="pup-pifu-test" id="pup1">
     <div class="pup-test-body">
+        <a href="javascript: void(0)" class="close-btn">X</a>
         <ul>
             <li style="background: url('images/pifuguanli-test1.jpg') no-repeat center top">
                 <div class="test1-btn" onclick="pupTest('one',1)"></div>
@@ -406,7 +591,7 @@
                 <div class="test7-btn" onclick="pupTest('seven',4)"></div>
                 <div class="test7-btn" onclick="pupTest('seven',5)"></div>
             </li>
-            <li class="report" style="padding: 0;width: 1250px">
+            <li class="report" style="padding: 0;width: 1250px;height: 700px">
                 <img src="images/" class="img1">
                 <img src="images/" class="img2">
                 <img src="images/" class="img3">
@@ -414,22 +599,133 @@
                 <img src="images/" class="img5">
                 <img src="images/" class="img6">
                 <img src="images/" class="img7">
+                <img src="images/" class="img8">
+                <img src="images/report-nine.jpg" class="img9">
+                <div class="ques9"></div>
             </li>
         </ul>
     </div>
 </div>
 
-<script src="js/jquery.min.js" type="text/javascript"></script>
+
+<div class="pup-pifu-test" id="pup2">
+    <div class="pup-test-body">
+        <a href="javascript: void(0)" class="close-btn">X</a>
+        <div class="report-ten">
+            <div class="input-grounp">
+                <input type="text" placeholder="输入您的姓名" class="input-name"/>
+                <input type="text" placeholder="输入手机号码" class="input-phone"/>
+                <input type="text" placeholder="输入短信验证码" class="input-yzm"/>
+                <input type="button" value="" class="send-btn" onclick="time();"/>
+                <div class="send-btn-cover" style="display: none">
+                    60秒后重新获取
+                </div>
+            </div>
+            <div class="select-group">
+                <select id="province">
+                    <option>----请选择省份----</option>
+                    <option>北京</option>
+                    <option>上海</option>
+                    <option>江苏</option>
+                </select>
+                <select class="city">
+                    <option>---请选择城市---</option>
+                </select>
+                <select class="city">
+                    <option>东城</option>
+                    <option>西城</option>
+                    <option>崇文</option>
+                    <option>宣武</option>
+                    <option>朝阳</option>
+                </select>
+                <select class="city">
+                    <option>黄浦</option>
+                    <option>卢湾</option>
+                    <option>徐汇</option>
+                    <option>长宁</option>
+                    <option>静安</option>
+                </select>
+                <select class="city">
+                    <option>南京</option>
+                    <option>镇江</option>
+                    <option>苏州</option>
+                    <option>南通</option>
+                    <option>扬州</option>
+                </select>
+
+                <select class="year">
+                    <option>2015</option>
+                    <option>2016</option>
+                    <option>2017</option>
+                    <option>2018</option>
+                </select>
+
+                <select class="month">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                </select>
+
+                <select class="day">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                    <option>15</option>
+                    <option>16</option>
+                    <option>17</option>
+                    <option>18</option>
+                    <option>19</option>
+                    <option>20</option>
+                    <option>21</option>
+                    <option>22</option>
+                    <option>23</option>
+                    <option>24</option>
+                    <option>25</option>
+                    <option>26</option>
+                    <option>27</option>
+                    <option>28</option>
+                    <option>29</option>
+                    <option>30</option>
+                    <option>31</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</div>
 <script>
     $(function(){
         $("#testBtn").click(function(){
-            $(".pup-pifu-test").show();
-        })
+            $("#pup1").show();
+        });
 
+        $("#yuyueBtn").click(function(){
+            $("#pup2").show();
+        })
     });
-    var ques1,ques2,ques3,ques4,ques5,ques6,ques7;
+    var ques1,ques2,ques3,ques4,ques5,ques6,ques7,ques8;
     function pupTest(ques,nub){
         $(".pup-test-body ul").animate({left: "-=1200"},300);
+        var ques9 = $(".report-ten");
         if (ques == "one"){
             ques1 = ques + nub;
         } else if(ques == "two" ){
@@ -444,6 +740,7 @@
             ques6 = ques + nub;
         } else if(ques == "seven"){
             ques7 = ques + nub;
+            ques8 = "eight" + nub;
             $(".report .img1").attr("src","images/report-" + ques1 + ".jpg");
             $(".report .img2").attr("src","images/report-" + ques2 + ".jpg");
             $(".report .img3").attr("src","images/report-" + ques3 + ".jpg");
@@ -451,6 +748,8 @@
             $(".report .img5").attr("src","images/report-" + ques5 + ".jpg");
             $(".report .img6").attr("src","images/report-" + ques6 + ".jpg");
             $(".report .img7").attr("src","images/report-" + ques7 + ".jpg");
+            $(".report .img8").attr("src","images/report-" + ques8 + ".jpg");
+            $(".ques9").html(ques9);
         }
     }
 </script>
@@ -519,29 +818,10 @@
             bannerSlider1.next()
         });
 
-        $("#banner_tabs").hover(function(){
-            $(".mouse-over" , this).animate({
-               top: "100px",
-                opacity: "1"
-            },300);
-        },function(){
-            $(".mouse-over" , this).animate({
-                top: "10px",
-                opacity: "0"
-            },300);
-        });
 
-        $(".gongneng-box .box-top").hover(function(){
-            $(".box-zz",this).animate({
-                opacity: "1",
-                left: 0
-            },200)
-        },function(){
-            $(".box-zz",this).animate({
-                opacity: "0",
-                left: "-393px"
-            },200)
-        });
+        $(".close-btn").click(function(){
+            $(".pup-pifu-test").hide();
+        })
     })
 
     function $$(id){
@@ -560,9 +840,99 @@
             e.innerHTML="播放";
         }
     }
+    var sec = 60;
+    function time(){
+        if($(".input-phone").val() == ""){
+            alert("手机号码不能为空");
+        } else {
+            if(sec < 0){
+                sec = 60;
+                $(".input-phone").attr("disabled",false);
+                $(".send-btn-cover").css("display","none");
+            }else{
+                $(".input-phone").attr("disabled",true);
+                $(".send-btn-cover").css("display","block").text(sec + "秒后重新获取");
+                sec--;
+
+                setTimeout(function() {
+                            time()
+                        },
+                        1000)
+            }
+        }
+
+    }
+
+
 </script>
 <script type="text/javascript" src="js/anquan.js"></script>
-<!--end banner1-->
 
+
+<!--end banner1-->
+<script src="ckplayer/ckplayer.js"></script>
+<script type="text/javascript">
+    function playerstop() {
+        setTimeend();
+    }
+    function setTimeend() {//获取下一部视频的播放ID
+        nowD++;
+        if (nowD >= videoarr.length ) {
+            nowD = 0;
+        }
+        playvideo(nowD);
+    }
+    function Close() {//关闭播放列表
+        CKobject._K_('a2').style.display = 'none';
+        CKobject._K_('playerlist').style.display = 'none';
+        CKobject._K_('a3').style.display = 'block';
+        CKobject._K_('a1').style.width = '970px';
+        CKobject.getObjectById('ckplayer_a1').width = 970;
+    }
+    function Open() {//打开播放列表
+        CKobject._K_('a2').style.display = 'block';
+        CKobject._K_('playerlist').style.display = 'block';
+        CKobject._K_('a3').style.display = 'none';
+        CKobject._K_('a1').style.width = '770px';
+        CKobject.getObjectById('ckplayer_a1').width = 770;
+    }
+
+    var nowD = 0;//目前播放的视频的编号(在数组里的编号)
+    var frontTime = false;//前置广告倒计时是否在运行中
+    var frontHtime = false;//后置广告是否在进行中
+    var videoarr = new Array();//新建一个数组来存flash端视频地址，添加方法就像下面一样
+    videoarr.push('http://movie.ks.js.cn/flv/2012/02/6-3.flv');
+    videoarr.push('http://movie.ks.js.cn/flv/2012/02/6-1.flv');
+    videoarr.push('http://movie.ks.js.cn/flv/2011/11/8-1.flv');
+    videoarr.push('http://movie.ks.js.cn/flv/2014/04/24-2.flv');
+    var html5arr = new Array();//新建一个数组来保存HTML5端用到的视频地址，注意，因为本演示只有一种mp4文件，所以html5下所有用到的视频地址都是相同的，请见谅，另外，该数组是一个二维数组
+    html5arr.push(['http://movie.ks.js.cn/flv/other/1_0.mp4->video/mp4']);
+    html5arr.push(['http://movie.ks.js.cn/flv/other/1_0.mp4->video/mp4']);
+    html5arr.push(['http://movie.ks.js.cn/flv/other/1_0.mp4->video/mp4']);
+    html5arr.push(['http://movie.ks.js.cn/flv/other/1_0.mp4->video/mp4']);
+    function playvideo(n) {
+        nowD = n;
+        var flashvars = {
+            f: videoarr[n],
+            c: 0,
+            p: 1,
+            e: 0,
+            marqueeClose: false,
+            my_url: encodeURIComponent(window.location.href)
+        };
+        for (i = 0; i < videoarr.length; i++) {//这里是用来改变右边列表背景色
+            if (i != nowD) {
+                //CKobject._K_('vli_' + i).style.backgroundColor = '#262626';
+            }
+            else {
+                // CKobject._K_('vli_' + i).style.backgroundColor = '#DAF2FF';
+            }
+        }
+        var video = ['http://movie.ks.js.cn/flv/other/1_0.mp4->video/mp4'];
+        CKobject.embed('ckplayer/ckplayer.swf', 'a1', 'ckplayer_a1', '100%', '100%', false, flashvars, html5arr[n]);
+    }
+    playvideo(0);
+    Open();
+
+</script>
 </body>
 </html>

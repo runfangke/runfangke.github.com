@@ -124,10 +124,41 @@
     height: 221px;
     overflow: hidden;
 }
+div,img{
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+}
+.gongneng-box .box-top>div{
+    border: 2px #fff solid;height: 60%;width: 60%;position: absolute;top: 20%;left: 20%;-webkit-transform: scale(1.2,1.2);transform: scale(1.2,1.2);opacity: 0;
+}
+.gongneng-box .box-top>div>a{
+    display: inline-block;
+    color: #fff;
+    font-size: 24px;
+    margin: 20px 0 0 20px;
+    -webkit-transform: scale(1.2,1.2);
+    transform: scale(1.2,1.2);
+    opacity: 0;
+}
+.gongneng-box .box-top:hover img{
+    -webkit-transform: scale(1.2,1.2);opacity: .5;
+    transform: scale(1.2,1.2);opacity: .5;
+}
+.gongneng-box .box-top:hover div{
+    -webkit-transform: scale(1,1);
+    transform: scale(1,1);
+    opacity: 1;
+}
+.gongneng-box .box-top:hover div a{
+    -webkit-transform: scale(1,1);
+    transform: scale(1,1);
+    opacity: 1;
+}
 .gongneng-box .box-bottom{
     width: 393px;
     height: 385px;
     margin-top: 8px;
+    margin-bottom: 8px;
     background-color: #f2eee6;
 }
 .gongneng-box .box-zz{
@@ -188,13 +219,45 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0, .7);
+    background-color: rgba(151, 192, 219, 0.9);
     display: none;
 }
 .pup-test-body{
+    position: relative;
     width: 1200px;
     margin: 150px auto 0;
     overflow: hidden;
+    -webkit-box-shadow: 0 0 10px #fff;
+    -moz-box-shadow: 0 0 10px #fff ;
+    box-shadow: 0 0 30px #000;
+    background-color: #fff;
+}
+@media (max-width: 1601px) {
+    .pup-test-body{
+        zoom: 0.85;
+    }
+}
+@media (max-width: 1400px) {
+    .pup-test-body{
+        zoom: 0.7;
+    }
+}
+.close-btn{
+    position: absolute;
+    z-index: 15;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background-color: red;
+    color: #fff;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    margin: 5px 5px 0 0
 }
 .pup-pifu-test ul{
     width: 999999px;
@@ -206,7 +269,7 @@
     width: 1200px;
     height: 600px;
     box-sizing: border-box;
-    padding: 140px 90px 0 160px;
+    padding: 140px 50px 0 160px;
 }
 .pup-pifu-test ul li div{
     display: inline-block;
@@ -254,4 +317,101 @@
 .report img{
     width: 1200px;
     margin-bottom: 10px;
+}
+.report-ten{
+    width: 1200px;
+    height: 600px;
+    background: url("../images/report-ten.jpg") no-repeat;
+}
+.input-grounp{
+    position: relative;
+    z-index: 10;
+    padding: 428px 0 0 185px;
+}
+.input-grounp input[type=text]{
+    width: 188px;
+    height: 34px;
+    line-height: 34px;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+}
+.input-grounp input:focus,.select-group select:focus{
+    outline: none;
+    border: none;
+}
+.input-phone{
+    margin-left: 82px;
+}
+.input-yzm{
+    margin-left: 243px;
+}
+.input-grounp input[type=button]{
+    position: absolute;
+    z-index: 11;
+    top: 424px;
+    border: none;
+    left: 693px;
+    width: 185px;
+    height: 40px;
+    cursor: pointer;
+    background: transparent;
+}
+.send-btn-cover{
+    position: absolute;
+    z-index: 12;
+    top: -4px;
+    border: none;
+    left: 508px;
+    width: 185px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: gray;
+    color: #fff;
+    border-radius: 5px;
+}
+.select-group{
+    margin: 33px 0 0 180px;
+}
+.select-group select{
+    background: transparent;
+    color: #fff;
+    border: none;
+    width: 178px;
+    padding-right: 30px;
+}
+.select-group select option{
+    color: #333;
+}
+.select-group select.city{
+    margin-left: 55px;
+    width: 228px;
+}
+.select-group select.year{
+    width: 102px;
+    margin-left: 112px;
+    padding: 0;
+}
+.select-group select.month{
+    width: 90px;
+    margin-left: 23px;
+    padding: 0;
+}
+.select-group select.day{
+    width: 90px;
+    margin-left: 8px;
+    padding: 0;
+}
+.pifu-fenxiang{
+    height: 600px;
+    position: relative;
+}
+#pTool{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    background: url("../images/video-bg.jpg") no-repeat;
 }
