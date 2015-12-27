@@ -1,0 +1,265 @@
+
+.meifu-banner{
+    text-align: center;
+    min-width: 1200px;
+}
+.meifu-banner img{
+    width: 100%;
+}
+.xueyuan-content{
+    margin-top: -6px;
+    background-color: #3f4446;
+    min-width: 1200px;
+}
+.footer{
+    background-color: #3f4446;
+    margin-top: 0;
+    padding-top: 30px;
+}
+.xueyuan-section-one .title{
+    padding: 70px 0 20px;
+}
+
+/* Carousel */
+#carousel1 {
+    width:980px;
+    height:600px;
+    overflow:hidden;
+    position:relative;
+    margin:0 auto;
+}
+#carousel1 img {
+    width:235px;
+    height:235px;
+}
+#carousel1 #title-text {
+    font-size:22px;
+    margin:10px 20px 0 0;
+    padding:0;
+    text-align:right;
+}
+#carousel1 #alt-text {
+    font-size:14px;
+    margin:5px 20px 0 0;
+    padding:0;
+    text-align:right;
+}
+#carousel1 #user-c {
+    padding:0;
+    position:absolute;
+    right:15px;
+    bottom:10px;
+}
+#carousel1 .carouselLeft, #carousel1 .carouselRight {
+    position:absolute;
+    bottom:20px;
+    width:29px;
+    height:30px;
+    overflow:hidden;
+    cursor:pointer;
+}
+#carousel1 .carouselLeft {
+    right:60px;
+    background:url(../images/templatemo_slider_right.png) no-repeat;
+}
+#carousel1 .carouselRight {
+    right:808px;
+    background:url(../images/templatemo_slider_left.png) no-repeat;
+}
+.zhuanjia-show{
+    margin-top: 30px;
+}
+.zhuanjia-box-left img{
+    width: 475px;
+    height: 700px;
+}
+.zhuanjia-right-top{
+    width: 718px;
+    height: 338px;
+    background: #495f5f;
+    color: #fff;
+    position: relative;
+}
+.zhuanjia-name{
+    width: 225px;
+    text-align: center;
+    padding: 115px 0 0 0;
+    font-size: 28px;
+    font-weight: 400;
+}
+.zhuanjia-jieshao{
+    position: relative;
+    top: 25px;
+    width: 470px;
+    height: 286px;
+    overflow: hidden;
+    font-size: 18px;
+    line-height: 155%;
+}
+.zhuanjia-right-top .show{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 718px;
+    background: #495f5f;
+    opacity: 0;
+}
+.zhuanjia-right-top:hover .show{
+    display: block;
+    z-index: 10;
+    min-height: 700px;
+    opacity: 1;
+}
+.zhuanjia-right-top .show .zhuanjia-name,.zhuanjia-right-top .show .zhuanjia-jieshao{
+    height: auto;
+    padding-bottom: 50px;
+}
+.zhuanjia-right-bottom{
+    width: 718px;
+    text-align: left;
+    margin-top: 7px;
+    margin-right: -30px;
+}
+.anli-box{
+    width: 355px;
+    height: 355px;
+    background: #000;
+    position: relative;
+}
+.anli-box span{
+    position: absolute;
+    display: block;
+    top: 130px;
+    left: 0;
+    width: 355px;
+    text-align: center;
+    color: #c0a062;
+    font-size: 26px;
+    font-weight: bold;
+    -webkit-transition: all 0.55s;
+    -moz-transition: all 0.55s;
+    -ms-transition: all 0.55s;
+    -o-transition: all 0.55s;
+    transition: all 0.55s;
+}
+.anli-box:hover img{
+    opacity: 1;
+}
+.anli-box:hover span{
+    opacity: 0;
+}
+.zhuanjia-right-bottom>div:first-child{
+    margin-right: 8px;
+}
+.anli-box img{
+    width: 355px;
+    height: 355px;
+    opacity: 0.4;
+    -webkit-transition: all 0.55s;
+    -moz-transition: all 0.55s;
+    -ms-transition: all 0.55s;
+    -o-transition: all 0.55s;
+    transition: all 0.55s;
+}
+.zhuanjiaJieshao{
+    display: none;
+}
+.xueyuan-login .d1{
+    width: 210px;
+}
+.d1-box{
+    width: 210px;
+    height: 210px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #bf9f62;
+    background: #5e686e;
+    text-align: center;
+    margin-top: 8px;
+}
+.xueyuan-login .d1>div:first-child{
+    margin-top: 0;
+}
+.d1-box .p1{
+    color: #3f4446;
+    line-height: 70px;
+    font-size: 30px;
+}
+.d1-box .p4{
+    font-size: 20px;
+    font-weight: 500;
+}
+.d1-box.active .p1{
+    color: #bf9f62;
+}
+.d1-f4.active{
+    background: #495f5f;
+}
+.d1-f3.active{
+    background: #3c746b;
+}
+.d1-f2.active{
+    background: #b86779;
+}
+.d1-f1.active{
+    background: #996188;
+}
+.xueyuan-login .d2{
+    width: 428px;
+    margin: 0 0 0 8px;
+}
+.d2-top{
+    width: 368px;
+    height: 358px;
+    padding: 70px 30px 0;
+    margin-bottom: 8px;
+    background-color: #495f5f;
+    color: #fff;
+    font-size: 18px;
+}
+.d2-top div{
+    display: none;
+}
+.d2-top div:first-child{
+    display: block;
+}
+.xueyuan-login .d3{
+    width: 545px;
+}
+.d3 .d3-top{
+    width: 100%;
+    height: 429px;
+    background: url("../images/xueyuan-img3.jpg") no-repeat;
+}
+.input-form{
+    padding-top: 245px;
+}
+.d3 .d3-top input{
+    display: block;
+    height: 50px;
+    width: 300px;
+    padding-left: 7px;
+    margin-left: 183px;
+    margin-bottom: 58px;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+}
+.d3 .d3-top input:focus{
+    border: none;
+}
+.d3-bottom a{
+    display: block;
+    margin-top: 8px;
+    width: 100%;
+    height: 212px;
+    border: none;
+    background: url("../images/xueyuan-img4.jpg") no-repeat;
+}
+.d3-bottom a:active{
+    background: url("../images/xueyuan-img5.png") no-repeat;
+}
+
+
+
+
