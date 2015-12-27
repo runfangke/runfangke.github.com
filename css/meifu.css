@@ -180,6 +180,12 @@
 .xueyuan-login .d1>div:first-child{
     margin-top: 0;
 }
+.xueyuan-section-two{
+    margin-top: 25px;
+}
+.xueyuan-section-two .title{
+    margin-bottom: 25px;
+}
 .d1-box .p1{
     color: #3f4446;
     line-height: 70px;
