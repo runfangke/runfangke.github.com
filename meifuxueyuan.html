@@ -15,33 +15,20 @@
     <link href="css/index.css" type="text/css" rel="stylesheet">
     <link href="css/meifu.css" type="text/css" rel="stylesheet">
     <!--3d轮播-->
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/JavaScript" src="js/CloudCarousel.1.0.5.js"></script>
-    <script type="text/JavaScript" src="js/jquery.mousewheel.js"></script><!--鼠标滚动插件-->
+    <script src="js/jquery.min.js"></script>
     <script src="js/jquery.kxbdMarquee.js"></script>
-
+    <script src="js/bxslider.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
             // 这初始化容器中指定的元素，在这种情况下，旋转木马.
-            $("#carousel1").CloudCarousel({
-                xPos:450,
-                yPos:110,
-                buttonLeft: $('#but1'),
-                buttonRight: $('#but2'),
-                altBox: $("#alt-text"),
-                titleBox: $("#title-text"),
-                FPS:30,
-                reflHeight:90,
-                reflGap:1,
-                yRadius:140,
-                autoRotateDelay: 1200,
-                speed:0.2,
-                mouseWheel:true,
-                bringToFront:true
+
+            $("#marquee44").kxbdMarquee({direction:"up",isEqual:true});
+
+            $(".anli-box").hover(function(){
+                $(".anli-box").addClass("hover");
+            },function(){
+                $(".anli-box").removeClass("hover");
             });
-
-            $("#marquee4").kxbdMarquee({direction:"up",isEqual:true});
-
         });
 
         function zhuanjiaShow(ele,name){
@@ -50,6 +37,10 @@
             $(".zhuanjiaJieshao").hide();
             $("#zhuanjiaJieshao" + ele).show();
             $("#zhuanjiaJieshao-" + ele).show();
+
+
+            $(".anli-page").removeClass("active");
+            $(".anli-" + ele).addClass("active");
         }
 
         function ketang(ele,nub,color) {
@@ -57,7 +48,7 @@
             $(ele).siblings().removeClass("active");
             $(".d2-top>div").hide();
             $("#fId" + nub).show();
-            $(".d2-top").css("background",color);
+            $(".d2-top,.d3-bottom-box,.d3-text,.d3-reg,.input-box").css("background",color);
             $("#ketangImg").attr("src","images/xueyuan-ketang" + nub + ".jpg")
         }
 
@@ -232,27 +223,34 @@
             </div>
             <!--3d轮播图-->
             <div class="xueyuan-tuijian">
-                <div id="carousel1">
-                    <p id="title-text"></p>
-                    <p id="alt-text"></p>
-                    <a target="_parent" onclick="zhuanjiaShow(1,'高文红')"><img class="cloudcarousel"  src="images/xueyuan/laoshi-show (1).jpg"/></a>
-                    <a target="_parent" onclick="zhuanjiaShow(2,'蒋琰')"><img class="cloudcarousel"  src="images/xueyuan/laoshi-show (2).jpg"/></a>
-                    <a target="_parent" onclick="zhuanjiaShow(3,'王芬')"><img class="cloudcarousel"  src="images/xueyuan/laoshi-show (3).jpg"/></a>
-                    <a target="_parent" onclick="zhuanjiaShow(4,'郑芸')"><img class="cloudcarousel"  src="images/xueyuan/laoshi-show (4).jpg"/></a>
-                    <a target="_parent" onclick="zhuanjiaShow(5,'冯晓玉')"><img class="cloudcarousel"  src="images/xueyuan/laoshi-show (5).jpg"/></a>
-                    <a target="_parent" onclick="zhuanjiaShow(6,'赵颖')"><img class="cloudcarousel"  src="images/xueyuan/laoshi-show (6).jpg"/></a>
-                    <a target="_parent" onclick="zhuanjiaShow(7,'朱晓敏')"><img class="cloudcarousel"  src="images/xueyuan/laoshi-show (7).jpg"/></a>
-                    <a target="_parent" onclick="zhuanjiaShow(8,'周婷婷')"><img class="cloudcarousel"  src="images/xueyuan/laoshi-show (8).jpg"/></a>
-                    <a target="_parent" onclick="zhuanjiaShow(9,'怀倩')"><img class="cloudcarousel"  src="images/xueyuan/laoshi-show (9).jpg"/></a>
-                    <a target="_parent" onclick="zhuanjiaShow(10,'魏丹')"><img class="cloudcarousel"  src="images/xueyuan/laoshi-show (10).jpg"/></a>
-                    <a target="_parent" onclick="zhuanjiaShow(11,'郭灿')"><img class="cloudcarousel"  src="images/xueyuan/laoshi-show (11).jpg"/></a>
-                    <a target="_parent" onclick="zhuanjiaShow(12,'刘荔青')"><img class="cloudcarousel"  src="images/xueyuan/laoshi-show (12).jpg"/></a>
-                    <a target="_parent" onclick="zhuanjiaShow(13,'仇淼')"><img class="cloudcarousel"  src="images/xueyuan/laoshi-show (13).jpg"/></a>
-                    <a target="_parent" onclick="zhuanjiaShow(14,'张美琪')"><img class="cloudcarousel"  src="images/xueyuan/laoshi-show (14).jpg"/></a>
-                    <a target="_parent" onclick="zhuanjiaShow(15,'李桂杰')"><img class="cloudcarousel"  src="images/xueyuan/laoshi-show (15).jpg"/></a>
-                    <!--<div id="but1" class="carouselLeft"></div>-->
-                    <!--<div id="but2" class="carouselRight"></div>-->
+                <div class="slider1">
+                    <div class="slide"><a target="_parent" onclick="zhuanjiaShow(1,'高文红')"><img class="cloudcarousel"  src="images/xueyuan/laoshi-show (1).jpg"/></a></div>
+                    <div class="slide"><a target="_parent" onclick="zhuanjiaShow(2,'蒋琰')"><img class="cloudcarousel"  src="images/xueyuan/laoshi-show (2).jpg"/></a></div>
+                    <div class="slide"><a target="_parent" onclick="zhuanjiaShow(3,'王芬')"><img class="cloudcarousel"  src="images/xueyuan/laoshi-show (3).jpg"/></a></div>
+                    <div class="slide"><a target="_parent" onclick="zhuanjiaShow(4,'郑芸')"><img class="cloudcarousel"  src="images/xueyuan/laoshi-show (4).jpg"/></a></div>
+                    <div class="slide"><a target="_parent" onclick="zhuanjiaShow(5,'冯晓玉')"><img class="cloudcarousel"  src="images/xueyuan/laoshi-show (5).jpg"/></a></div>
+                    <div class="slide"><a target="_parent" onclick="zhuanjiaShow(6,'赵颖')"><img class="cloudcarousel"  src="images/xueyuan/laoshi-show (6).jpg"/></a></div>
+                    <div class="slide"><a target="_parent" onclick="zhuanjiaShow(7,'朱晓敏')"><img class="cloudcarousel"  src="images/xueyuan/laoshi-show (7).jpg"/></a></div>
+                    <div class="slide"><a target="_parent" onclick="zhuanjiaShow(8,'周婷婷')"><img class="cloudcarousel"  src="images/xueyuan/laoshi-show (8).jpg"/></a></div>
+                    <div class="slide"><a target="_parent" onclick="zhuanjiaShow(9,'怀倩')"><img class="cloudcarousel"  src="images/xueyuan/laoshi-show (9).jpg"/></a></div>
+                    <div class="slide"><a target="_parent" onclick="zhuanjiaShow(10,'魏丹')"><img class="cloudcarousel"  src="images/xueyuan/laoshi-show (10).jpg"/></a></div>
+                    <!--<div class="slide"><a target="_parent" onclick="zhuanjiaShow(11,'郭灿')"><img class="cloudcarousel"  src="images/xueyuan/laoshi-show (11).jpg"/></a></div>-->
+                    <div class="slide"><a target="_parent" onclick="zhuanjiaShow(12,'刘荔青')"><img class="cloudcarousel"  src="images/xueyuan/laoshi-show (12).jpg"/></a></div>
+                    <div class="slide"><a target="_parent" onclick="zhuanjiaShow(13,'仇淼')"><img class="cloudcarousel"  src="images/xueyuan/laoshi-show (13).jpg"/></a></div>
+                    <div class="slide"><a target="_parent" onclick="zhuanjiaShow(14,'张美琪')"><img class="cloudcarousel"  src="images/xueyuan/laoshi-show (14).jpg"/></a></div>
+                    <div class="slide"><a target="_parent" onclick="zhuanjiaShow(15,'李桂杰')"><img class="cloudcarousel"  src="images/xueyuan/laoshi-show (15).jpg"/></a></div>
                 </div>
+                <script type="text/javascript">
+                    $(document).ready(function(){
+                        $('.slider1').bxSlider({
+                            slideWidth: 235,
+                            minSlides: 4,
+                            maxSlides: 5,
+                            slideMargin: 10
+                        });
+                    });
+                </script>
+
                 <!--carousel1 end-->
             </div>
             <!--专家介绍-->
@@ -269,10 +267,34 @@
                                 <div class="zhuanjia-name fl" id="zhuanjiaName">
                                     高老师
                                 </div>
-                                <div class="zhuanjia-jieshao" id="marquee4">
+                                <div class="zhuanjia-jieshao" id="marquee44">
                                     <div>
                                         <div class="zhuanjiaJieshao" id="zhuanjiaJieshao1" style="display: block">
-                                            111
+                                            <br/>
+                                            中国特级美容大师<br/>
+                                            永丰（北京）投资有限公司董事长<br/>
+                                            （中美合资）华辰美容化妆品有限公司董事长<br/>
+                                            中国美发美容协会副会长<br/>
+                                            全国美发美容职业教育教学指导委员会委员<br/>
+                                            美国E-W自然医学院名誉教授<br/>
+                                            2010年，荣获三八红旗手称号<br/>
+                                            2012年，荣获哈尔滨十行百佳巾帼文明岗标兵称号<br/>
+                                            2013年，荣获中国商贸业优质服务明星<br/>
+                                            2013年，商务部《美容服务 面部护理操作技术要<br/>
+                                            求》标准起草专家<br/><br/>
+
+                                            高文红女士长期专注于皮肤护理技术的深入研究、<br/>
+                                            实践应用及健康护肤理念的传播与推广，至今已<br/>
+                                            历二十七年。在《美容皮肤学》、《美容临床学》<br/>
+                                            专业领域和美容行业中，高文红女士陆续提出了<br/>
+                                            若干最新实用的美容皮肤学理论，如“润芳可肤<br/>
+                                            质划分理论”、“补水四因子”、“不安定肌肤<br/>
+                                            理论”、 “肌肤的生物恒定”等，从理论层面解<br/>
+                                            释肌肤养护的各种问题，创领行业技术先锋。<br/>
+                                            护肤理论与所推广的护肤技术，获得了美国E-W<br/>
+                                            自然健康医学院、韩国 CIB 细胞生物研究所等国<br/>
+                                            际研究机构的专家及诸多世界同行的高度认可，<br/>
+                                            并展开专项技术的共同研究与产品的深度开发。<br/>
                                         </div>
                                         <div class="zhuanjiaJieshao" id="zhuanjiaJieshao2">
                                             头衔荣誉：<br/>
@@ -291,7 +313,7 @@
                                             1、各类问题性肌肤（各类型痤疮、敏感、色斑）的调理及实操。<br/>
                                             2、衰老肌肤年轻化调理及实操。<br/>
                                             3、健康肌肤规划和管理。<br/>
-                                            4、美容师技术导师。<br/>
+                                            4、美容师技术导师。<br/><br/>
                                             职业格言：<br/>
                                             只要用心，就能做得一样好！<br/>
                                         </div>
@@ -307,7 +329,7 @@
                                             擅长专业和技能：<br/>
                                             1、各类型问题性皮肤的诊断和调理及实操。<br/>
                                             2、衰老肌肤年轻化调理及实操。<br/>
-                                            3、资深美容行业教育者。<br/>
+                                            3、资深美容行业教育者。<br/><br/>
                                             职业格言：<br/>
                                             年轻是资本，阅历是财富，有心让别人变美，无意发现自己越来越年轻。<br/>
                                         </div>
@@ -324,7 +346,7 @@
                                             擅长专业和技能:<br/>
                                             敏感与过敏皮肤的调理和后期功能恢复<br/>
                                             皮肤规划方案使皮肤年轻态保持方法<br/>
-                                            根据顾客不同的肌肤状况，通过皮肤辨证学正确指导家居护肤品使用方法<br/>
+                                            根据顾客不同的肌肤状况，通过皮肤辨证学正确指导家居护肤品使用方法<br/><br/>
                                             职业格言:<br/>
                                             将来的我，会感谢现在拼搏的自己！<br/>
                                         </div>
@@ -335,7 +357,7 @@
                                             润芳可国际护肤专家讲师<br/><br/>
 
                                             作为从业5年的资深美容顾问，经冯小玉老师调理过皮肤的患者达上万例，顾客满意度高达100%，在美容行业中已小有知名度。而这些成就与冯小玉老师认真、细心以及每一天的努力密不可分.<br/>
-                                            冯老师坦言：“在与顾客沟通调理皮肤之初，顾客大多会有很多的疑问，或许被美容院伤害过，或许被太多理念洗礼过，而最终也没能达到自己想要的效果和解决自己想解决的问题。这些我们都能深深的理解，因此，面对每一位顾客都会格外用心用心，认真的帮顾客分析皮肤的状况，最后进行辨证诊疗，没有洗脑，没有引导消费，只是用心为顾客调理皮肤，因此每一位顾客最后都成为我的朋友，信任我，并跟随我！”<br/>
+                                            冯老师坦言：“在与顾客沟通调理皮肤之初，顾客大多会有很多的疑问，或许被美容院伤害过，或许被太多理念洗礼过，而最终也没能达到自己想要的效果和解决自己想解决的问题。这些我们都能深深的理解，因此，面对每一位顾客都会格外用心用心，认真的帮顾客分析皮肤的状况，最后进行辨证诊疗，没有洗脑，没有引导消费，只是用心为顾客调理皮肤，因此每一位顾客最后都成为我的朋友，信任我，并跟随我！”<br/><br/>
                                             擅长专业和技能：<br/>
                                             皮肤学讲解及主持<br/>
                                             问题性皮肤调理<br/><br/>
@@ -354,7 +376,7 @@
                                             擅长专业和技能：<br/>
                                             与顾客沟通交流，准备诊断顾客肌肤问题<br/>
                                             年轻化肌肤护理操作<br/>
-                                            问题肌肤诊断与治疗<br/>
+                                            问题肌肤诊断与治疗<br/><br/>
 
                                             职业格言：<br/>
                                             低调做人，高调做事，相信努力一定会有结果！<br/>
@@ -370,7 +392,7 @@
                                             擅长专业和技能：<br/>
                                             润芳可源之素及科恩医生年轻化护理<br/>
                                             痤疮肌肤调理<br/>
-                                            色斑肌肤调理<br/>
+                                            色斑肌肤调理<br/><br/>
                                             职业格言：<br/>
                                             站高一层想问题，跨前一步干工作！<br/>
                                         </div>
@@ -379,23 +401,23 @@
                                             润芳可国际护肤专家讲师<br/><br/>
 
                                             擅长运用肌肤学辩证理论精确诊断肌肤状态，合理制定方案、强化治疗效果。在肌肤护理时迅速实现全面美肌，同时更注重“美的延续”，重视皮肤综合护理及营养摄入。亲身体验过润芳可的每一款产品，更加切身知道如何应对各种皮肤问题，针对性、个性化的解决皮肤难题。面对求美者的美丽诉求，具有不同的见解。亲切、耐心，擅于为求美者量身定制个性化的美肤方案。<br/>
-                                            周婷婷老师的观点是：“好的治疗效果必须基于科学化的皮肤诊断，在正规的诊疗过程及大量的经验下作出专业诊断，并针对不同皮肤问题的多种不同表现，分别治疗，并需及时养护。”<br/>
+                                            周婷婷老师的观点是：“好的治疗效果必须基于科学化的皮肤诊断，在正规的诊疗过程及大量的经验下作出专业诊断，并针对不同皮肤问题的多种不同表现，分别治疗，并需及时养护。”<br/><br/>
                                             擅长专业和技能：<br/>
                                             敏感性肌肤调理<br/>
                                             螨炎性皮肤调理<br/>
-                                            沙龙会议策划<br/>
+                                            沙龙会议策划<br/><br/>
                                             职业格言：<br/>
                                             做一个明媚的女子,不倾国不倾城,优雅的摸爬滚打。<br/>
                                         </div>
                                         <div class="zhuanjiaJieshao" id="zhuanjiaJieshao9">
                                             头衔荣誉<br/>
                                             （中美合资）华辰美容化妆品有限公司山东培训部高级讲师<br/>
-                                            润芳可国际护肤专家讲师<br/>
-                                            2007年进入美容行业，从事美容专业的临床和教学工作近十年，积累了极其丰富的临床经验。美容技术娴熟，手法专业，德艺双馨，曾帮助众多因长期受困于皮肤问题而抑郁自卑的顾客找回健康肌肤与自信，深受求美者青睐和好评。曾多次获得公司“优秀员工奖”。<br/>
+                                            润芳可国际护肤专家讲师<br/><br/>
+                                            2007年进入美容行业，从事美容专业的临床和教学工作近十年，积累了极其丰富的临床经验。美容技术娴熟，手法专业，德艺双馨，曾帮助众多因长期受困于皮肤问题而抑郁自卑的顾客找回健康肌肤与自信，深受求美者青睐和好评。曾多次获得公司“优秀员工奖”。<br/><br/>
                                             擅长专业和技能：<br/>
                                             1、各类型问题性皮肤的诊断和调理及实操。<br/>
                                             2、衰老肌肤年轻化调理及实操。<br/>
-                                            3、美容师技术导师<br/>
+                                            3、美容师技术导师<br/><br/>
                                             职业格言:<br/>
                                             我要用我的专业知识让更多的爱美人士皮肤健康美丽起来<br/>
                                         </div>
@@ -405,12 +427,12 @@
 
                                             最初以患者身份接触润芳可，在润芳可老师的调理下，从激素性肌肤恢复成健康肌肤，深知问题肌肤给爱美人士带来的困扰，于是立志从事美容业，用自己的技术造福问题肌肤患者。<br/>
                                             从事皮肤美容、问题皮肤调理、问题肌肤调理保养教学工作6年余，具有深厚的医学美容理论基础和扎实的临床工作经验。在问题肌肤教学、问题肌肤调理等方面具有不同的见多解和丰富的诊疗经验。<br/>
-                                            擅长运用肌肤辨证疗法治疗各类色素性、激素性肌肤，精确诊断肌肤问题，合理制定方案、强化治疗效果，作为追求完美的肌肤管理专家，能够精确诊断病情，合理制定方案，在改善问题肌肤的同时达到全面美肌的目的。<br/>
+                                            擅长运用肌肤辨证疗法治疗各类色素性、激素性肌肤，精确诊断肌肤问题，合理制定方案、强化治疗效果，作为追求完美的肌肤管理专家，能够精确诊断病情，合理制定方案，在改善问题肌肤的同时达到全面美肌的目的。<br/><br/>
 
                                             擅长专业和技能：<br/>
                                             皮肤学讲解<br/>
                                             问题性皮肤调理<br/>
-                                            激素性肌肤调理<br/>
+                                            激素性肌肤调理<br/><br/>
                                             职业格言：<br/>
                                             坚持！自信！<br/>
                                         </div>
@@ -429,7 +451,7 @@
                                             擅长专业和技能：<br/>
                                             1、各类型问题性皮肤的诊断和调理及实操。<br/>
                                             2、衰老肌肤年轻化调理及实操。<br/>
-                                            3、美容师技术导师<br/>
+                                            3、美容师技术导师<br/><br/>
                                             职业格言：<br/>
                                             健康美丽的肌肤才能达到年轻态。<br/>
                                         </div>
@@ -447,7 +469,7 @@
                                             擅长专业和技能：<br/>
                                             1、各类型问题性皮肤的诊断和调理，尤其是激素后遗症恢复调理。<br/>
                                             2、衰老肌肤年轻化调理及实操。<br/>
-                                            3、美容师技术导师。<br/>
+                                            3、美容师技术导师。<br/><br/>
                                             职业格言：<br/>
                                             成功是由日复一日的点滴汇聚而成的。<br/>
                                         </div>
@@ -455,12 +477,12 @@
                                             头衔荣誉<br/>
                                             高级培训讲师<br/>
                                             润芳可国际护肤专家讲师<br/>
-                                            哈尔滨市美发美容化妆品协会理事<br/>
-                                            2008年开始进入美容行业，2010年加入润芳可。5年来运用润芳可专业的技术和高品质的产品，为顾客量身定制搭配方案，帮助众多爱美人士摆脱了皮肤问题的困扰。更在美容养生方面有着深入的研究。<br/>
+                                            哈尔滨市美发美容化妆品协会理事<br/><br/>
+                                            2008年开始进入美容行业，2010年加入润芳可。5年来运用润芳可专业的技术和高品质的产品，为顾客量身定制搭配方案，帮助众多爱美人士摆脱了皮肤问题的困扰。更在美容养生方面有着深入的研究。<br/><br/>
                                             擅长专业和技能：<br/>
                                             1、各类型问题性皮肤的诊断和调理及实操。<br/>
                                             2、美容养生。<br/>
-                                            3、美容师技术导师。<br/>
+                                            3、美容师技术导师。<br/><br/>
                                             职业格言：<br/>
                                             积土而为山，积水而为海。<br/>
                                         </div>
@@ -469,11 +491,11 @@
                                             高级培训讲师<br/>
                                             润芳可国际护肤专家讲师<br/><br/>
 
-                                            2004年开始进入美容行业，从事美容临床工作多年，根据润芳可皮肤管理的理论，梳理出了一套自己的皮肤管理方案。尤其在产品配方制定与调整方面有着丰富的经验，能够通过配方和比例上的细微调整，改善皮肤波动的情况。主张实现完美肌肤必不可少的万能条件是：自我认知、高度配合和高品质产品。曾获得“十佳美容讲师”称号。<br/>
+                                            2004年开始进入美容行业，从事美容临床工作多年，根据润芳可皮肤管理的理论，梳理出了一套自己的皮肤管理方案。尤其在产品配方制定与调整方面有着丰富的经验，能够通过配方和比例上的细微调整，改善皮肤波动的情况。主张实现完美肌肤必不可少的万能条件是：自我认知、高度配合和高品质产品。曾获得“十佳美容讲师”称号。<br/><br/>
                                             擅长专业和技能：<br/>
                                             1、各类型问题性皮肤的诊断和调理。<br/>
                                             2、衰老肌肤年轻化调理及实操。<br/>
-                                            3、美容师技术导师<br/>
+                                            3、美容师技术导师<br/><br/>
                                             职业格言：<br/>
                                             要想给别人一口水，自己要先有一口井。<br/>
                                         </div>
@@ -486,7 +508,31 @@
                                 </div>
                                 <div class="zhuanjia-jieshao">
                                     <div class="zhuanjiaJieshao" id="zhuanjiaJieshao-1" style="display: block">
+                                        <br/>
+                                        中国特级美容大师<br/>
+                                        永丰（北京）投资有限公司董事长<br/>
+                                        （中美合资）华辰美容化妆品有限公司董事长<br/>
+                                        中国美发美容协会副会长<br/>
+                                        全国美发美容职业教育教学指导委员会委员<br/>
+                                        美国E-W自然医学院名誉教授<br/>
+                                        2010年，荣获三八红旗手称号<br/>
+                                        2012年，荣获哈尔滨十行百佳巾帼文明岗标兵称号<br/>
+                                        2013年，荣获中国商贸业优质服务明星<br/>
+                                        2013年，商务部《美容服务 面部护理操作技术要<br/>
+                                        求》标准起草专家<br/><br/>
 
+                                        高文红女士长期专注于皮肤护理技术的深入研究、<br/>
+                                        实践应用及健康护肤理念的传播与推广，至今已<br/>
+                                        历二十七年。在《美容皮肤学》、《美容临床学》<br/>
+                                        专业领域和美容行业中，高文红女士陆续提出了<br/>
+                                        若干最新实用的美容皮肤学理论，如“润芳可肤<br/>
+                                        质划分理论”、“补水四因子”、“不安定肌肤<br/>
+                                        理论”、 “肌肤的生物恒定”等，从理论层面解<br/>
+                                        释肌肤养护的各种问题，创领行业技术先锋。<br/>
+                                        护肤理论与所推广的护肤技术，获得了美国E-W<br/>
+                                        自然健康医学院、韩国 CIB 细胞生物研究所等国<br/>
+                                        际研究机构的专家及诸多世界同行的高度认可，<br/>
+                                        并展开专项技术的共同研究与产品的深度开发。<br/>
                                     </div>
                                     <div class="zhuanjiaJieshao" id="zhuanjiaJieshao-2">
                                         头衔荣誉：<br/>
@@ -500,12 +546,12 @@
                                         润芳可国际护肤金牌讲师<br/><br/>
 
 
-                                        毕业于哈尔滨医科大学附属医学院，后进修医疗美容专业。1998年正式进入美容行业，从事美容专业的医疗、教学、科研工作近二十年，对各种问题性皮肤的调理积累了大量的临床经验和理论研究。对敏感、痤疮、色斑皮肤诊断和治疗方面有着丰富的经验，在衰老肌肤年轻化调理方面有着深入研究并获得了显著的成果，曾帮助众多顾客改善了皮肤的衰老状态。良好的调理效果及优良的专业素养受到顾客广泛好评。十余年间，曾多次被公司评为“先进个人”“优秀工作者”；曾在哈尔滨市举办的技术比武中取得优异的成绩，获得“先进技术能手”的光荣称号。<br/>
+                                        毕业于哈尔滨医科大学附属医学院，后进修医疗美容专业。1998年正式进入美容行业，从事美容专业的医疗、教学、科研工作近二十年，对各种问题性皮肤的调理积累了大量的临床经验和理论研究。对敏感、痤疮、色斑皮肤诊断和治疗方面有着丰富的经验，在衰老肌肤年轻化调理方面有着深入研究并获得了显著的成果，曾帮助众多顾客改善了皮肤的衰老状态。良好的调理效果及优良的专业素养受到顾客广泛好评。十余年间，曾多次被公司评为“先进个人”“优秀工作者”；曾在哈尔滨市举办的技术比武中取得优异的成绩，获得“先进技术能手”的光荣称号。<br/><br/>
                                         擅长专业和技能：<br/>
                                         1、各类问题性肌肤（各类型痤疮、敏感、色斑）的调理及实操。<br/>
                                         2、衰老肌肤年轻化调理及实操。<br/>
                                         3、健康肌肤规划和管理。<br/>
-                                        4、美容师技术导师。<br/>
+                                        4、美容师技术导师。<br/><br/>
                                         职业格言：<br/>
                                         只要用心，就能做得一样好！<br/>
                                     </div>
@@ -517,11 +563,11 @@
                                         哈尔滨市美发美容化妆品协会副会长<br/>
                                         润芳可国际护肤金牌讲师<br/><br/>
 
-                                        1987年创立自己的美容院，开始进入美容行业。第二年引入润芳可品牌，并运用润芳可专业的美容技术和高品质的产品帮助众多顾客获得了完美肌肤。同年，加入润芳可。近30年来不仅在美容专业技术的研究上有着突出成就，更在美容行业人才培养上，有着卓越的贡献。培养出了无数优秀的美容师，为行业的发展输入了大量人才。<br/>
+                                        1987年创立自己的美容院，开始进入美容行业。第二年引入润芳可品牌，并运用润芳可专业的美容技术和高品质的产品帮助众多顾客获得了完美肌肤。同年，加入润芳可。近30年来不仅在美容专业技术的研究上有着突出成就，更在美容行业人才培养上，有着卓越的贡献。培养出了无数优秀的美容师，为行业的发展输入了大量人才。<br/><br/>
                                         擅长专业和技能：<br/>
                                         1、各类型问题性皮肤的诊断和调理及实操。<br/>
                                         2、衰老肌肤年轻化调理及实操。<br/>
-                                        3、资深美容行业教育者。<br/>
+                                        3、资深美容行业教育者。<br/><br/>
                                         职业格言：<br/>
                                         年轻是资本，阅历是财富，有心让别人变美，无意发现自己越来越年轻。<br/>
                                     </div>
@@ -538,7 +584,7 @@
                                         擅长专业和技能:<br/>
                                         敏感与过敏皮肤的调理和后期功能恢复<br/>
                                         皮肤规划方案使皮肤年轻态保持方法<br/>
-                                        根据顾客不同的肌肤状况，通过皮肤辨证学正确指导家居护肤品使用方法<br/>
+                                        根据顾客不同的肌肤状况，通过皮肤辨证学正确指导家居护肤品使用方法<br/><br/>
                                         职业格言:<br/>
                                         将来的我，会感谢现在拼搏的自己！<br/>
                                     </div>
@@ -549,7 +595,7 @@
                                         润芳可国际护肤专家讲师<br/><br/>
 
                                         作为从业5年的资深美容顾问，经冯小玉老师调理过皮肤的患者达上万例，顾客满意度高达100%，在美容行业中已小有知名度。而这些成就与冯小玉老师认真、细心以及每一天的努力密不可分.<br/>
-                                        冯老师坦言：“在与顾客沟通调理皮肤之初，顾客大多会有很多的疑问，或许被美容院伤害过，或许被太多理念洗礼过，而最终也没能达到自己想要的效果和解决自己想解决的问题。这些我们都能深深的理解，因此，面对每一位顾客都会格外用心用心，认真的帮顾客分析皮肤的状况，最后进行辨证诊疗，没有洗脑，没有引导消费，只是用心为顾客调理皮肤，因此每一位顾客最后都成为我的朋友，信任我，并跟随我！”<br/>
+                                        冯老师坦言：“在与顾客沟通调理皮肤之初，顾客大多会有很多的疑问，或许被美容院伤害过，或许被太多理念洗礼过，而最终也没能达到自己想要的效果和解决自己想解决的问题。这些我们都能深深的理解，因此，面对每一位顾客都会格外用心用心，认真的帮顾客分析皮肤的状况，最后进行辨证诊疗，没有洗脑，没有引导消费，只是用心为顾客调理皮肤，因此每一位顾客最后都成为我的朋友，信任我，并跟随我！”<br/><br/>
                                         擅长专业和技能：<br/>
                                         皮肤学讲解及主持<br/>
                                         问题性皮肤调理<br/><br/>
@@ -568,7 +614,7 @@
                                         擅长专业和技能：<br/>
                                         与顾客沟通交流，准备诊断顾客肌肤问题<br/>
                                         年轻化肌肤护理操作<br/>
-                                        问题肌肤诊断与治疗<br/>
+                                        问题肌肤诊断与治疗<br/><br/>
 
                                         职业格言：<br/>
                                         低调做人，高调做事，相信努力一定会有结果！<br/>
@@ -584,7 +630,7 @@
                                         擅长专业和技能：<br/>
                                         润芳可源之素及科恩医生年轻化护理<br/>
                                         痤疮肌肤调理<br/>
-                                        色斑肌肤调理<br/>
+                                        色斑肌肤调理<br/><br/>
                                         职业格言：<br/>
                                         站高一层想问题，跨前一步干工作！<br/>
                                     </div>
@@ -593,23 +639,23 @@
                                         润芳可国际护肤专家讲师<br/><br/>
 
                                         擅长运用肌肤学辩证理论精确诊断肌肤状态，合理制定方案、强化治疗效果。在肌肤护理时迅速实现全面美肌，同时更注重“美的延续”，重视皮肤综合护理及营养摄入。亲身体验过润芳可的每一款产品，更加切身知道如何应对各种皮肤问题，针对性、个性化的解决皮肤难题。面对求美者的美丽诉求，具有不同的见解。亲切、耐心，擅于为求美者量身定制个性化的美肤方案。<br/>
-                                        周婷婷老师的观点是：“好的治疗效果必须基于科学化的皮肤诊断，在正规的诊疗过程及大量的经验下作出专业诊断，并针对不同皮肤问题的多种不同表现，分别治疗，并需及时养护。”<br/>
+                                        周婷婷老师的观点是：“好的治疗效果必须基于科学化的皮肤诊断，在正规的诊疗过程及大量的经验下作出专业诊断，并针对不同皮肤问题的多种不同表现，分别治疗，并需及时养护。”<br/><br/>
                                         擅长专业和技能：<br/>
                                         敏感性肌肤调理<br/>
                                         螨炎性皮肤调理<br/>
-                                        沙龙会议策划<br/>
+                                        沙龙会议策划<br/><br/>
                                         职业格言：<br/>
                                         做一个明媚的女子,不倾国不倾城,优雅的摸爬滚打。<br/>
                                     </div>
                                     <div class="zhuanjiaJieshao" id="zhuanjiaJieshao-9">
                                         头衔荣誉<br/>
                                         （中美合资）华辰美容化妆品有限公司山东培训部高级讲师<br/>
-                                        润芳可国际护肤专家讲师<br/>
+                                        润芳可国际护肤专家讲师<br/><br/>
                                         2007年进入美容行业，从事美容专业的临床和教学工作近十年，积累了极其丰富的临床经验。美容技术娴熟，手法专业，德艺双馨，曾帮助众多因长期受困于皮肤问题而抑郁自卑的顾客找回健康肌肤与自信，深受求美者青睐和好评。曾多次获得公司“优秀员工奖”。<br/>
-                                        擅长专业和技能：<br/>
+                                        <br/>擅长专业和技能：<br/>
                                         1、各类型问题性皮肤的诊断和调理及实操。<br/>
                                         2、衰老肌肤年轻化调理及实操。<br/>
-                                        3、美容师技术导师<br/>
+                                        3、美容师技术导师<br/><br/>
                                         职业格言:<br/>
                                         我要用我的专业知识让更多的爱美人士皮肤健康美丽起来<br/>
                                     </div>
@@ -619,12 +665,12 @@
 
                                         最初以患者身份接触润芳可，在润芳可老师的调理下，从激素性肌肤恢复成健康肌肤，深知问题肌肤给爱美人士带来的困扰，于是立志从事美容业，用自己的技术造福问题肌肤患者。<br/>
                                         从事皮肤美容、问题皮肤调理、问题肌肤调理保养教学工作6年余，具有深厚的医学美容理论基础和扎实的临床工作经验。在问题肌肤教学、问题肌肤调理等方面具有不同的见多解和丰富的诊疗经验。<br/>
-                                        擅长运用肌肤辨证疗法治疗各类色素性、激素性肌肤，精确诊断肌肤问题，合理制定方案、强化治疗效果，作为追求完美的肌肤管理专家，能够精确诊断病情，合理制定方案，在改善问题肌肤的同时达到全面美肌的目的。<br/>
+                                        擅长运用肌肤辨证疗法治疗各类色素性、激素性肌肤，精确诊断肌肤问题，合理制定方案、强化治疗效果，作为追求完美的肌肤管理专家，能够精确诊断病情，合理制定方案，在改善问题肌肤的同时达到全面美肌的目的。<br/><br/>
 
                                         擅长专业和技能：<br/>
                                         皮肤学讲解<br/>
                                         问题性皮肤调理<br/>
-                                        激素性肌肤调理<br/>
+                                        激素性肌肤调理<br/><br/>
                                         职业格言：<br/>
                                         坚持！自信！<br/>
                                     </div>
@@ -643,7 +689,7 @@
                                         擅长专业和技能：<br/>
                                         1、各类型问题性皮肤的诊断和调理及实操。<br/>
                                         2、衰老肌肤年轻化调理及实操。<br/>
-                                        3、美容师技术导师<br/>
+                                        3、美容师技术导师<br/><br/>
                                         职业格言：<br/>
                                         健康美丽的肌肤才能达到年轻态。<br/>
                                     </div>
@@ -661,7 +707,7 @@
                                         擅长专业和技能：<br/>
                                         1、各类型问题性皮肤的诊断和调理，尤其是激素后遗症恢复调理。<br/>
                                         2、衰老肌肤年轻化调理及实操。<br/>
-                                        3、美容师技术导师。<br/>
+                                        3、美容师技术导师。<br/><br/>
                                         职业格言：<br/>
                                         成功是由日复一日的点滴汇聚而成的。<br/>
                                     </div>
@@ -669,12 +715,12 @@
                                         头衔荣誉<br/>
                                         高级培训讲师<br/>
                                         润芳可国际护肤专家讲师<br/>
-                                        哈尔滨市美发美容化妆品协会理事<br/>
-                                        2008年开始进入美容行业，2010年加入润芳可。5年来运用润芳可专业的技术和高品质的产品，为顾客量身定制搭配方案，帮助众多爱美人士摆脱了皮肤问题的困扰。更在美容养生方面有着深入的研究。<br/>
+                                        哈尔滨市美发美容化妆品协会理事<br/><br/>
+                                        2008年开始进入美容行业，2010年加入润芳可。5年来运用润芳可专业的技术和高品质的产品，为顾客量身定制搭配方案，帮助众多爱美人士摆脱了皮肤问题的困扰。更在美容养生方面有着深入的研究。<br/><br/>
                                         擅长专业和技能：<br/>
                                         1、各类型问题性皮肤的诊断和调理及实操。<br/>
                                         2、美容养生。<br/>
-                                        3、美容师技术导师。<br/>
+                                        3、美容师技术导师。<br/><br/>
                                         职业格言：<br/>
                                         积土而为山，积水而为海。<br/>
                                     </div>
@@ -684,34 +730,638 @@
                                         润芳可国际护肤专家讲师<br/><br/>
 
                                         2004年开始进入美容行业，从事美容临床工作多年，根据润芳可皮肤管理的理论，梳理出了一套自己的皮肤管理方案。尤其在产品配方制定与调整方面有着丰富的经验，能够通过配方和比例上的细微调整，改善皮肤波动的情况。主张实现完美肌肤必不可少的万能条件是：自我认知、高度配合和高品质产品。曾获得“十佳美容讲师”称号。<br/>
-                                        擅长专业和技能：<br/>
+                                        <br/>擅长专业和技能：<br/>
                                         1、各类型问题性皮肤的诊断和调理。<br/>
                                         2、衰老肌肤年轻化调理及实操。<br/>
-                                        3、美容师技术导师<br/>
+                                        3、美容师技术导师<br/><br/>
                                         职业格言：<br/>
                                         要想给别人一口水，自己要先有一口井。<br/>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="zhuanjia-right-bottom clearfix">
-                            <div class="anli-box fl">
-                                <img src="images/zhengyun/郑芸-敏感红血丝-1A_compressed.jpg"/>
+                        <div class="zhuanjia-right-bottom clearfix" id="marquee">
+                            <div class="anli-7 anli-page active">
+                                <div id="marquee7">
+                                    <div class="anli-box fl anli-7">
+                                        <img src="images/xueyuan-anli/anli-7-1a.jpg"/>
                                 <span>
+                                    Before<br/><br/>
                                     TREATMENT<br/>
                                     CASE<br/>
                                     案例
                                 </span>
-                            </div>
-                            <div class="anli-box fl">
-                                <img src="images/zhengyun/郑芸-敏感红血丝-1A_compressed.jpg"/>
+                                    </div>
+                                    <div class="anli-box fl anli-7">
+                                        <img src="images/xueyuan-anli/anli-7-1b.jpg"/>
                                  <span>
+                                     After<br/><br/>
+                                     TREATMENT<br/>
+                                     CASE<br/>
+                                     案例
+                                </span>
+                                    </div>
+
+                                    <div class="anli-box fl anli-7">
+                                        <img src="images/xueyuan-anli/anli-7-2a.jpg"/>
+                                <span>
+                                    Before<br/><br/>
                                     TREATMENT<br/>
                                     CASE<br/>
                                     案例
                                 </span>
+                                    </div>
+                                    <div class="anli-box fl anli-7">
+                                        <img src="images/xueyuan-anli/anli-7-2b.jpg"/>
+                                 <span>
+                                     After<br/><br/>
+                                     TREATMENT<br/>
+                                     CASE<br/>
+                                     案例
+                                </span>
+                                    </div>
+
+                                    <div class="anli-box fl anli-7">
+                                        <img src="images/xueyuan-anli/anli-7-3a.jpg"/>
+                                <span>
+                                    Before<br/><br/>
+                                    TREATMENT<br/>
+                                    CASE<br/>
+                                    案例
+                                </span>
+                                    </div>
+                                    <div class="anli-box fl anli-7">
+                                        <img src="images/xueyuan-anli/anli-7-3b.jpg"/>
+                                 <span>
+                                     After<br/><br/>
+                                     TREATMENT<br/>
+                                     CASE<br/>
+                                     案例
+                                </span>
+                                    </div>
+
+                                    <div class="anli-box fl anli-7">
+                                        <img src="images/xueyuan-anli/anli-7-4a.jpg"/>
+                                <span>
+                                    Before<br/><br/>
+                                    TREATMENT<br/>
+                                    CASE<br/>
+                                    案例
+                                </span>
+                                    </div>
+                                    <div class="anli-box fl anli-7">
+                                        <img src="images/xueyuan-anli/anli-7-4b.jpg"/>
+                                 <span>
+                                     After<br/><br/>
+                                     TREATMENT<br/>
+                                     CASE<br/>
+                                     案例
+                                </span>
+                                    </div>
+
+                                    <div class="anli-box fl anli-7">
+                                        <img src="images/xueyuan-anli/anli-7-5a.jpg"/>
+                                <span>
+                                    Before<br/><br/>
+                                    TREATMENT<br/>
+                                    CASE<br/>
+                                    案例
+                                </span>
+                                    </div>
+                                    <div class="anli-box fl anli-7">
+                                        <img src="images/xueyuan-anli/anli-7-5b.jpg"/>
+                                 <span>
+                                     After<br/><br/>
+                                     TREATMENT<br/>
+                                     CASE<br/>
+                                     案例
+                                </span>
+                                    </div>
+
+                                    <div class="anli-box fl anli-7">
+                                        <img src="images/xueyuan-anli/anli-7-6a.jpg"/>
+                                <span>
+                                    Before<br/><br/>
+                                    TREATMENT<br/>
+                                    CASE<br/>
+                                    案例
+                                </span>
+                                    </div>
+                                    <div class="anli-box fl anli-7">
+                                        <img src="images/xueyuan-anli/anli-7-6b.jpg"/>
+                                 <span>
+                                     After<br/><br/>
+                                     TREATMENT<br/>
+                                     CASE<br/>
+                                     案例
+                                </span>
+                                    </div>
+
+                                    <div class="anli-box fl anli-7">
+                                        <img src="images/xueyuan-anli/anli-7-7a.jpg"/>
+                                <span>
+                                    Before<br/><br/>
+                                    TREATMENT<br/>
+                                    CASE<br/>
+                                    案例
+                                </span>
+                                    </div>
+                                    <div class="anli-box fl anli-7">
+                                        <img src="images/xueyuan-anli/anli-7-7b.jpg"/>
+                                 <span>
+                                     After<br/><br/>
+                                     TREATMENT<br/>
+                                     CASE<br/>
+                                     案例
+                                </span>
+                                    </div>
+                                </div>
                             </div>
+                            <script>
+                                $(function(){
+                                    $('#marquee7').bxSlider({
+                                        slideWidth: 355,
+                                        infiniteLoop: true,
+                                        minSlides: 2,
+                                        maxSlides: 2,
+                                        moveSlideQty: 2,
+                                        speed: 500,
+                                        autoHover: true,
+                                        slideMargin: 8,
+                                        auto: true,
+                                        controls: false//隐藏左右按钮
+                                    });
+
+                                });
+                            </script>
+                            <div class="anli-8 anli-page">
+                                <div id="marquee8">
+                                    <div class="anli-box fl anli-8">
+                                        <img src="images/xueyuan-anli/anli-8-1a.jpg"/>
+                                <span>
+                                    Before<br/><br/>
+                                    TREATMENT<br/>
+                                    CASE<br/>
+                                    案例
+                                </span>
+                                    </div>
+                                    <div class="anli-box fl anli-8">
+                                        <img src="images/xueyuan-anli/anli-8-1b.jpg"/>
+                                 <span>
+                                     After<br/><br/>
+                                     TREATMENT<br/>
+                                     CASE<br/>
+                                     案例
+                                </span>
+                                    </div>
+
+                                    <div class="anli-box fl anli-8">
+                                        <img src="images/xueyuan-anli/anli-8-2a.jpg"/>
+                                <span>
+                                    Before<br/><br/>
+                                    TREATMENT<br/>
+                                    CASE<br/>
+                                    案例
+                                </span>
+                                    </div>
+                                    <div class="anli-box fl anli-8">
+                                        <img src="images/xueyuan-anli/anli-8-2b.jpg"/>
+                                 <span>
+                                     After<br/><br/>
+                                     TREATMENT<br/>
+                                     CASE<br/>
+                                     案例
+                                </span>
+                                    </div>
+
+                                    <div class="anli-box fl anli-8">
+                                        <img src="images/xueyuan-anli/anli-8-3a.jpg"/>
+                                <span>
+                                    Before<br/><br/>
+                                    TREATMENT<br/>
+                                    CASE<br/>
+                                    案例
+                                </span>
+                                    </div>
+                                    <div class="anli-box fl anli-8">
+                                        <img src="images/xueyuan-anli/anli-8-3b.jpg"/>
+                                 <span>
+                                     After<br/><br/>
+                                     TREATMENT<br/>
+                                     CASE<br/>
+                                     案例
+                                </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <script>
+                                $(function(){
+                                    $('#marquee8').bxSlider({
+                                        slideWidth: 355,
+                                        infiniteLoop: true,
+                                        minSlides: 2,
+                                        maxSlides: 2,
+                                        moveSlideQty: 2,
+                                        speed: 500,
+                                        autoHover: true,
+                                        slideMargin: 8,
+                                        auto: true,
+                                        controls: false//隐藏左右按钮
+                                    });
+
+                                });
+                            </script>
+
+                            <div class="anli-4 anli-page">
+                                <div id="marquee4">
+                                    <div class="anli-box fl anli-4">
+                                        <img src="images/xueyuan-anli/anli-4-1a.jpg"/>
+                                <span>
+                                    Before<br/><br/>
+                                    TREATMENT<br/>
+                                    CASE<br/>
+                                    案例
+                                </span>
+                                    </div>
+                                    <div class="anli-box fl anli-4">
+                                        <img src="images/xueyuan-anli/anli-4-1b.jpg"/>
+                                 <span>
+                                     After<br/><br/>
+                                     TREATMENT<br/>
+                                     CASE<br/>
+                                     案例
+                                </span>
+                                    </div>
+
+                                    <div class="anli-box fl anli-4">
+                                        <img src="images/xueyuan-anli/anli-4-2a.jpg"/>
+                                <span>
+                                    Before<br/><br/>
+                                    TREATMENT<br/>
+                                    CASE<br/>
+                                    案例
+                                </span>
+                                    </div>
+                                    <div class="anli-box fl anli-4">
+                                        <img src="images/xueyuan-anli/anli-4-2b.jpg"/>
+                                 <span>
+                                     After<br/><br/>
+                                     TREATMENT<br/>
+                                     CASE<br/>
+                                     案例
+                                </span>
+                                    </div>
+
+                                    <div class="anli-box fl anli-4">
+                                        <img src="images/xueyuan-anli/anli-4-3a.jpg"/>
+                                <span>
+                                    Before<br/><br/>
+                                    TREATMENT<br/>
+                                    CASE<br/>
+                                    案例
+                                </span>
+                                    </div>
+                                    <div class="anli-box fl anli-4">
+                                        <img src="images/xueyuan-anli/anli-4-3b.jpg"/>
+                                 <span>
+                                     After<br/><br/>
+                                     TREATMENT<br/>
+                                     CASE<br/>
+                                     案例
+                                </span>
+                                    </div>
+
+                                    <div class="anli-box fl anli-4">
+                                        <img src="images/xueyuan-anli/anli-4-4a.jpg"/>
+                                <span>
+                                    Before<br/><br/>
+                                    TREATMENT<br/>
+                                    CASE<br/>
+                                    案例
+                                </span>
+                                    </div>
+                                    <div class="anli-box fl anli-4">
+                                        <img src="images/xueyuan-anli/anli-4-4b.jpg"/>
+                                 <span>
+                                     After<br/><br/>
+                                     TREATMENT<br/>
+                                     CASE<br/>
+                                     案例
+                                </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <script>
+                                $(function(){
+                                    $('#marquee4').bxSlider({
+                                        slideWidth: 355,
+                                        infiniteLoop: true,
+                                        minSlides: 2,
+                                        maxSlides: 2,
+                                        moveSlideQty: 2,
+                                        speed: 500,
+                                        autoHover: true,
+                                        slideMargin: 8,
+                                        auto: true,
+                                        controls: false//隐藏左右按钮
+                                    });
+
+                                });
+                            </script>
+
+                            <div class="anli-6 anli-page">
+                                <div id="marquee6">
+                                    <div class="anli-box fl anli-6">
+                                        <img src="images/xueyuan-anli/anli-6-1a.jpg"/>
+                                <span>
+                                    Before<br/><br/>
+                                    TREATMENT<br/>
+                                    CASE<br/>
+                                    案例
+                                </span>
+                                    </div>
+                                    <div class="anli-box fl anli-6">
+                                        <img src="images/xueyuan-anli/anli-6-1b.jpg"/>
+                                 <span>
+                                     After<br/><br/>
+                                     TREATMENT<br/>
+                                     CASE<br/>
+                                     案例
+                                </span>
+                                    </div>
+
+                                    <div class="anli-box fl anli-6">
+                                        <img src="images/xueyuan-anli/anli-6-2a.jpg"/>
+                                <span>
+                                    Before<br/><br/>
+                                    TREATMENT<br/>
+                                    CASE<br/>
+                                    案例
+                                </span>
+                                    </div>
+                                    <div class="anli-box fl anli-6">
+                                        <img src="images/xueyuan-anli/anli-6-2b.jpg"/>
+                                 <span>
+                                     After<br/><br/>
+                                     TREATMENT<br/>
+                                     CASE<br/>
+                                     案例
+                                </span>
+                                    </div>
+
+                                    <div class="anli-box fl anli-6">
+                                        <img src="images/xueyuan-anli/anli-6-3a.jpg"/>
+                                <span>
+                                    Before<br/><br/>
+                                    TREATMENT<br/>
+                                    CASE<br/>
+                                    案例
+                                </span>
+                                    </div>
+                                    <div class="anli-box fl anli-6">
+                                        <img src="images/xueyuan-anli/anli-6-3b.jpg"/>
+                                 <span>
+                                     After<br/><br/>
+                                     TREATMENT<br/>
+                                     CASE<br/>
+                                     案例
+                                </span>
+                                    </div>
+
+                                    <div class="anli-box fl anli-6">
+                                        <img src="images/xueyuan-anli/anli-6-4a.jpg"/>
+                                <span>
+                                    Before<br/><br/>
+                                    TREATMENT<br/>
+                                    CASE<br/>
+                                    案例
+                                </span>
+                                    </div>
+                                    <div class="anli-box fl anli-6">
+                                        <img src="images/xueyuan-anli/anli-6-4b.jpg"/>
+                                 <span>
+                                     After<br/><br/>
+                                     TREATMENT<br/>
+                                     CASE<br/>
+                                     案例
+                                </span>
+                                    </div>
+
+                                    <div class="anli-box fl anli-6">
+                                        <img src="images/xueyuan-anli/anli-6-5a.jpg"/>
+                                <span>
+                                    Before<br/><br/>
+                                    TREATMENT<br/>
+                                    CASE<br/>
+                                    案例
+                                </span>
+                                    </div>
+                                    <div class="anli-box fl anli-6">
+                                        <img src="images/xueyuan-anli/anli-6-5b.jpg"/>
+                                 <span>
+                                     After<br/><br/>
+                                     TREATMENT<br/>
+                                     CASE<br/>
+                                     案例
+                                </span>
+                                    </div>
+
+                                    <div class="anli-box fl anli-6">
+                                        <img src="images/xueyuan-anli/anli-6-6a.jpg"/>
+                                <span>
+                                    Before<br/><br/>
+                                    TREATMENT<br/>
+                                    CASE<br/>
+                                    案例
+                                </span>
+                                    </div>
+                                    <div class="anli-box fl anli-6">
+                                        <img src="images/xueyuan-anli/anli-6-6b.jpg"/>
+                                 <span>
+                                     After<br/><br/>
+                                     TREATMENT<br/>
+                                     CASE<br/>
+                                     案例
+                                </span>
+                                    </div>
+
+                                    <div class="anli-box fl anli-6">
+                                        <img src="images/xueyuan-anli/anli-6-7a.jpg"/>
+                                <span>
+                                    Before<br/><br/>
+                                    TREATMENT<br/>
+                                    CASE<br/>
+                                    案例
+                                </span>
+                                    </div>
+                                    <div class="anli-box fl anli-6">
+                                        <img src="images/xueyuan-anli/anli-6-7b.jpg"/>
+                                 <span>
+                                     After<br/><br/>
+                                     TREATMENT<br/>
+                                     CASE<br/>
+                                     案例
+                                </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <script>
+                                $(function(){
+                                    $('#marquee6').bxSlider({
+                                        slideWidth: 355,
+                                        infiniteLoop: true,
+                                        minSlides: 2,
+                                        maxSlides: 2,
+                                        moveSlideQty: 2,
+                                        speed: 500,
+                                        autoHover: true,
+                                        slideMargin: 8,
+                                        auto: true,
+                                        controls: false//隐藏左右按钮
+                                    });
+
+                                });
+                            </script>
+
+                            <div class="anli-5 anli-page">
+                                <div id="marquee5">
+                                    <div class="anli-box fl anli-5">
+                                        <img src="images/xueyuan-anli/anli-5-1a.jpg"/>
+                                <span>
+                                    Before<br/><br/>
+                                    TREATMENT<br/>
+                                    CASE<br/>
+                                    案例
+                                </span>
+                                    </div>
+                                    <div class="anli-box fl anli-5">
+                                        <img src="images/xueyuan-anli/anli-5-1b.jpg"/>
+                                 <span>
+                                     After<br/><br/>
+                                     TREATMENT<br/>
+                                     CASE<br/>
+                                     案例
+                                </span>
+                                    </div>
+
+                                    <div class="anli-box fl anli-5">
+                                        <img src="images/xueyuan-anli/anli-5-2a.jpg"/>
+                                <span>
+                                    Before<br/><br/>
+                                    TREATMENT<br/>
+                                    CASE<br/>
+                                    案例
+                                </span>
+                                    </div>
+                                    <div class="anli-box fl anli-5">
+                                        <img src="images/xueyuan-anli/anli-5-2b.jpg"/>
+                                 <span>
+                                     After<br/><br/>
+                                     TREATMENT<br/>
+                                     CASE<br/>
+                                     案例
+                                </span>
+                                    </div>
+
+                                    <div class="anli-box fl anli-5">
+                                        <img src="images/xueyuan-anli/anli-5-3a.jpg"/>
+                                <span>
+                                    Before<br/><br/>
+                                    TREATMENT<br/>
+                                    CASE<br/>
+                                    案例
+                                </span>
+                                    </div>
+                                    <div class="anli-box fl anli-5">
+                                        <img src="images/xueyuan-anli/anli-5-3b.jpg"/>
+                                 <span>
+                                     After<br/><br/>
+                                     TREATMENT<br/>
+                                     CASE<br/>
+                                     案例
+                                </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <script>
+                                $(function(){
+                                    $('#marquee5').bxSlider({
+                                        slideWidth: 355,
+                                        infiniteLoop: true,
+                                        minSlides: 2,
+                                        maxSlides: 2,
+                                        moveSlideQty: 2,
+                                        speed: 500,
+                                        autoHover: true,
+                                        slideMargin: 8,
+                                        auto: true,
+                                        controls: false//隐藏左右按钮
+                                    });
+
+                                });
+                            </script>
+
+                            <div class="anli-10 anli-page">
+                                <div id="marquee10">
+                                    <div class="anli-box fl anli-10">
+                                        <img src="images/xueyuan-anli/anli-10-1a.jpg"/>
+                                <span>
+                                    Before<br/><br/>
+                                    TREATMENT<br/>
+                                    CASE<br/>
+                                    案例
+                                </span>
+                                    </div>
+                                    <div class="anli-box fl anli-10">
+                                        <img src="images/xueyuan-anli/anli-10-1b.jpg"/>
+                                 <span>
+                                     After<br/><br/>
+                                     TREATMENT<br/>
+                                     CASE<br/>
+                                     案例
+                                </span>
+                                    </div>
+
+                                    <div class="anli-box fl anli-10">
+                                        <img src="images/xueyuan-anli/anli-10-2a.jpg"/>
+                                <span>
+                                    Before<br/><br/>
+                                    TREATMENT<br/>
+                                    CASE<br/>
+                                    案例
+                                </span>
+                                    </div>
+                                    <div class="anli-box fl anli-10">
+                                        <img src="images/xueyuan-anli/anli-10-2b.jpg"/>
+                                 <span>
+                                     After<br/><br/>
+                                     TREATMENT<br/>
+                                     CASE<br/>
+                                     案例
+                                </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <script>
+                                $(function(){
+                                    $('#marquee10').bxSlider({
+                                        slideWidth: 355,
+                                        infiniteLoop: true,
+                                        minSlides: 2,
+                                        maxSlides: 2,
+                                        moveSlideQty: 2,
+                                        speed: 500,
+                                        autoHover: true,
+                                        slideMargin: 8,
+                                        auto: true,
+                                        controls: false//隐藏左右按钮
+                                    });
+
+                                });
+                            </script>
                         </div>
+
+
                     </div>
                 </div><!--zhuanjia-box end-->
 
@@ -727,26 +1377,24 @@
             <div class="xueyuan-login clearfix">
                 <div class="d1 fl">
                     <div class="d1-box d1-f4 active" onmouseover="ketang(this,4,'#495f5f')">
-                        <p class="p1">F4</p>
+                        <p class="p1">F1</p>
                         <p class="p2">美肤</p>
                         <p class="p3">专业课堂</p>
                     </div>
-                    <div class="d1-box d1-f3" onmouseover="ketang(this,3,'#3c746b')">
-                        <p class="p1">F3</p>
-                        <p class="p2">院线</p>
-                        <p class="p3">管理课堂</p>
-                    </div>
-                    <div class="d1-box d1-f2" onmouseover="ketang(this,2,'#b86779')">
+                    <div class="d1-box d1-f3" onmouseover="ketang(this,3,'#b86779')">
                         <p class="p1">F2</p>
                         <p class="p2">美容师</p>
+                        <p class="p3">管理课堂</p>
+                    </div>
+                    <div class="d1-box d1-f2" onmouseover="ketang(this,2,'#3c746b')">
+                        <p class="p1">F3</p>
+                        <p class="p2">培训师</p>
                         <p class="p3">专业课堂</p>
-                        <p class="p4"></p>
                     </div>
                     <div class="d1-box d1-f1" onmouseover="ketang(this,1,'#996188')">
-                        <p class="p1">F1</p>
-                        <p class="p2">培训师</p>
-                        <p class="p4">（美容导师）</p>
-                        <p class="p3">专业课堂</p>
+                        <p class="p1">F4</p>
+                        <p class="p2">院线</p>
+                        <p class="p3">管理者课堂</p>
                     </div>
                 </div><!--d1 end-->
 
@@ -756,13 +1404,13 @@
                             以独创的润芳可护肤理念，专业美容皮肤学知识，以及特殊的皮肤分型方式为基础，根据不同的肌肤类型及肌肤问题，由专业的皮肤美容老师指导护肤，使您用同样的产品，涂抹出不一样的效果。
                         </div>
                         <div id="fId3">
-                            由润芳可的资深市场分析人员，以品牌市场定位为依据，以盈利为最终目的，用数以万计的成功经验指导加盟商判断理想的经营地点，定位目标顾客，制定经营计划，手把手带领加盟店的业绩一步步走高。
-                        </div>
-                        <div id="fId2">
                             润芳可美容师技术交流会，又称美容界最专业技术培训会，培训优势直接体现为美容师专业技能与职业自豪感大大加强，更加热爱美容事业。而培训合格者，能够定制合理调理方案，让顾客的满意率大大上升。
                         </div>
-                        <div id="fId1">
+                        <div id="fId2">
                             区别于传统培训师，润芳可培训师成员80%以上有医学背景，在入职前需要进行长时间高强度的专业培训，培训合格后，由专家指导实习三个月后方可独立诊疗肌肤，而后还会进行定期专业提升培训，提高专业水平。
+                        </div>
+                        <div id="fId1">
+                            由润芳可的资深市场分析人员，以品牌市场定位为依据，以盈利为最终目的，用数以万计的成功经验指导加盟商判断理想的经营地点，定位目标顾客，制定经营计划，手把手带领加盟店的业绩一步步走高。
                         </div>
                     </div>
                     <div class="d2-bottom">
@@ -773,14 +1421,40 @@
                 <div class="d3 fr">
                     <form>
                         <div class="d3-top">
+                            <div class="d3-text">
+                                <span>STUDENT LOGIN</span><br/>
+                                学员登录
+                            </div>
+                            <a class="d3-reg" href="javascript: void(0)">
+                                New student registration 由此点击注册
+                            </a>
                             <div class="input-form">
-                                <input type="text" placeholder="输入学名"/>
-                                <input type="password" placeholder="输入密码"/>
+                                <div class="input-box">
+                                    <div class="input-left">
+                                        Username
+                                    </div>
+                                    <input type="text" placeholder="输入学名"/>
+
+                                </div>
+                                <div class="input-box">
+                                    <div class="input-left">
+                                        Password
+                                    </div>
+                                    <input type="password" placeholder="输入密码"/>
+                                </div>
                             </div>
                         </div>
+                        <input type="hidden" style="background: url(images/xueyuan-img11.jpg)">
                         <div class="d3-bottom">
-                            <a href="javascript: void(0)"></a>
-                            <img src="images/xueyuan-img6.png" style="margin-top: 8px;"/>
+                            <a href="javascript: void(0)" class="login-btn"></a>
+                            <div class="d3-bottom-box">
+                                <img src="images/xueyuan-img12.png"/>
+                                <span>Remenber Me 记住我！</span>
+                            </div>
+                            <div class="d3-bottom-box">
+                                <img src="images/xueyuan-img13.png"/>
+                                <span>Forgot Password 忘记密码！</span>
+                            </div>
                         </div>
                     </form>
                 </div>
@@ -818,8 +1492,191 @@
 </div>
 <!--右侧导航 end-->
 
+<div class="xueyuan-reg">
+    <div class="xueyuan-reg-content">
+        <div class="reg-row">
+            <span class="reg-text-box">
+                <span class="reg-xx">*</span>
+                输入学员名：
+            </span>
+            <input type="text"  id="input4">
+            <span class="reg-ts"></span>
+            <span class="reg-ts2">
+                4-20位字符，支持汉字、字母、数字组合
+            </span>
+        </div>
+
+        <div class="reg-row">
+            <span class="reg-text-box">
+                <span class="reg-xx">*</span>
+                请设置密码：
+            </span>
+            <input type="password" id="pw1">
+            <span class="reg-ts">6至16位字符</span>
+            <span class="reg-ts2">
+                建议由字母、数字和符号两种以上组合
+            </span>
+        </div>
+
+        <div class="reg-row">
+            <span class="reg-text-box">
+                <span class="reg-xx">*</span>
+                请确认密码：
+            </span>
+            <input type="password" id="pw2">
+            <span class="reg-ts"></span>
+            <span class="reg-ts2">
+                请再次输入密码
+            </span>
+        </div>
+
+        <div class="reg-row">
+            <span class="reg-text-box">
+                <span class="reg-xx">*</span>
+                请验证<span class="phoneTxt">手机</span>：
+            </span>
+            <input type="text"  id="input3">
+            <span class="reg-ts">或<a href="javascript: void(0)" id="yzPhone">验证个人邮箱</a></span>
+            <span class="reg-ts2">
+                完成验证后，您可用该<span class="phoneTxt">手机</span>号登录和找回密码
+            </span>
+        </div>
+
+        <div class="reg-row">
+            <span class="reg-text-box">
+                <span class="reg-xx">*</span>
+                输入验证码：
+            </span>
+            <input type="text" style="width: 150px"  id="input2">
+            <span class="yzm">yzm</span>
+            <span class="reg-ts">看不清？<a href="javascript: void(0)">换一个</a></span>
+        </div>
+
+        <div class="reg-row">
+            <span class="reg-text-box">
+                <span class="reg-xx">*</span>
+                <span class="yz-text">短信</span>验证码：
+            </span>
+            <input type="text" id="input1">
+            <a class="reg-ts" href="javascript: void(0)">获取验证码</a>
+            <span class="reg-ts2">
+                请输入短信验证码
+            </span>
+        </div>
+
+        <div class="reg-row">
+            <span class="reg-yellow">请注意正确填写</span>
+        </div>
+
+        <div class="reg-btn">
+            <div class="reg-box">
+                <a href="javascript:void (0)" id="reg-btn">立即注册</a>
+                <a href="javascript:void (0)" id="shibai">输入不一致，请重新输入</a>
+                <a href="javascript:void (0)" id="chenggong">恭喜您已成功注册</a>
+
+            </div>
+            <img src="images/xueyuan-img15.jpg"/>
+            <a href="javascript:void (0)" class="yzc">我已注册！现在进入教室</a>
+        </div>
+    </div>
+</div>
+<script>
+
+    $(function(){
+        $('.d3-reg').click(function(){
+            $(".xueyuan-reg").show();
+        });
+        $(".yzc").click(function(){
+            $(".xueyuan-reg").hide();
+        })
 
 
+        //切换邮箱/手机验证
+        $("#yzPhone").click(function(){
+            if($("#yzPhone").text() == "验证个人邮箱"){
+                $(".phoneTxt,.yz-text").empty().text("邮箱");
+                $("#yzPhone").text("验证个人手机");
+            } else {
+                $(".phoneTxt,.yz-text").empty().text("手机");
+                $("#yzPhone").text("验证个人邮箱");
+            }
+        });
+        //点击注册进行注册验证
+        $("#reg-btn").click(function(){
+            $(".xueyuan-reg-content input").each(function(){
+                if ($(this).val() == ""){
+                    $(this).addClass("empty").focus();
+                    return false;
+                } else if($("#pw1").val() != '' && $("#pw2").val() != '' && $("#input1").val() != '' && $("#input2").val() != '' && $("#input3").val() != '' && $("#input4").val() != ''){
+                    //成功之后的动画效果
+                    $("#chenggong").animate({
+                        top: '-142px'
+                    },500);
+                    $("#reg-btn,#shibai").animate({
+                        opacity: 0
+                    },300);
+                    setTimeout(function(){
+                        $(".xueyuan-reg").hide(500);
+
+                    },3000)
+                }
+            });
+
+        });
+        //去除红框
+        $(".xueyuan-reg-content input").blur(function(){
+            if ($(this).val() != ''){
+                $(this).removeClass("empty");
+            }
+        });
+        //确认两次密码是否一致
+        $("#pw2").blur(function(){
+            var passwordOne = $("#pw1").val();
+            var passwordTwo = $("#pw2").val();
+            if (passwordOne != passwordTwo){
+                $(this).addClass("empty");
+                $("#shibai").animate({
+                    top: '-71px'
+                },500);
+                $("#reg-btn").animate({
+                    top: '71px'
+                },500);
+            } else {
+                $("#reg-btn").animate({
+                    top: 0
+                },500);
+                $("#shibai").animate({
+                    top: 0
+                },500);
+            }
+        });
+        $("#pw1").blur(function(){
+            var passwordOne = $("#pw1").val();
+            var passwordTwo = $("#pw2").val();
+
+            if(passwordTwo != '' && passwordOne != passwordTwo){
+                $("#pw2").addClass("empty");
+                $("#shibai").animate({
+                    top: '-71px'
+                },500);
+                $("#reg-btn").animate({
+                    top: '71px'
+                },500);
+            } else {
+                $("#reg-btn").animate({
+                    top: 0
+                },500);
+                $("#shibai").animate({
+                    top: 0
+                },500);
+            }
+        })
+
+        $("#shibai").click(function(){
+            $("#pw2").focus();
+        })
+    })
+</script>
 
 
 <script src="js/scrollReveal.js" type="text/javascript"></script>
