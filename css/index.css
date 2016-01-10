@@ -237,7 +237,8 @@ a.agrayright{cursor:default;background:url(../images/syztrgiht1222.png) no-repea
 }
 .footer{
     width: 100%;
-    margin: 40px auto 0;
+    margin: 0 auto 0;
+    padding-top: 40px;
     padding-bottom: 20px;
     text-align: center;
 }
