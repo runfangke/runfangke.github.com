@@ -331,7 +331,7 @@
                 </div><!--fengongsi end-->
                 <table id="table">
                     <thead>
-                    <tr>
+                    <tr id="block">
                         <td>职位名称</td>
                         <td>职位类别</td>
                         <td>所属部门</td>
@@ -522,6 +522,7 @@
         $(ele).addClass("active").siblings().removeClass("active");
         $("#table tr").hide();
         $(dizhi).show();
+        $("#block").show();
     }
 </script>
 <script type="text/javascript" src="js/anquan.js"></script>
