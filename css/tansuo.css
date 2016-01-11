@@ -315,6 +315,15 @@
     color: #c5b09e;
     margin-right: 6px;
 }
+.jiameng-section1 .row1>div:nth-child(odd){
+    background-color: #c5b09e;color: #e8d9ca
+}
+.jiameng-section1 .row1>div:nth-child(even){
+    background-color: #e8d9ca
+}
+.jiameng-section1 .row1>div.active{
+    background-color: #a47c59;color: #fff
+}
 .jiameng-section1 .row2{
     height: 296px;
     margin-top: 6px;
@@ -328,7 +337,9 @@
     font-weight: 300;
     line-height: 40px;
     text-indent: 50px;
-    letter-spacing: 2px;
+}
+.jiameng-section1 .row2 .fl p{
+    display: none;
 }
 .jiameng-section2 .row{
     margin-bottom: 6px;

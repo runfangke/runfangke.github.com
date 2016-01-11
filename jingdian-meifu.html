@@ -93,6 +93,7 @@
                                     <ul>
                                         <li><a href="runfangke-fanghu.html">防护美颜乳</a></li>
                                         <li><a href="runfangke-fanghu2.html">防护隔离乳</a></li>
+                                        <li><a href="runfangke-ningshi1.html">凝时贵妃霜</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="#">基础系列</a>
@@ -166,7 +167,7 @@
                                 <li><a href="meifuxueyuan.html#ketang">培训师课堂</a></li>
                             </ul>
                         </li>
-                        <li class="first-menu"><a href="zhaopin-shehui.html" rel="nofollow">加入我们</a>
+                        <li class="first-menu" style="margin-left: -20px"><a href="zhaopin-shehui.html" rel="nofollow">加入我们</a>
                             <ul class="clearfix">
                                 <li><a href="">认识润芳可</a></li>
                                 <li><a href="zhaopin-ren.html">人在润芳可</a></li>
@@ -182,8 +183,51 @@
     </nav>
 </div>
 
-<div class="jingdian-banner">
-    <img src="images/meifu-banner.jpg">
+<div id="banner_tabs" class="flexslider">
+    <ul class="slides">
+        <li>
+            <a title="" target="_blank" href="#">
+                <img width="1920" height="648" alt="" style="background: url(images/meifu-banner.jpg) no-repeat center;" >
+            </a>
+        </li>
+        <li>
+            <a title="" href="#">
+                <img width="1920" height="648" alt="" style="background: url(images/shuiji-banner.jpg) no-repeat center;" >
+            </a>
+        </li>
+        <li>
+            <a title="" href="#">
+                <img width="1920" height="648" alt="" style="background: url(images/shuhuan-banner.jpg) no-repeat center;" >
+            </a>
+        </li>
+        <li>
+            <a title="" href="#">
+                <img width="1920" height="648" alt="" style="background: url(images/qudou-banner.jpg) no-repeat center;">
+            </a>
+        </li>
+        <li>
+            <a title="" href="#">
+                <img width="1920" height="648" alt="" style="background: url(images/jinfu-banner.jpg) no-repeat center;" >
+            </a>
+        </li>
+        <li>
+            <a title="" href="#">
+                <img width="1920" height="648" alt="" style="background: url(images/yanzhou-banner.jpg) no-repeat center;" >
+            </a>
+        </li>
+    </ul>
+    <ul class="flex-direction-nav">
+        <li><a class="flex-prev" href="javascript:;">Previous</a></li>
+        <li><a class="flex-next" href="javascript:;">Next</a></li>
+    </ul>
+    <ol id="bannerCtrl" class="flex-control-nav flex-control-paging">
+        <li class="active"><a>1</a></li>
+        <li><a>2</a></li>
+        <li><a>3</a></li>
+        <li><a>4</a></li>
+        <li><a>5</a></li>
+        <li><a>6</a></li>
+    </ol>
 </div>
 
 <div class="jingdian-body">
@@ -250,10 +294,10 @@
                     <div class="box-bottom">
                         <div class="box-title">
                             <span class="nub">4</span>
-                            光效反应
+                            其他
                         </div>
                         <div class="box-content">
-                            抗生素药物，避孕药物会造成身体对紫外线的吸收敏感；贝壳类、海藻类食物也会增强光感反应；柑橘科、桑科容易吸收紫外线。
+                            精神压力大，过度疲劳，神经功能紊乱，身体新陈代谢的平衡就会遭到破坏，皮肤所需的营养供应趋于缓慢，色素母细胞就会变得活跃，从而产生斑点。
                         </div>
                     </div>
                 </div><!--box end-->
@@ -354,8 +398,8 @@
             <div class="jingdian-content-row clearfix">
 
                 <div class="jingdian-section-left fl">
-                    <p><span class="nub">1</span>提高皮肤含水量，“稀释”分解色素</p>
-                    <p><span class="nub">2</span>清除体内自由基，促进皮肤更新能力</p>
+                    <p><span class="nub">1</span>提高皮肤含水量，“稀释”分解色素。</p>
+                    <p><span class="nub">2</span>清除体内自由基，促进皮肤更新能力。</p>
                     <p><span class="nub">3</span>加强防护，恢复皮肤保护屏障。</p>
                 </div>
                 <div class="jingdian-section-right fl">
@@ -472,19 +516,37 @@
     })();
     $(function(){
         $("#nav-one").click(function(){
-            $.scrollTo('#one',500);
+            scroller('one',500);
         });
         $("#nav-two").click(function(){
-            $.scrollTo('#two',500);
+            scroller('two',500);
         });
         $("#nav-three").click(function(){
-            $.scrollTo('#three',500);
+            scroller('three',500);
         });
         $("#nav-four").click(function(){
-            $.scrollTo('#four',500);
+            scroller('four',500);
         });
 
     });
+
+    $(function() {
+        var bannerSlider = new Slider($('#banner_tabs'), {
+            time: 5000,
+            delay: 400,
+            event: 'hover',
+            auto: true,
+            mode: 'fade',
+            controller: $('#bannerCtrl'),
+            activeControllerCls: 'active'
+        });
+        $('#banner_tabs .flex-prev').click(function() {
+            bannerSlider.prev()
+        });
+        $('#banner_tabs .flex-next').click(function() {
+            bannerSlider.next()
+        });
+    })
 </script>
 <script type="text/javascript" language="javascript" src="js/public.js"></script>
 <script type="text/javascript" language="javascript" src="js/jquery.hhService.js"></script>
