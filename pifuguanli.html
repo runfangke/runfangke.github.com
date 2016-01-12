@@ -119,24 +119,7 @@
         }
     </style>
     <script src="js/jquery.min.js" type="text/javascript"></script>
-    <script type="text/javascript">
-        var currentShowCity=0;
 
-        $(document).ready(function(){
-            $("#province").change(function(){
-                $("#province option").each(function(i,o){
-                    if($(this).attr("selected"))
-                    {
-
-                        $(".city").hide();
-                        $(".city").eq(i).show();
-                        currentShowCity=i;
-                    }
-                });
-            });
-            $("#province").change();
-        });
-    </script>
 
     <title>REVACL润芳可-您的私人护肤专家</title>
 </head>
@@ -623,103 +606,33 @@
     <div class="pup-test-body">
         <a href="javascript: void(0)" class="close-btn">X</a>
         <div class="report-ten">
-            <div class="input-grounp">
-                <input type="text" placeholder="输入您的姓名" class="input-name"/>
-                <input type="text" placeholder="输入手机号码" class="input-phone"/>
-                <input type="text" placeholder="输入短信验证码" class="input-yzm"/>
-                <input type="button" value="" class="send-btn" onclick="time();"/>
-                <div class="send-btn-cover" style="display: none">
-                    60秒后重新获取
+            <form>
+                <div class="input-grounp">
+                    <input type="text" placeholder="输入您的姓名" class="input-name"/>
+                    <input type="text" placeholder="输入手机号码" class="input-phone"/>
+                    <input type="text" placeholder="输入短信验证码" class="input-yzm"/>
+                    <input type="button" value="" class="send-btn" onclick="time();"/>
+                    <div class="send-btn-cover" style="display: none">
+                        60秒后重新获取
+                    </div>
                 </div>
-            </div>
-            <div class="select-group">
-                <select id="province">
-                    <option>----请选择省份----</option>
-                    <option>北京</option>
-                    <option>上海</option>
-                    <option>江苏</option>
-                </select>
-                <select class="city">
-                    <option>---请选择城市---</option>
-                </select>
-                <select class="city">
-                    <option>东城</option>
-                    <option>西城</option>
-                    <option>崇文</option>
-                    <option>宣武</option>
-                    <option>朝阳</option>
-                </select>
-                <select class="city">
-                    <option>黄浦</option>
-                    <option>卢湾</option>
-                    <option>徐汇</option>
-                    <option>长宁</option>
-                    <option>静安</option>
-                </select>
-                <select class="city">
-                    <option>南京</option>
-                    <option>镇江</option>
-                    <option>苏州</option>
-                    <option>南通</option>
-                    <option>扬州</option>
-                </select>
-
-                <select class="year">
-                    <option>2015</option>
-                    <option>2016</option>
-                    <option>2017</option>
-                    <option>2018</option>
-                </select>
-
-                <select class="month">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                    <option>6</option>
-                    <option>7</option>
-                    <option>8</option>
-                    <option>9</option>
-                    <option>10</option>
-                    <option>11</option>
-                    <option>12</option>
-                </select>
-
-                <select class="day">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                    <option>6</option>
-                    <option>7</option>
-                    <option>8</option>
-                    <option>9</option>
-                    <option>10</option>
-                    <option>11</option>
-                    <option>12</option>
-                    <option>13</option>
-                    <option>14</option>
-                    <option>15</option>
-                    <option>16</option>
-                    <option>17</option>
-                    <option>18</option>
-                    <option>19</option>
-                    <option>20</option>
-                    <option>21</option>
-                    <option>22</option>
-                    <option>23</option>
-                    <option>24</option>
-                    <option>25</option>
-                    <option>26</option>
-                    <option>27</option>
-                    <option>28</option>
-                    <option>29</option>
-                    <option>30</option>
-                    <option>31</option>
-                </select>
-            </div>
+                <div class="select-group" style="display: block">
+                    <label>
+                        <span>请选择城市</span>
+                        <select>
+                            <option></option>
+                            <option>北京</option>
+                        </select>
+                    </label>
+                    <label style="margin-left: 60px">
+                        <span>请选择时间</span>
+                        <input type="date">
+                    </label>
+                </div>
+                <div style="text-align: center;display: block">
+                    <input type="submit">
+                </div>
+            </form>
         </div>
     </div>
 </div>

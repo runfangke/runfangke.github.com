@@ -372,36 +372,39 @@ div,img{
     border-radius: 5px;
 }
 .select-group{
-    margin: 33px 0 0 180px;
+    display: block;
+    height: 55px;
+    margin-top: 15px;
+    margin-left: 110px;
+    background-color: black;
 }
-.select-group select{
-    background: transparent;
-    color: #fff;
-    border: none;
-    width: 178px;
-    padding-right: 30px;
+.select-group label{
+    display: inline-block;
+    width: 280px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #c0a062;
+    color: #000;
+    border-radius: 5px;
 }
-.select-group select option{
-    color: #333;
+.select-group label span{
+    display: inline-block;
+    width: 40%;
+    text-align: center;
+    font-weight: bold;
 }
-.select-group select.city{
-    margin-left: 55px;
-    width: 228px;
+.select-group label select{
+    width: 45%;
+    height: 24px;
 }
-.select-group select.year{
-    width: 102px;
-    margin-left: 112px;
-    padding: 0;
+.select-group label input{
+    width: 140px;
 }
-.select-group select.month{
-    width: 90px;
-    margin-left: 23px;
-    padding: 0;
-}
-.select-group select.day{
-    width: 90px;
-    margin-left: 8px;
-    padding: 0;
+.report-ten input[type=submit]{
+    width: 195px;
+    height: 45px;
+    margin-top: 9px;
+    opacity: 0;
 }
 .pifu-fenxiang{
     height: 600px;
