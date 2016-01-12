@@ -70,21 +70,13 @@
     padding-top: 30px;
     font-size: 26px;
     color: #a7997d;
-    -webkit-transition: all 0.35s;
-    transition: all 0.35s;
-    opacity: 0;
-    -webkit-transform: skew(90deg,90deg);
-    transform: skew(90deg,90deg);
+    opacity: 1;
 }
 .jingdian-content-box .box-content{
     color: #818285;
     font-size: 16px;
     text-shadow: 0 0 .1px #afb0b4;
-    -webkit-transition: all 0.35s;
-    transition: all 0.35s;
-    opacity: 0;
-    -webkit-transform: rotateY(90deg);
-    transform: rotateY(90deg);
+    opacity: 1;
 }
 .nub{
     display: inline-block;
@@ -96,16 +88,7 @@
     border-radius: 4px;
     margin-right: 5px;
 }
-.jingdian-content-box:hover .box-title{
-    -webkit-transform: skew(180deg,180deg);
-    transform: skew(180deg,180deg);
-    opacity: 1;
-}
-.jingdian-content-box:hover .box-content{
-    -webkit-transform: rotateY(0deg);
-    transform: rotateY(0deg);
-    opacity: 1;
-}
+
 .section2-img{
     position: relative;
     background-color: #000;
