@@ -94,12 +94,12 @@ a.daohang_a{ width:275px; height:74px; display:block; float:left;text-align:cent
     margin-left: 0;
     margin-top: 7px;
 }
-.down .runfangke-header-logo {
+.down .runfangke-header-logo ,.runfangke-header-logo{
     display: inline;
     float: left;
     margin-top: 10px;
 }
-.down nav.runfangke-header-logo {
+.down nav.runfangke-header-logo ,nav.runfangke-header-logo{
     display: inline;
     float: left;
 }
@@ -115,7 +115,7 @@ a.daohang_a{ width:275px; height:74px; display:block; float:left;text-align:cent
     height: 27px;
     background:url(../images/sub-logo.png) no-repeat;background-size:316px 27px; margin-top:10px;
 }
-.down .runfangke-header-logo h1 a{
+.down .runfangke-header-logo h1 a,.runfangke-header-logo h1 a{
     margin-top: 3px;
 }
 .runfangke-header-fdj{ width:19px; height:19px; background:url(../images/sousuo-bai.png) no-repeat; display:inline-block;padding-left:10px; position:relative; top:3px; border:0}
@@ -126,8 +126,8 @@ a.runfangke-header-fdj:hover{background:url(../images/sousuo-jin.png) no-repeat;
 .search_inp{ background:#fff;border-radius:5px; border:1px solid #d9d9d9; height:22px; line-height:22px; width:0; margin-left:10px;opacity:0; position:absolute; left:0; padding-left:26px;outline:none;}
 .search_icon{ position:absolute; left:14px;outline:none;}
 .w_bor{ border:1px solid #fff}
-.down .runfangke-header-fdj{ width:19px; height:19px; background:url(../images/sousuo-jin.png) no-repeat; display:block;padding-left:10px}
-.down a.runfangke-header-fdj:hover{background:url(../images/sousuo-jin.png) no-repeat;}
+.down .runfangke-header-fdj,.runfangke-header-fdj{ width:19px; height:19px; background:url(../images/sousuo-jin.png) no-repeat; display:block;padding-left:10px}
+.down a.runfangke-header-fdj:hover,a.runfangke-header-fdj:hover{background:url(../images/sousuo-jin.png) no-repeat;}
 nav.toggle .runfangke-header-fdj{ width:19px; height:19px; background:url(../images/sousuo-jin.png) no-repeat; display:block;}
 nav.toggle a.runfangke-header-fdj:hover{background:url(../images/sousuo-jin.png) no-repeat;}
 .runfangke-header-link {
@@ -207,7 +207,7 @@ nav.toggle .runfangke-header-link>li>a {
     color:#a47c59
 }
 
-.down .runfangke-header-link>li>a {
+.down .runfangke-header-link>li>a ,.runfangke-header-link>li>a {
     display: block;
     padding: 0px 10px 0px 10px;
     font-size:16px;
@@ -216,7 +216,7 @@ nav.toggle .runfangke-header-link>li>a {
     line-height:55px;
     color:#a47c59
 }
-.down nav.toggle .runfangke-header-link>li>a {
+.down nav.toggle .runfangke-header-link>li>a ,nav.toggle .runfangke-header-link>li>a {
     display: block;
     padding: 0px 10px 0px 10px;
     font-size:16px;
@@ -224,7 +224,7 @@ nav.toggle .runfangke-header-link>li>a {
     height:69px;
     line-height:55px;
 }
-.down nav.toggle .runfangke-header-link a{
+.down nav.toggle .runfangke-header-link a,nav.toggle .runfangke-header-link a{
     color:#a47c59
 }
 .runfangke-header-log {
@@ -237,8 +237,8 @@ nav.toggle .runfangke-header-link>li>a {
 /*.runfangke-header-link .hover a.runfangke-header-link-product-a{ background:#f00}*/
 .runfangke-header-link .hover a.runfangke-header-link-product-a{ height:79px;background:url(../images/nav-hover.png) center center no-repeat; color:#c49664}
 
-.down .runfangke-header{ width:100%;  height:69px;background:url(../images/banner_bai.png) center center no-repeat;}
-.down nav.toggle .runfangke-header{ width:100%;  height:69px; background:none}
+.down .runfangke-header,.runfangke-header{ width:100%;  height:69px;background:url(../images/banner_bai.png) center center no-repeat;}
+.down nav.toggle .runfangke-header,nav.toggle .runfangke-header{ width:100%;  height:69px; background:none}
 
 
 /**侧栏跟随效果**/
