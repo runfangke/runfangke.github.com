@@ -323,7 +323,7 @@
                     您的浏览器不支持 audio 标签。请使用ie10以上版本
                 </video>
             </div><!--fl end-->
-            <div class="fr" style="border: none">
+            <div class="fr" style="border: none;overflow: hidden">
                 <div class="fengongsi" style="background-color: #3f4446">
                     <div class="box box2 active" onmouseover="boxChange('.gongzuo-box',this)">工作环境</div>
                     <div class="box box2" onmouseover="boxChange('.peixun-box',this)">培训发展</div>
@@ -332,7 +332,7 @@
                     <div class="box box2" onmouseover="boxChange('.runfang-box',this)">润芳可人说</div>
                 </div><!--fengongsi end-->
 
-                <div class="ren-box gongzuo-box">
+                <div class="ren-box gongzuo-box" style="position: absolute;left: 0;top: 80px;">
                     <p>
                         我们倡导“快乐工作，健康生活”，<br/>
                         为员工提供了舒适的办公环境和便利的工作条件，<br/>
@@ -348,7 +348,7 @@
                         <img src="images/zhaopin-ren-6.jpg"/>
                     </div>
                 </div>
-                <div class="ren-box peixun-box" style="display: none">
+                <div class="ren-box peixun-box" style="position: absolute;top: 10000px;left: 0;">
                     <p>
                         我们为每一位润芳可员工的成长与发展负责，<br/>
                         在企业内部建立了完善的培训体系，<br/>
@@ -359,7 +359,7 @@
                     </p>
                     <img src="images/zhaopin-img5.jpg"/>
                 </div>
-                <div class="ren-box yuangong-box" style="display: none">
+                <div class="ren-box yuangong-box" style="position: absolute;top: 10000px;left: 0;">
                     <p>
                         为支持员工健康的业余爱好，<br/>
                         丰富员工的业余生活，<br/>
@@ -370,7 +370,7 @@
                     </p>
                     <img src="images/zhaopin-img6.jpg"/>
                 </div>
-                <div class="ren-box xinchou-box" style="display: none">
+                <div class="ren-box xinchou-box" style="position: absolute;top: 10000px;left: 0;">
                     <p>
                         为了吸引、激励、保留优秀的人才，保证员工和公司共同成长，<br/>
                         润芳可兼顾市场发展趋势、行业动态以及内部公平性<br/>
@@ -378,7 +378,7 @@
                     </p>
                     <img src="images/zhaopin-img7.jpg"/>
                 </div>
-                <div class="ren-box runfang-box" style="display: none">
+                <div class="ren-box runfang-box" style="position: absolute;top: 10000px;left: 0;">
                     <p>
                         他们勤奋、积极、热情、快乐，<br/>
                         在润芳可脚踏实地的工作着，<br/>
@@ -388,7 +388,7 @@
                         想知道润芳可人眼中的华辰润芳可吗？<br/>
                         去听听他们的心声吧。<br/>
                     </p>
-                    <div class="slide" style="float:left; overflow:hidden;">
+                    <div class="slide1" style="float:left; overflow:hidden;">
                         <ul id="marquee1">
                             <li class="clearfix">
                                 <div class="fl" style="width: 530px;height: 350px;color: #756d62;font-size: 18px;background-color: #f5f5f5;display: inline-block">
@@ -513,8 +513,9 @@
 
     function boxChange(dizhi,ele){
         $(ele).addClass("active").siblings().removeClass("active");
-        $(".ren-box").hide();
-        $(dizhi).show();
+        $(".ren-box").css("top","10000px");
+        $(dizhi).css("top","80px");
+        $(dizhi).attr("aa")
     }
 </script>
 <script type="text/javascript" src="js/anquan.js"></script>
