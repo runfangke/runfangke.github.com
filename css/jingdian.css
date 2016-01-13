@@ -235,10 +235,11 @@
 }
 
 .flex-control-nav {
-    width: 100%;
+    width: 70%;
     position: absolute;
     bottom: 10px;
     text-align: center;
+    left: 40%
 }
 
 .flex-control-nav li {
@@ -250,7 +251,7 @@
 
 .flex-control-paging li a {
     background: url(../images/dot.png) no-repeat 0 -16px;
-    display: none;
+    display: inline-block;
     height: 16px;
     overflow: hidden;
     text-indent: -99em;
