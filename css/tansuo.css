@@ -1,8 +1,7 @@
 .tansuo-banner{
     min-width: 1200px;
-    height: 992px;
+    height: 648px;
     background: url("../images/tansuo-banner.jpg") no-repeat center top fixed;
-    background-size: cover;
     position: relative;
 }
 .jiameng-banner{
