@@ -1,0 +1,98 @@
+html{background: red;}
+body{
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.btn{
+  display: inline-block;
+  border-radius: 4px;
+}
+.btn-red{
+  @extend .btn;
+  background-color: red;
+}
+.btn-yellow{
+  @extend .btn;
+  background-color: yellow;
+}
+%btn{
+  display: inline-block;
+  border-radius: 4px;
+}
+.btn-gray{
+  @extend %btn;
+}
+
+@mixin size($width,$height){
+  width: $width;
+  height: $height;
+}
+
+.box-center {
+  @include size(500px,300px);
+}
+
+nav {
+  margin: 0;
+  padding: 0;
+  ul{
+    list-style: none;
+  }
+  li{
+    display: inline-block;
+  }
+  a{
+    display: block;
+  }
+}
+.container{
+  width: 20px + 8in;
+}
+$grid-prefix: col-md- !default;
+$grid-width: 60px !default;
+$grid-gutter: 20px !default;
+
+%grid {
+  float: left;
+  margin-left: $grid-gutter / 2;
+  margin-right: $grid-gutter / 2;
+}
+
+//through
+@for $i from 1 through 12 {
+  .#{$grid-prefix}#{$i}{
+    width: $grid-width * $i + $grid-gutter * ($i - 1);
+    @extend %grid;
+  }
+}
+
+//to
+@for $i from 1 to 13 {
+  .#{$grid-prefix}#{$i}{
+    width: $grid-width * $i + $grid-gutter * ($i - 1);
+    @extend %grid;
+  }
+}
+//@while 指令也需要 SassScript 表达式（像其他指令一样），并且会生成不同的样式块，直到表达式值为 false 时停止循环。这个和 @for 指令很相似，只要 @while 后面的条件为 true 就会执行。
+$types: 4;
+$type-width: 20px;
+
+@while $types > 0 {
+  .while-#{$types} {
+    width: $type-width + $types;
+  }
+  $types: $types - 1;
+}
+
+$list: adam john wynn mason kuroir;//$list 就是一个列表
+
+@mixin author-images {
+  @each $author in $list {
+    .photo-#{$author} {
+      background: url("/images/avatars/#{$author}.png") no-repeat;
+    }
+  }
+}
+
+.author-bio {
+  @include author-images;
+}

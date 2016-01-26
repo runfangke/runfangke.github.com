@@ -1,0 +1,140 @@
+html {
+  background: red; }
+
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; }
+
+.btn, .btn-red, .btn-yellow {
+  display: inline-block;
+  border-radius: 4px; }
+
+.btn-red {
+  background-color: red; }
+
+.btn-yellow {
+  background-color: yellow; }
+
+.btn-gray {
+  display: inline-block;
+  border-radius: 4px; }
+
+.box-center {
+  width: 500px;
+  height: 300px; }
+
+nav {
+  margin: 0;
+  padding: 0; }
+  nav ul {
+    list-style: none; }
+  nav li {
+    display: inline-block; }
+  nav a {
+    display: block; }
+
+.container {
+  width: 788px; }
+
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px; }
+
+.col-md-1 {
+  width: 60px; }
+
+.col-md-2 {
+  width: 140px; }
+
+.col-md-3 {
+  width: 220px; }
+
+.col-md-4 {
+  width: 300px; }
+
+.col-md-5 {
+  width: 380px; }
+
+.col-md-6 {
+  width: 460px; }
+
+.col-md-7 {
+  width: 540px; }
+
+.col-md-8 {
+  width: 620px; }
+
+.col-md-9 {
+  width: 700px; }
+
+.col-md-10 {
+  width: 780px; }
+
+.col-md-11 {
+  width: 860px; }
+
+.col-md-12 {
+  width: 940px; }
+
+.col-md-1 {
+  width: 60px; }
+
+.col-md-2 {
+  width: 140px; }
+
+.col-md-3 {
+  width: 220px; }
+
+.col-md-4 {
+  width: 300px; }
+
+.col-md-5 {
+  width: 380px; }
+
+.col-md-6 {
+  width: 460px; }
+
+.col-md-7 {
+  width: 540px; }
+
+.col-md-8 {
+  width: 620px; }
+
+.col-md-9 {
+  width: 700px; }
+
+.col-md-10 {
+  width: 780px; }
+
+.col-md-11 {
+  width: 860px; }
+
+.col-md-12 {
+  width: 940px; }
+
+.while-4 {
+  width: 24px; }
+
+.while-3 {
+  width: 23px; }
+
+.while-2 {
+  width: 22px; }
+
+.while-1 {
+  width: 21px; }
+
+.author-bio .photo-adam {
+  background: url("/images/avatars/adam.png") no-repeat; }
+
+.author-bio .photo-john {
+  background: url("/images/avatars/john.png") no-repeat; }
+
+.author-bio .photo-wynn {
+  background: url("/images/avatars/wynn.png") no-repeat; }
+
+.author-bio .photo-mason {
+  background: url("/images/avatars/mason.png") no-repeat; }
+
+.author-bio .photo-kuroir {
+  background: url("/images/avatars/kuroir.png") no-repeat; }
