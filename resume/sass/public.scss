@@ -1,3 +1,4 @@
+@charset "utf-8";
 html,body{font-family: STHeiti,"Source Han Sans CN",simhei;}
 %widthAndHeight {
   width: 100%;
@@ -22,14 +23,18 @@ html,body{font-family: STHeiti,"Source Han Sans CN",simhei;}
   -o-animation: $name $time $iteration $direction;
   animation: $name $time $iteration $direction;
 }
+
 .banner {
   position: relative;
 
-  img {
+  .img {
     @extend %widthAndHeight;
     position: relative;
     z-index: 1;
     opacity: .3;
+    background: url("../images/banner-bg.jpg") no-repeat;
+
+    background-size: cover;
   }
   .banner-mark{
     @extend %widthAndHeight;
@@ -40,6 +45,7 @@ html,body{font-family: STHeiti,"Source Han Sans CN",simhei;}
     display: flex;
     align-items: center;
     z-index: 3;
+    font-size: 16px;
     .banner-introduce{
       background-color: rgba(255,255,255, 0.6);
       box-shadow: 0 0 5px rgba(255,255,255, 0.75);
@@ -55,6 +61,7 @@ html,body{font-family: STHeiti,"Source Han Sans CN",simhei;}
     width: 100px;
     height: 40px;
     margin-left: -50px;
+    z-index: 4;
     i {
       position: relative;
       cursor: pointer;
@@ -156,11 +163,40 @@ $tabBtnGray: gray;
   border-radius: 6px;
   box-shadow: 0 0 8px #444;
   padding: 30px 0;
-  font-size: 16px;
+  font-size: 14px;
 }
 .project-row{
   padding: 15px 0;
   border-bottom: 1px solid #929292;
+  .col-md-8{
+    h4,p{
+      position: relative;
+      padding-left: 100px;
+    }
+    h4:before{
+      content: '项目名称';
+      position: absolute;
+      top:0;
+      left: 0;
+      font-size: 18px;
+      line-height: 1.1;
+      font-weight: 500;
+    }
+  }
+}
+.work-row{
+  .col-md-8{
+    h4:before{
+      content: '公司名称';
+    }
+  }
+}
+.dhu-row{
+  .col-md-8{
+    h4:before{
+      content: '就读学校';
+    }
+  }
 }
 footer{
   min-width: 1200px;
@@ -179,4 +215,12 @@ footer{
   left: 0;
   top: 0;
   z-index: 0;
+}
+@media (max-width: 680px) and (min-width: 1px){
+  .banner{
+    .img{
+      background: url("../images/banner-bg1.jpg") no-repeat;
+
+    }
+  }
 }

@@ -2,13 +2,17 @@
 <html lang="zh-cmn-Hans">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <meta name="renderer" content="webkit"/>
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta content="yes" name="apple-touch-fullscreen"/>
+    <meta content="telephone=no,email=no" name="format-detection"/>
+    <meta name="App-Config" content="fullscreen=yes,useHistoryState=yes,transition=yes"/>
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
-    <title>wowowo</title>
+    <meta name="keywords" content="张家裕" />
+    <meta name="description" content="张家裕"/>
 
     <link rel="stylesheet" href="css/bootstrap.css"/>
     <link rel="stylesheet" href="css/public.css"/>
+    <title>张家裕--web前端</title>
 
 </head>
 <body>
@@ -24,7 +28,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Brand</a>
+                <a class="navbar-brand">张家裕</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -40,7 +44,7 @@
                     <!--<button type="submit" class="btn btn-default">Submit</button>-->
                 <!--</form>-->
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">下载普通版简历</a></li>
+                    <li><a href="word/张家裕--web前端.docx">下载普通版简历</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">联系我 <span class="caret"></span></a>
                         <ul class="dropdown-menu">
@@ -61,26 +65,27 @@
     </div>
 
     <!--背景图-->
-    <img src="images/banner-bg.jpg"/>
+    <div class="img"></div>
 
 
     <!--浮层-->
     <div class="banner-mark">
         <div class="col-xs-10 col-md-6 col-xs-offset-1 col-md-offset-3  banner-introduce">
             <div class="banner-introduce-text">
-                <h2>张家裕---web前端工程师 3年经验</h2>
+                <h2>张家裕---web前端工程师</h2>
                 <h4>男，汉族，1991年9月10日出生</h4>
                 10年至14年2月，在韩国大邱韩医大学校计算机应用专业（&&韩国语专业）学习，获得理学、文学双学士学位。<br/>
                 毕业后一直在北京从事web前端开发工作，<br/>
-                在学习的道路上从未停下脚步。<br/><br/>
-                熟练使用各种类库如jquery、zepto<br/>
-                在实际项目中应用过angularjs、requirejs等框架<br/>
-                使用gulp进行前端自动化作业，熟练sass<br/>
-                两个移动web项目开发经验，熟练适配各类机型<br/>
-                能够快速解决各个pc浏览器兼容问题<br/>
-                喜欢思考、阅读。<br/>
-                正在学习java语言<br/>
-
+                <div class="hidden-sm hidden-xs">
+                    在学习的道路上从未停下脚步。<br/><br/>
+                    熟练使用各种类库如jquery、zepto<br/>
+                    在实际项目中应用过angularjs、requirejs等框架<br/>
+                    使用gulp进行前端自动化作业，熟练sass<br/>
+                    两个移动web项目开发经验，熟练适配各类机型<br/>
+                    能够快速解决各个pc浏览器兼容问题<br/>
+                    喜欢思考、阅读。<br/>
+                    正在学习java语言<br/>
+                </div>
             </div>
             <div class="banner-introduce-btn text-center">
                 <a href="https://www.github.com/jayazhang"><button class="first">github主页</button></a>
@@ -217,7 +222,7 @@
             工作经历
         </h3>
         <div class="col-md-10">
-            <div class="row project-row">
+            <div class="row project-row work-row">
                 <div class="col-md-8">
                     <h4>金蝌蚪理财</h4>
                     <p>
@@ -233,7 +238,7 @@
                     <div class="col-xs-5">至今</div>
                 </div>
             </div><!--project-row end-->
-            <div class="row project-row">
+            <div class="row project-row work-row">
                 <div class="col-md-8">
                     <h4>今日传媒（江苏云煤）</h4>
                     <p>
@@ -249,7 +254,7 @@
                     <div class="col-xs-5">2015年6月</div>
                 </div>
             </div><!--project-row end-->
-            <div class="row project-row">
+            <div class="row project-row work-row">
                 <div class="col-md-8">
                     <h4>威海奥讯</h4>
                     <p>
@@ -265,6 +270,27 @@
                     <div class="col-xs-5">2014年6月</div>
                 </div>
             </div><!--project-row end-->
+        </div>
+    </div>
+    <div class="row jaya-row">
+        <h3 class="col-md-2 text-center">
+            教育背景
+        </h3>
+        <div class="col-md-10">
+            <div class="row project-row dhu-row">
+                <div class="col-md-8">
+                    <h4>韩国大邱韩医大学校</h4>
+                    <p>
+                        就读于韩国大邱韩医大学校计算机应用专业并辅修韩国语专业，期间获得文学、理学双学士学位。
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <div class="col-xs-5">2010年2月</div>
+                    <div class="col-xs-2 text-center">---</div>
+                    <div class="col-xs-5">2014年2月</div>
+                </div>
+            </div><!--project-row end-->
+
         </div>
     </div>
 </div>
@@ -327,25 +353,29 @@
             index.scroller("content",600,'#navbar');
         });
 
+        setTimeout(function(){
+            var smokyBG = $('#wavybg-wrapper').waterpipe({
+                //Default values
+                gradientStart: '#000000',
+                gradientEnd: '#222222',
+                smokeOpacity: 0.1,
+                numCircles: 1,
+                maxMaxRad: 'auto',
+                minMaxRad: 'auto',
+                minRadFactor: 0,
+                iterations: 8,
+                drawsPerFrame: 10,
+                lineWidth: 2,
+                speed: 1,
+                //Background
+                bgColorInner: "#ffffff",
+                bgColorOuter: "#666666"
+            });
+        },100)
+
     });
 
-    var smokyBG = $('#wavybg-wrapper').waterpipe({
-        //Default values
-        gradientStart: '#000000',
-        gradientEnd: '#222222',
-        smokeOpacity: 0.1,
-        numCircles: 1,
-        maxMaxRad: 'auto',
-        minMaxRad: 'auto',
-        minRadFactor: 0,
-        iterations: 8,
-        drawsPerFrame: 10,
-        lineWidth: 2,
-        speed: 1,
-        //Background
-        bgColorInner: "#ffffff",
-        bgColorOuter: "#666666"
-    });
+
 
 </script>
 </body>
