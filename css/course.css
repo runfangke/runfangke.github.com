@@ -1,0 +1,138 @@
+@charset "utf-8";
+body, h1, h2, h3, h4, h5, h6, hr, p,
+blockquote, /* structural elements 结构元素 */
+dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+pre, /* text formatting elements 文本格式元素 */
+form, fieldset, legend, button, /* form elements 表单元素 */
+th, td, /* table elements 表格元素 */
+img {
+    border: medium none;
+    margin: 0;
+    padding: 0;
+}
+li, ol {
+    list-style: none;
+    vertical-align: bottom;
+}
+em {
+    font-style: normal;
+}
+img {
+    vertical-align: middle;
+}
+a, input, textarea, select, option, button, .logo, #icon_num li, #icon_num_top li, .blk_29 .LeftBotton, .blk_29 .RightBotton, #cal #cm .cell, .work_lcontent img, .work_detail img, .brow img {
+    cursor: pointer;
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+*html .clearfix {
+    height: 1%;
+}
+* + html .clearfix {
+    height: 1%;
+}
+.clearfix {
+    display: inline-block;
+}
+/* Hide from IE Mac */
+.clearfix {
+    display: block;
+}
+.course{
+    background-color: #3f4446;
+}
+.course-header{
+    height: 215px;
+    line-height: 215px;
+    text-align: center;
+}
+.bgcolor-F1{
+    background-color: #495f5f;
+}
+.bgcolor-F2{
+    background-color: #3c746b;
+}
+.bgcolor-F3{
+    background-color: #b86779;
+}
+.bgcolor-F4{
+    background-color: #996188;
+}
+.course-logo img{
+    width: 900px;
+}
+.course-num{
+    width: 215px;
+}
+.course-num-F1{
+    background-color: #333e3e;
+}
+.course-num-F2{
+    background-color: #335851;
+}
+.course-num-F3{
+    background-color: #905563;
+}
+.course-num-F4{
+     background-color: #7a506e;
+}
+.course-content-body{
+    padding: 35px 0 45px;
+}
+.upper-part{
+    margin-bottom: 20px;
+}
+.upper-part-video{
+    width: 1200px;
+    height: 800px;
+    background-color: #000;
+}
+.upper-part-txt .part-text{
+    box-sizing: border-box;
+    width: 595px;
+    height: 150px;
+    padding: 25px 35px;
+    color: #fff;
+    font-size: 18px;
+}
+.upper-part-txt .part-text p{
+    width: 525px;
+    height: 100px;
+    overflow: hidden;
+}
+.lower-part{
+    margin-top: 20px;
+    margin-right: -16px;
+}
+.lower-part li{
+    box-sizing: border-box;
+    float: left;
+    width: 231px;
+    margin-right: 12px;
+}
+.lower-part li a{
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+}
+.lower-part li a img{
+    width: 230px;
+    height: 154px;
+}
+.lower-part li a .lower-part-txt{
+    height: 50px;
+    line-height: 49px;
+}
+
+
+
+
+
+
+
+
