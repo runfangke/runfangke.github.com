@@ -23,10 +23,10 @@
     margin-bottom: -6px;
 }
 .yuanzhisu{
-    -moz-user-select:none;/*»ðºü*/
-    -webkit-user-select:none;/*webkitä¯ÀÀÆ÷*/
+    -moz-user-select:none;/*ï¿½ï¿½ï¿½*/
+    -webkit-user-select:none;/*webkitï¿½ï¿½ï¿½ï¿½ï¿½*/
     -ms-user-select:none;/*IE10*/
-    -khtml-user-select:none;/*ÔçÆÚä¯ÀÀÆ÷*/
+    -khtml-user-select:none;/*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*/
     user-select:none;
 }
 

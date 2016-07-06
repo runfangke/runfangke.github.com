@@ -364,6 +364,7 @@
     width: 880px;
     height: 216px;
     display: -ms-flex;
+
     display: -webkit-flex;
     display: flex;
     -ms-flex-align: center;
@@ -379,15 +380,15 @@
     line-height: 33px;
     letter-spacing: 2px;
 }
-.jiameng-section4 .clearfix{
-    margin-right: -20px;
-}
-.jiameng-section4 .clearfix img{
-    width: 362px;
-    height: 363px;
-    margin-right: 5px;
-    margin-bottom: 8px;
-}
+/*.jiameng-section4 .clearfix{*/
+    /*margin-right: -20px;*/
+/*}*/
+/*.jiameng-section4 .clearfix img{*/
+    /*width: 362px;*/
+    /*height: 363px;*/
+    /*margin-right: 5px;*/
+    /*margin-bottom: 8px;*/
+/*}*/
 .jiameng-section5 .input-group{
     margin-bottom: 6px;
 }

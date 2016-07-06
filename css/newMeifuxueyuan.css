@@ -1,0 +1,54 @@
+.container{width: 1100px;}
+.list-title1{width: 483px;}
+.news-text{width: 483px;}
+.xueyuan-content{background-color: #fff;}
+.xueyuan-content .e-title{margin-top: 18px;font-size:12px;text-align: center;color: #a47c59;}
+.xueyuan-content .title{padding: 0;font-size: 18px;font-weight: bold;}
+.bx-wrapper .bx-prev {left: -45px;background: url(../images/left.png) no-repeat 0 0;}
+.bx-wrapper .bx-next {right: -45px;background: url(../images/right.png) no-repeat 0 0;}
+.bx-wrapper .bx-controls-direction a {position: absolute;top: 50%;margin-top: -19px;outline: 0;width: 37px;height: 37px;text-indent: -9999px;z-index: 9999;}
+.zhuanjia-show{border: 2px solid #e5e5e5;}
+.teacher-info{width: 1096px;height: 631px;border: 2px solid #e5e5e5;margin-bottom: 36px;}
+.teacher-info .teacher-left{float: left;width: 480px;height: 633px;}
+.teacher-info .teacher-left img{width: 100%;height: 100%;}
+.teacher-right .teacher-content-top{width: 580px;height: 370px;margin-left:20px;overflow: hidden;}
+.teacher-right .teacher-content-bottom{width: 600px;height:254px;}
+#name{font-size: 18px;padding-top: 15px;}
+#title{font-size: 16px;color: #50504f;padding-bottom: 5px;}
+#teacherContent{width: 580px;height: 320px;}
+#teacherContent p{font-size: 14px;color: #878786;text-indent: 28px;line-height: 20px;letter-spacing: 1px;}
+.teacher-info .teacher-right .teacher-content-bottom{width:517px;height: 255px; margin:0 45px 0 53px;}
+.teacher-content-bottom .bx-wrapper .bx-prev {left: 15px;background: url(../images/left.png) no-repeat 0 0;}
+.teacher-content-bottom .bx-wrapper .bx-next {right: 15px;background: url(../images/right.png) no-repeat 0 0;}
+.teacher-content-bottom .bx-wrapper .bx-controls-direction a {position: absolute;top: 50%;margin-top: -19px;outline: 0;width: 37px;height: 37px;text-indent: -9999px;z-index: 9999;}
+.anli-box img{width: 254px;height: 254px;}
+.anli-box{position: relative;}
+.anli-box span{position: absolute;top: 30px;left:-56px;}
+.school-left,.school-right{background: #4d4c4b;border-radius: 18px;}
+.school-left{width: 510px;height: 406px;}
+.school-right{width: 570px;height: 406px;}
+.school-left ul{height: 406px;}
+.left1 ul li{width: 16px;text-align: center;font-size: 16px;color: #fff;line-height: 17px;padding:11px 10px 11px 20px;border-right:3px solid #fff;}
+.school-con ul li:hover{color: #c2a067;border-color:#c2a067;}
+.left2{width: 460px;height: 407px;}
+.left2-top{width: 415px;height: 282px;margin: 10px auto 20px;}
+.left2-top img{width: 100%;height: 100%;}
+.left2-bottom{width: 420px;height: 90px;margin: 0 auto;overflow: hidden;}
+.left2-bottom p{text-indent: 2em;color: #c2a067;letter-spacing: 1px;}
+.right1 ul{width: 570px;}
+.right1 ul li{float: left;width: 190px;text-align:center;padding:22px 0 10px 0;font-size: 16px; color: #fff;border-bottom: 3px solid #fff;}
+.right2{width: 485px;height: 320px;margin: 20px auto;color: #c2a067;}
+.right2 span a{color: #c2a067;}
+.right-fl{width: 85px;height: 290px;text-align: center;margin-right: 15px;}
+.right-fl p{height: 40px;line-height: 40px;margin-bottom: 16px;}
+.right-fr{width: 360px;height: 275px;}
+.right-fr span{margin-left: 30px;}
+.useName,.miMa,.yanZheng,.land{height: 40px;line-height: 40px;margin-bottom: 16px;border-radius: 10px;border: none;outline: none;}
+.useName,.miMa,.yanZheng{padding-left: 30px;width: 226px;}
+.useName{background: url(../images/school-icon01.png) no-repeat 10px center #fff;}
+.miMa{background: url(../images/school-icon02.png) no-repeat 10px center #fff;}
+.yanZheng{width: 100px; background: url(../images/school-icon03.png) no-repeat 10px center #fff;}
+.land{width: 162px;height: 63px;color: #fff;font-size: 30px;font-family: "黑体";background: linear-gradient(#f9ce88,#a67d5a);margin-bottom: 20px;}
+#class-con li{display: none;}
+
+

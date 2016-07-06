@@ -4,7 +4,7 @@
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td,figure{margin:0;padding:0;}
 div{margin:0;padding:0;background-position:0;}
 form{margin: 0px; padding:0px;}
-a{ text-decoration:none}
+a{text-decoration:none;color: #000000;}
 img{border:none;}
 ul,dl,li{list-style-type: none;}
 .clear{ clear:both}
@@ -17,7 +17,6 @@ ul,dl,li{list-style-type: none;}
 *{margin: 0;padding: 0;}
 body {
     font: 14px/1.4 "Microsoft Yahei",verdana;
-    font-weight: 100;
     position: relative;
     z-index: 1;
 }

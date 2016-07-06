@@ -110,7 +110,7 @@
 .zhuanjia a.active{ background:url(../images/btn_on.png) center center no-repeat}
 .huodong a{ background:url(../images/btn_off.png) center center no-repeat}
 .huodong a.active{ background:url(../images/btn_on.png) center center no-repeat}
-/*ÄÚÈÝ²¿·Ö¿ªÊ¼*/
+/*ï¿½ï¿½ï¿½Ý²ï¿½ï¿½Ö¿ï¿½Ê¼*/
 .content{
     background-color: #fff;
     min-width: 1200px;
@@ -136,7 +136,7 @@
     margin-top: 40px;
     margin-bottom: 60px;
 }
-/*¹ö¶¯*/
+/*ï¿½ï¿½ï¿½ï¿½*/
 
 a.abtn{display:block;height:68px;width:35px;overflow:hidden;background:url(../images/syztleft1222.png) no-repeat; margin-top:65px;}
 a.abtn:hover{background:url(../images/syztleft1222-h.png) no-repeat;}
@@ -146,7 +146,7 @@ a.aright{float:right;background:url(../images/syztrgiht1222.png) no-repeat;}
 a.aright:hover{float:right;background:url(../images/syztrgiht1222-h.png) no-repeat;}
 a.agrayright{cursor:default;background:url(../images/syztrgiht1222.png) no-repeat;}
 .scrolllist{width:1235px;height:184px;margin:50px auto 0;}
-.scrolllist .imglist_w{width:1116px;height:240px;overflow:hidden;float:left;position:relative;/*±ØÒªÔªËØ*/ margin-left:24px;}
+.scrolllist .imglist_w{width:1116px;height:240px;overflow:hidden;float:left;position:relative;/*ï¿½ï¿½ÒªÔªï¿½ï¿½*/ margin-left:24px;}
 .scrolllist .imglist_w ul{width:20000px;position:absolute;left:0px;top:0px;}
 .scrolllist .imglist_w li{width:360px;float:left; color:#FFF; font-size:16px; font-weight:bold; margin:0 6px;height: 210px;overflow: hidden}
 .scrolllist .imglist_w li img{width: 360px;height: 210px}

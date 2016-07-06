@@ -1,0 +1,16 @@
+.jingdian-section{padding-bottom: 20px;padding-top: 20px;}
+.jingdian-body .title{font-weight: bold;font-size: 18px;width: 450px;}
+.jingdian-section{margin-right: -10px;}
+.jingdian-content-box{width: 286px;height: 512px;border: 2px solid #e5e5e5;margin-right: 15px;}
+.box-top1{width: 286px;height: 299px;}
+.box-top1 img{width: 286px;height: 299px;}
+.box-bottom1{background: #fff;}
+.box-bottom1 .box-title{font-size: 16px;font-weight: bold;color: #000;text-align: center;padding-top: 20px;margin-bottom: 17px;}
+.box-bottom1 .box-content{font-size: 14px;color: #898686;text-indent: 30px;letter-spacing: 1px;padding: 0 17px;width: 256px;height: 135px;overflow: hidden;}
+.box1{border: none;height: 300px;margin-right: 19px;}
+.jingdian-section-left{width: 446px;}
+.jingdian-section-left .nub{background: #c0a062;width: 32px;height: 32px;color: #fff;border-radius: 50%;margin-right: 17px;}
+.jingdian-section-left p{font-size: 14px;color: #898686;margin-bottom: 5px;}
+.d1{font-size: 16px;color: #898686;}
+.jingdian-content-row{position: relative;}
+.jingdian-section-right{position: absolute;right: 0;bottom: 0;}
