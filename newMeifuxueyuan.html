@@ -407,7 +407,7 @@
                 <div class="school-left fl clearfix">
                     <div class="left1 fl">
                         <ul id="classroom">
-                            <li>美肤专业课堂</li>
+                            <li class="active">美肤专业课堂</li>
                             <li>美容师管理课堂</li>
                             <li>院线管理者课堂</li>
                         </ul>
@@ -449,8 +449,8 @@
                 </div>
                 <div class="school-right fr">
                     <div class="right1">
-                        <ul class="clearfix">
-                            <li>美肤登录</li>
+                        <ul class="clearfix" id="loginWay">
+                            <li class="active">美肤登录</li>
                             <li>美容师登录</li>
                             <li>院线登录</li>
                         </ul>
@@ -470,7 +470,9 @@
                                 letter-spacing: 10px;width: 102px;height: 38px;line-height: 38px;text-indent: 10px;">1649</span></p>
                                 <p style="position: relative;margin-top: 4px; margin-bottom: 18px;"><input type="checkbox" class="remember"/><span style="position: absolute;"><a href="#">记住密码？</a></span></p>
                                 <p><input type="button" value="登录" class="land"/></p>
-                                <p><img src="images/school-icon05.png"/><span style="margin-left: 12px;"><img src="images/school-icon06.png"/></span></p>
+                                <p><a href="#"><img src="images/school-icon05.png"/></a>
+                                    <span style="margin-left: 12px;"><a href="#"><img src="images/school-icon06.png"/></a></span>
+                                </p>
                             </div>
                         </form>
                     </div>
@@ -881,13 +883,17 @@
         $("#news>li").hover(function(){
             var index = $(this).index();
             pics.eq(index).show().siblings().hide();
-        })
-    })
-    $(function(){
+        });
+
         var con = $("#class-con>li");
         $("#classroom>li").hover(function(){
             var index = $(this).index();
+            $(this).addClass('active').siblings().removeClass('active');
             con.eq(index).show().siblings().hide();
+        });
+
+        $('#loginWay>li').hover(function(){
+            $(this).addClass('active').siblings().removeClass('active');
         })
     })
 </script>

@@ -41,7 +41,6 @@
 .linian-content .box-1 p{font-size: 14px;}
 .box7{background: url(../images/linian01.jpg) no-repeat;height: 305px;position: relative;margin-bottom: 25px;}
 .box8{background: url(../images/linian02.jpg) no-repeat;height: 305px;position: relative;}
-.box-1{}
 .box-1 p{text-indent: 28px;}
 .box7 .box-1{margin-top: 10px;}
 .box7 .box-1 h4{line-height: 28px;}
@@ -49,7 +48,8 @@
 .box8 .box-1{margin-top: 50px;}
 .box8 .box-1 h4{line-height: 32px;}
 .box8 .box-1 p{margin-bottom: 0;line-height: 24px;letter-spacing: 1px;}
-
+.scrolllist .imglist_w .img-list li{width: 340px;height: 255px;}
+.scrolllist .imglist_w,.scrolllist .imglist_w .img-list {height: 255px;}
 
 
 

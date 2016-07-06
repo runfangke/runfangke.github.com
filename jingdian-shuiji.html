@@ -564,6 +564,21 @@
 </script>
 <script type="text/javascript" src="js/anquan.js"></script>
 <!--end banner1-->
-
+<script>
+    $(function(){
+        function notebook(){
+            var windowW = $(window).width();
+            var zoom = windowW/1920;
+            if(windowW>=1200){
+                $('#banner_tabs').css('zoom',zoom);
+            }
+        }
+        notebook();
+        $(window).resize(function(){
+            notebook();
+            console.log(1);
+        });
+    })
+</script>
 </body>
 </html>
