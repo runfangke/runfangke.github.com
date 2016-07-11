@@ -15,7 +15,7 @@
 .list-title1 a{position: absolute;right: 0;}
 .list-title{background: url(../images/dot1.png) 0 center no-repeat;margin-bottom: 6px;}
 .text-list ul li:hover .list-title,.text-list ul li:hover .time-list{color: #c2a067;}
-.list-con{color: #767878;font-size: 12px;width: 410px;height: 14px;overflow: hidden;}
+.list-con{color: #767878;font-size: 12px;width: 410px;/*height: 14px;*/overflow-x: hidden;white-space: nowrap}
 .text-list ul li{margin-bottom:20px;width: 583px; }
 .text-list ul :last-child{margin-bottom: 0;}
 .time-list{color: #919393;position: absolute;right: 0;}
