@@ -13,7 +13,7 @@
 .video{width: 330px;height: 185px;background: url(../images/news-images/news1-fr1.png) no-repeat center #f6f2ee;}
 .hot-text{margin-top: 30px;width: 330px;height:695px;background-color:#f6f2ee;}
 .hot-text-title{font-size: 20px;padding-top: 30px;}
-.hot-text-title p{border-left:4px solid #b6b0ac;text-indent:20px;}
+.hot-text-title p{border-left:4px solid #b6b0ac;text-indent:20px;font-size: bold;}
 .hot-text-box1{width: 330px;border-bottom:1px dashed #e7e3df;}
 .text-box{width: 270px;margin:29px auto;}
 .news-love{width: 330px;height: 330px;background-color: #f6f2ee;margin-top: 30px;}
