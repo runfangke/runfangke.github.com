@@ -67,3 +67,6 @@
 .swiper-active-switch{
     background-color: #f4a017;
 }
+.very-gray{
+    color:rgba(0,0,0,0.5);
+}
