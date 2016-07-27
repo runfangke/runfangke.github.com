@@ -7,7 +7,7 @@
 .news-big-title{font-size: 24px;font-weight: bold;margin: 40px 0;}
 .news-small-title{margin-bottom: 30px;}
 .news-small-title span{padding: 0 13px;}
-.news-text p{line-height: 20px;text-indent: 2em;margin:10px 0 25px 0;letter-spacing: 1px;}
+.news-text p{line-height: 23px;text-indent: 2em;margin:10px 0 25px 0;letter-spacing: 1px;}
 .img-title{margin: 25px 0 30px 0;text-align: center;}
 .content-right{width: 330px;}
 .video{width: 330px;height: 185px;background: url(../images/news-images/news1-fr1.png) no-repeat center #f6f2ee;}
