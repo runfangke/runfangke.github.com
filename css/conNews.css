@@ -22,7 +22,7 @@
 .hot-text-title a{font-size: 16px;text-align: right;display:inline-block;line-height: 25px;}
 .news-head{border-top: 1px solid #e7e3df;}
 .news-head-con{width:270px;margin: 10px auto 12px;background: url(../images/news-images/news1-fr2.png) no-repeat 0 5px;}
-.news-head-con p{width: 250px;margin-left: 25px;letter-spacing: 1px;line-height: 20px;height: 40px;overflow: hidden;}
+.news-head-con p{width: 250px;margin-left: 25px;letter-spacing: 1px;line-height: 20px;height: 40px;overflow: hidden;font-size: 15px;}
 
 .people{margin-top: -15px;margin-bottom: -16px;}
 .people-img{width: 247px;height: 362px;}
@@ -38,7 +38,7 @@
 
 .small-title{margin:25px 0 30px 0;font-weight: bold;}
 .brand{margin-bottom: 40px;}
-.brand li{line-height: 22px;background: url(../images/news-images/news7-1.png) no-repeat 0 6px;}
+.brand li{line-height: 30px;background: url(../images/news-images/news7-1.png) no-repeat 0 6px;}
 .brand li p{margin-left: 25px;}
 .news-text p{margin-bottom: 40px;}
 
