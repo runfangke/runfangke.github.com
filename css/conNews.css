@@ -3,8 +3,8 @@
 #contents{margin-top: 30px;color: #444;font-size: 15px;font-family: "微软雅黑";}
 .content-left{width: 60px;height: 305px;}
 .news-content{width: 750px;margin: 0 30px;}
-.paging a{font-size: 12px;font-family: "宋体";letter-spacing: 2px;}
-.news-big-title{font-size: 18px;font-weight: bold;margin: 40px 0;}
+.paging a{font-size: 14px;font-family: "宋体";letter-spacing: 2px;}
+.news-big-title{font-size: 24px;font-weight: bold;margin: 40px 0;}
 .news-small-title{margin-bottom: 30px;}
 .news-small-title span{padding: 0 13px;}
 .news-text p{line-height: 20px;text-indent: 2em;margin:10px 0 25px 0;letter-spacing: 1px;}
@@ -12,14 +12,14 @@
 .content-right{width: 330px;}
 .video{width: 330px;height: 185px;background: url(../images/news-images/news1-fr1.png) no-repeat center #f6f2ee;}
 .hot-text{margin-top: 30px;width: 330px;height:677px;background-color:#f6f2ee;}
-.hot-text-title{font-size: 18px;padding-top: 30px;}
+.hot-text-title{font-size: 24px;padding-top: 30px;}
 .hot-text-title p{border-left:4px solid #b6b0ac;text-indent:26px;}
 .hot-text-box1{width: 330px;border-bottom:1px dashed #e7e3df;}
 .text-box{width: 270px;margin:29px auto;}
 .news-love{width: 330px;height: 330px;background-color: #f6f2ee;margin-top: 30px;}
 .img-title1{margin-top: 30px;}
 .img-title1 p{line-height: 18px;height: 36px;overflow: hidden;}
-.hot-text-title a{font-size: 12px;text-align: right;display:inline-block;line-height: 25px;}
+.hot-text-title a{font-size: 16px;text-align: right;display:inline-block;line-height: 25px;}
 .news-head{border-top: 1px solid #e7e3df;}
 .news-head-con{width:270px;margin: 10px auto 12px;background: url(../images/news-images/news1-fr2.png) no-repeat 0 5px;}
 .news-head-con p{width: 250px;margin-left: 25px;letter-spacing: 1px;line-height: 20px;height: 40px;overflow: hidden;}
