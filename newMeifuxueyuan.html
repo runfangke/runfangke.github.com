@@ -16,6 +16,8 @@
     <link href="css/meifu.css" type="text/css" rel="stylesheet">
     <link href="css/newIndex.css" type="text/css" rel="stylesheet">
     <link href="css/newMeifuxueyuan.css" type="text/css" rel="stylesheet">
+    <link href="css/pifuguanli.css" type="text/css" rel="stylesheet">
+
     <!--3d轮播-->
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.kxbdMarquee.js"></script>
@@ -398,6 +400,68 @@
                 </div>
             </div>
         </div>
+
+
+        <style>
+            .pifu-fenxiang iframe{
+                margin-left: 80px;
+                display: none;
+            }
+            .play-ui{
+                position: absolute;
+                left: 590px;
+                width: 260px;
+                height: 498px;
+                background: #262626;
+                top: 114px;
+                color: #fff;
+            }
+            .play-ui ul{
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+            }
+            .play-ui ul li{
+                width: 285px;
+                height: 40px;
+                border-bottom: 1px solid #aa794b;
+                line-height: 40px;
+                padding-left: 15px;
+                cursor: pointer;
+            }
+        </style>
+        <div class="pifu-fenxiang" style="margin-top: 12px;background: #262626;overflow: hidden;">
+            <img src="images/pifuguanli-img2.jpg" width="1200" height="90" class="fenxiang-img" id="guke" style="margin-top: 0;margin-left: -40px"/>
+            <iframe height=498 width=510 src="http://player.youku.com/embed/XMTQ4NjgzOTc2OA==" frameborder=0 allowfullscreen style="display: block"></iframe>
+            <iframe height=498 width=510 src="http://player.youku.com/embed/XMTQ4Njg0NDUwMA==" frameborder=0 allowfullscreen></iframe>
+            <iframe height=498 width=510 src="http://player.youku.com/embed/XMTQ4NjgzNTY4OA==" frameborder=0 allowfullscreen></iframe>
+            <iframe height=498 width=510 src="http://player.youku.com/embed/XMTQ4NjgyNDU5Mg==" frameborder=0 allowfullscreen></iframe>
+            <iframe height=498 width=510 src="http://player.youku.com/embed/XMTQ4NjgwNjEyMA==" frameborder=0 allowfullscreen></iframe>
+            <iframe height=498 width=510 src="http://player.youku.com/embed/XMTQ4Njc4OTM2NA==" frameborder=0 allowfullscreen></iframe>
+            <iframe height=498 width=510 src="http://player.youku.com/embed/XMTQ4NjgxOTYyNA==" frameborder=0 allowfullscreen></iframe>
+            <div class="play-ui">
+                <ul>
+                    <li>分享视频1</li>
+                    <li>分享视频2</li>
+                    <li>分享视频3</li>
+                    <li>分享视频4</li>
+                    <li>分享视频5</li>
+                    <li>分享视频6</li>
+                    <li>分享视频7</li>
+                </ul>
+            </div>
+        </div>
+        <script>
+            $(function(){
+                $(".play-ui li").click(function(){
+                    var i = $(this).index();
+                    $(".pifu-fenxiang iframe").hide();
+                    $(".pifu-fenxiang iframe").eq(i).css("display","block");
+                })
+            })
+        </script>
+
+
         <div class="school">
             <div class="e-title">BEAUTY  SCHOOL</div>
             <div class="title">
@@ -905,7 +969,7 @@
             if(windowW>=1600){
                 $("body>div:not('#header')").css('zoom',zoom);
             }else{
-                $("body>div:not('#header')").css('zoom',1600/1920);
+                $("body>div:not('#header')").css('zoom',windowW/1920);
             }
         }
         notebook();
