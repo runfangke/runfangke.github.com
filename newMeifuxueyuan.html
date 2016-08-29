@@ -1075,6 +1075,10 @@
         $('#loginWay>li').hover(function(){
             $(this).addClass('active').siblings().removeClass('active');
         })
+        
+         $(".close-btn").click(function(){
+            $(".pup-pifu-test").hide();
+        })
     })
 </script>
 
@@ -1117,6 +1121,29 @@
             $(".report .img8").attr("src","images/report-" + ques8 + ".jpg");
             $(".ques9").html(ques9);
         }
+    }
+    
+    var sec = 60;
+    function time(){
+        if($(".input-phone").val() == ""){
+            alert("手机号码不能为空");
+        } else {
+            if(sec < 0){
+                sec = 60;
+                $(".input-phone").attr("disabled",false);
+                $(".send-btn-cover").css("display","none");
+            }else{
+                $(".input-phone").attr("disabled",true);
+                $(".send-btn-cover").css("display","block").text(sec + "秒后重新获取");
+                sec--;
+
+                setTimeout(function() {
+                            time()
+                        },
+                        1000)
+            }
+        }
+
     }
 </script>
 <!--end banner-->
