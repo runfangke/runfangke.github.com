@@ -405,25 +405,64 @@
         </div>
         <!--店家分享-->
         <div class="jiameng-section3" id="section3">
-            <div class="title1" data-sr="enter bottom over 0.5s and move 30px">
-                店家分享
-            </div>
-            <div class="video clearfix">
-                <div class="video-logo">
-                    <img src="images/logo.png"/>
-                </div>
-                <div id="a1" style="margin-left: 50px;width: 860px;"></div>
-
-                <div id="a3" onclick="Open();"  title="展开列表"><img src="images/kuoda.png" width="20" height="20"/></div>
-                <ul id="playerlist">
-                    <div id="a2" onclick="Close();" title="收起列表"><img src="images/suoxiao.png" width="20" height="20"/> </div>
-                    <li id="vli_0" onclick="playvideo(0)" style="border-top: 1px solid #333;margin-top: 40px;"><img src="images/no.png"><font size="3" color="skyblue">店家分享1</font></li>
-                    <li id="vli_1" onclick="playvideo(1)"><img src="images/no.png"><font size="3" color="skyblue">店家分享2</font></li>
-                    <li id="vli_2" onclick="playvideo(2)"><img src="images/no.png"><font size="3" color="skyblue">店家分享3</font></li>
-                    <li id="vli_3" onclick="playvideo(3)"><img src="images/no.png"><font size="3" color="skyblue">店家分享4</font></li>
+             <style>
+            .pifu-fenxiang iframe{
+                margin-left: 80px;
+                display: none;
+            }
+            .play-ui{
+                position: absolute;
+                left: 590px;
+                width: 260px;
+                height: 498px;
+                background: #262626;
+                top: 114px;
+                color: #fff;
+            }
+            .play-ui ul{
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+            }
+            .play-ui ul li{
+                width: 285px;
+                height: 40px;
+                border-bottom: 1px solid #aa794b;
+                line-height: 40px;
+                padding-left: 15px;
+                cursor: pointer;
+            }
+        </style>
+        <div class="pifu-fenxiang" style="margin-top: 12px;background: #262626;overflow: hidden;">
+            
+            <iframe height=498 width=510 src="http://player.youku.com/embed/XMTQ4NjgzOTc2OA==" frameborder=0 allowfullscreen style="display: block"></iframe>
+            <iframe height=498 width=510 src="http://player.youku.com/embed/XMTQ4Njg0NDUwMA==" frameborder=0 allowfullscreen></iframe>
+            <iframe height=498 width=510 src="http://player.youku.com/embed/XMTQ4NjgzNTY4OA==" frameborder=0 allowfullscreen></iframe>
+            <iframe height=498 width=510 src="http://player.youku.com/embed/XMTQ4NjgyNDU5Mg==" frameborder=0 allowfullscreen></iframe>
+            <iframe height=498 width=510 src="http://player.youku.com/embed/XMTQ4NjgwNjEyMA==" frameborder=0 allowfullscreen></iframe>
+            <iframe height=498 width=510 src="http://player.youku.com/embed/XMTQ4Njc4OTM2NA==" frameborder=0 allowfullscreen></iframe>
+            <iframe height=498 width=510 src="http://player.youku.com/embed/XMTQ4NjgxOTYyNA==" frameborder=0 allowfullscreen></iframe>
+            <div class="play-ui">
+                <ul>
+                    <li>分享视频1</li>
+                    <li>分享视频2</li>
+                    <li>分享视频3</li>
+                    <li>分享视频4</li>
+                    <li>分享视频5</li>
+                    <li>分享视频6</li>
+                    <li>分享视频7</li>
                 </ul>
             </div>
-            <img src="images/jiameng-img-05.jpg"/>
+        </div>
+        <script>
+            $(function(){
+                $(".play-ui li").click(function(){
+                    var i = $(this).index();
+                    $(".pifu-fenxiang iframe").hide();
+                    $(".pifu-fenxiang iframe").eq(i).css("display","block");
+                })
+            })
+        </script>
         </div>
         <!--合作伙伴-千店展示-->
         <div class="jiameng-section4" id="section4">
@@ -600,7 +639,6 @@
 </script>
 <script type="text/javascript" src="js/anquan.js"></script>
 <!--end banner1-->
-<script src="ckplayer/ckplayer.js"></script>
 <script type="text/javascript">
     function zhichi(nub,ele){
         $(".zhichi").hide();
@@ -616,67 +654,7 @@
     }
 
 
-    function playerstop() {
-        setTimeend();
-    }
-    function setTimeend() {//获取下一部视频的播放ID
-        nowD++;
-        if (nowD >= videoarr.length ) {
-            nowD = 0;
-        }
-        playvideo(nowD);
-    }
-    function Close() {//关闭播放列表
-        CKobject._K_('a2').style.display = 'none';
-        CKobject._K_('playerlist').style.display = 'none';
-        CKobject._K_('a3').style.display = 'block';
-        CKobject._K_('a1').style.width = '970px';
-        CKobject.getObjectById('ckplayer_a1').width = 970;
-    }
-    function Open() {//打开播放列表
-        CKobject._K_('a2').style.display = 'block';
-        CKobject._K_('playerlist').style.display = 'block';
-        CKobject._K_('a3').style.display = 'none';
-        CKobject._K_('a1').style.width = '770px';
-        CKobject.getObjectById('ckplayer_a1').width = 770;
-    }
-
-    var nowD = 0;//目前播放的视频的编号(在数组里的编号)
-    var frontTime = false;//前置广告倒计时是否在运行中
-    var frontHtime = false;//后置广告是否在进行中
-    var videoarr = new Array();//新建一个数组来存flash端视频地址，添加方法就像下面一样
-    videoarr.push('http://movie.ks.js.cn/flv/2012/02/6-3.flv');
-    videoarr.push('http://movie.ks.js.cn/flv/2012/02/6-1.flv');
-    videoarr.push('http://movie.ks.js.cn/flv/2011/11/8-1.flv');
-    videoarr.push('http://movie.ks.js.cn/flv/2014/04/24-2.flv');
-    var html5arr = new Array();//新建一个数组来保存HTML5端用到的视频地址，注意，因为本演示只有一种mp4文件，所以html5下所有用到的视频地址都是相同的，请见谅，另外，该数组是一个二维数组
-    html5arr.push(['http://movie.ks.js.cn/flv/other/1_0.mp4->video/mp4']);
-    html5arr.push(['http://movie.ks.js.cn/flv/other/1_0.mp4->video/mp4']);
-    html5arr.push(['http://movie.ks.js.cn/flv/other/1_0.mp4->video/mp4']);
-    html5arr.push(['http://movie.ks.js.cn/flv/other/1_0.mp4->video/mp4']);
-    function playvideo(n) {
-        nowD = n;
-        var flashvars = {
-            f: videoarr[n],
-            c: 0,
-            p: 1,
-            e: 0,
-            marqueeClose: false,
-            my_url: encodeURIComponent(window.location.href)
-        };
-        for (i = 0; i < videoarr.length; i++) {//这里是用来改变右边列表背景色
-            if (i != nowD) {
-                //CKobject._K_('vli_' + i).style.backgroundColor = '#262626';
-            }
-            else {
-                // CKobject._K_('vli_' + i).style.backgroundColor = '#DAF2FF';
-            }
-        }
-        var video = ['http://movie.ks.js.cn/flv/other/1_0.mp4->video/mp4'];
-        CKobject.embed('ckplayer/ckplayer.swf', 'a1', 'ckplayer_a1', '100%', '100%', false, flashvars, html5arr[n]);
-    }
-    playvideo(0);
-    Open();
+  
 
 </script>
 <script>
