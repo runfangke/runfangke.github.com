@@ -17,7 +17,7 @@
     <link href="css/newIndex.css" type="text/css" rel="stylesheet">
     <link href="css/newMeifuxueyuan.css" type="text/css" rel="stylesheet">
     <link href="css/pifuguanli.css" type="text/css" rel="stylesheet">
-
+    <link href="css/pifuguanli.css" type="text/css" rel="stylesheet">
     <!--3d轮播-->
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.kxbdMarquee.js"></script>
@@ -431,7 +431,11 @@
             }
         </style>
         <div class="pifu-fenxiang" style="margin-top: 12px;background: #262626;overflow: hidden;">
-            <img src="images/pifuguanli-img2.jpg" width="1200" height="90" class="fenxiang-img" id="guke" style="margin-top: 0;margin-left: -40px"/>
+            <div class="e-title">Share the beauty</div>
+            <div class="title">
+                美肤分享
+            </div>
+            
             <iframe height=498 width=510 src="http://player.youku.com/embed/XMTQ4NjgzOTc2OA==" frameborder=0 allowfullscreen style="display: block"></iframe>
             <iframe height=498 width=510 src="http://player.youku.com/embed/XMTQ4Njg0NDUwMA==" frameborder=0 allowfullscreen></iframe>
             <iframe height=498 width=510 src="http://player.youku.com/embed/XMTQ4NjgzNTY4OA==" frameborder=0 allowfullscreen></iframe>
@@ -461,7 +465,17 @@
             })
         </script>
 
-
+        <div class="pifu-test">
+            <img src="images/pifuguanli-img3.jpg" width="1200" height="90" class="fenxiang-img" id="zaixian"/>
+            <div class="pifu-test-row clearfix">
+                <div class="left fl">
+                    <div class="yuyue-btn" id="testBtn"></div>
+                </div>
+                <div class="right fr">
+                    <div class="yuyue-btn" id="yuyueBtn"></div>
+                </div>
+            </div>
+        </div>
         <div class="school">
             <div class="e-title">BEAUTY  SCHOOL</div>
             <div class="title">
@@ -548,6 +562,108 @@
 
 
 
+<div class="pup-pifu-test" id="pup1">
+    <div class="pup-test-body">
+        <a href="javascript: void(0)" class="close-btn">X</a>
+        <ul>
+            <li style="background: url('images/pifuguanli-test1.jpg') no-repeat center top">
+                <div class="test1-btn" onclick="pupTest('one',1)"></div>
+                <div class="test1-btn" onclick="pupTest('one',2)"></div>
+                <div class="test1-btn" onclick="pupTest('one',3)"></div>
+                <div class="test1-btn" onclick="pupTest('one',4)"></div>
+                <div class="test1-btn" onclick="pupTest('one',5)"></div>
+                <div class="test1-btn" onclick="pupTest('one',6)"></div>
+                <div class="test1-btn" onclick="pupTest('one',7)"></div>
+                <div class="test1-btn" onclick="pupTest('one',8)"></div>
+                <div class="test1-btn" onclick="pupTest('one',9)"></div>
+            </li>
+            <li style="background: url('images/pifuguanli-test2.jpg') no-repeat center top">
+                <div class="test2-btn" onclick="pupTest('two',1)"></div>
+                <div class="test2-btn" onclick="pupTest('two',2)"></div>
+                <div class="test2-btn" onclick="pupTest('two',3)"></div>
+                <div class="test2-btn" onclick="pupTest('two',4)"></div>
+                <div class="test2-btn" onclick="pupTest('two',5)"></div>
+            </li>
+            <li style="background: url('images/pifuguanli-test3.jpg') no-repeat center top">
+                <div class="test3-btn" onclick="pupTest('three',1)"></div>
+                <div class="test3-btn" onclick="pupTest('three',2)"></div>
+                <div class="test3-btn" onclick="pupTest('three',3)"></div>
+                <div class="test3-btn" onclick="pupTest('three',4)"></div>
+            </li>
+            <li style="background: url('images/pifuguanli-test4.jpg') no-repeat center top">
+                <div class="test4-btn" onclick="pupTest('four',1)"></div>
+                <div class="test4-btn" onclick="pupTest('four',2)"></div>
+                <div class="test4-btn" onclick="pupTest('four',3)"></div>
+            </li>
+            <li style="background: url('images/pifuguanli-test5.jpg') no-repeat center top">
+                <div class="test5-btn" onclick="pupTest('five',1)"></div>
+                <div class="test5-btn" onclick="pupTest('five',2)"></div>
+                <div class="test5-btn" onclick="pupTest('five',3)"></div>
+            </li>
+            <li style="background: url('images/pifuguanli-test6.jpg') no-repeat center top">
+                <div class="test6-btn" onclick="pupTest('six',1)"></div>
+                <div class="test6-btn" onclick="pupTest('six',2)"></div>
+                <div class="test6-btn" onclick="pupTest('six',3)"></div>
+                <div class="test6-btn" onclick="pupTest('six',4)"></div>
+            </li>
+            <li style="background: url('images/pifuguanli-test7.jpg') no-repeat center top">
+                <div class="test7-btn" onclick="pupTest('seven',1)"></div>
+                <div class="test7-btn" onclick="pupTest('seven',2)"></div>
+                <div class="test7-btn" onclick="pupTest('seven',3)"></div>
+                <div class="test7-btn" onclick="pupTest('seven',4)"></div>
+                <div class="test7-btn" onclick="pupTest('seven',5)"></div>
+            </li>
+            <li class="report" style="padding: 0;width: 1250px;height: 700px">
+                <img src="images/" class="img1">
+                <img src="images/" class="img2">
+                <img src="images/" class="img3">
+                <img src="images/" class="img4">
+                <img src="images/" class="img5">
+                <img src="images/" class="img6">
+                <img src="images/" class="img7">
+                <img src="images/" class="img8">
+                <img src="images/report-nine.jpg" class="img9">
+                <div class="ques9"></div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+<div class="pup-pifu-test" id="pup2">
+    <div class="pup-test-body">
+        <a href="javascript: void(0)" class="close-btn">X</a>
+        <div class="report-ten">
+            <form>
+                <div class="input-grounp">
+                    <input type="text" placeholder="输入您的姓名" class="input-name"/>
+                    <input type="text" placeholder="输入手机号码" class="input-phone"/>
+                    <input type="text" placeholder="输入短信验证码" class="input-yzm"/>
+                    <input type="button" value="" class="send-btn" onclick="time();"/>
+                    <div class="send-btn-cover" style="display: none">
+                        60秒后重新获取
+                    </div>
+                </div>
+                <div class="select-group" style="display: block">
+                    <label>
+                        <span>请选择城市</span>
+                        <select>
+                            <option></option>
+                            <option>北京</option>
+                        </select>
+                    </label>
+                    <label style="margin-left: 60px">
+                        <span>请选择时间</span>
+                        <input type="date">
+                    </label>
+                </div>
+                <div style="text-align: center;display: block">
+                    <input type="submit">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 <div id="footer">
     <div class="container">
         <p class="p1">美丽热线</p>
@@ -977,6 +1093,47 @@
             notebook();
         });
     })
+</script>
+<script>
+    $(function(){
+        $("#testBtn").click(function(){
+            $("#pup1").show();
+        });
+
+        $("#yuyueBtn").click(function(){
+            $("#pup2").show();
+        })
+    });
+    var ques1,ques2,ques3,ques4,ques5,ques6,ques7,ques8;
+    function pupTest(ques,nub){
+        $(".pup-test-body ul").animate({left: "-=1200"},300);
+        var ques9 = $(".report-ten");
+        if (ques == "one"){
+            ques1 = ques + nub;
+        } else if(ques == "two" ){
+            ques2 = ques + nub;
+        } else if(ques == "three"){
+            ques3 = ques + nub;
+        } else if(ques == "four"){
+            ques4 = ques + nub;
+        } else if(ques == "five"){
+            ques5 = ques + nub;
+        } else if(ques == "six"){
+            ques6 = ques + nub;
+        } else if(ques == "seven"){
+            ques7 = ques + nub;
+            ques8 = "eight" + nub;
+            $(".report .img1").attr("src","images/report-" + ques1 + ".jpg");
+            $(".report .img2").attr("src","images/report-" + ques2 + ".jpg");
+            $(".report .img3").attr("src","images/report-" + ques3 + ".jpg");
+            $(".report .img4").attr("src","images/report-" + ques4 + ".jpg");
+            $(".report .img5").attr("src","images/report-" + ques5 + ".jpg");
+            $(".report .img6").attr("src","images/report-" + ques6 + ".jpg");
+            $(".report .img7").attr("src","images/report-" + ques7 + ".jpg");
+            $(".report .img8").attr("src","images/report-" + ques8 + ".jpg");
+            $(".ques9").html(ques9);
+        }
+    }
 </script>
 <!--end banner-->
 <!--end head下拉框-->
