@@ -258,3 +258,32 @@ nav.toggle .runfangke-header-link>li>a {
 /**滑动**/
 #sidebar ul li .sidebox{position:absolute;width:62px;height:62px;top:0;right:0;transition:all 0.3s;background:#875f50;opacity:1;filter:Alpha(opacity=100);color:#fff;font:14px/62px "Microsoft YaHei";overflow:hidden;}
 #sidebar ul li span{ position:relative;right:8px}
+
+
+/*新的底部*/
+#newFooter{
+    margin-top: 20px;
+    text-align: center;
+    background: url("../images/2016-09/footer-bg.jpg") repeat-y center center;
+}
+#newFooter .p1{
+    font-size: 18px;
+    font-weight: bold;
+    color: #221815;
+    padding: 18px 0 12px 0;
+}
+#newFooter .p2 a{
+    display: inline-block;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    color: #221815;
+    padding-left: 38px;
+    background: url("../images/2016-09/footer-phone.png") no-repeat left center;
+    padding-bottom: 8px;
+}
+#newFooter .p3,#newFooter .p4{
+    font-size: 12px;
+    color: #221815;
+    padding-bottom: 12px;
+}
