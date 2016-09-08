@@ -1,0 +1,50 @@
+.people-title{
+    height: 120px;
+    background: url("../images/2016-09/people_03.png") no-repeat;
+}
+.people1{
+    min-width: 1200px;
+    background-color: #3f4446;
+}
+.people-section-title{
+    height: 157px;
+}
+.people-section-content{
+    padding: 0 143px;
+    font-size: 16.6px;
+    color: #756d62;
+    text-indent: 33px;
+    line-height: 30px;
+}
+.swiper-btn{
+    position: absolute;
+    top: 50%;
+    width: 70px;
+    display: inline-block;
+    height: 70px;
+    cursor: pointer;
+    margin-top: -35px;
+    z-index: 1000;
+    opacity: 0.5;
+    -webkit-transition: all 0.45s;
+    -moz-transition: all 0.45s;
+    -ms-transition: all 0.45s;
+    -o-transition: all 0.45s;
+    transition: all 0.45s;
+}
+.swiper-btn:hover{
+    opacity: 1;
+}
+.left{
+    left: 0;
+    background: url("../images/ad_ctr.png") no-repeat 0 0;
+}
+.right{
+    right: 0;
+    background: url("../images/ad_ctr.png") no-repeat 0 -70px;
+}
+.people-bg{
+    height: 10px;
+    width: 100%;
+    background-color: #3f4446;
+}
