@@ -14,6 +14,100 @@
     <link href="css/people.css" type="text/css" rel="stylesheet">
     <link href="//cdn.bootcss.com/Swiper/2.7.0/idangerous.swiper.min.css" rel="stylesheet">
     <link href="css/conNews.css" type="text/css" rel="stylesheet">
+    <link href="css/zhaopin.css" type="text/css" rel="stylesheet">
+    <style>
+        .flexslider {
+            margin: 0px auto 20px;
+            position: relative;
+            width: 100%;
+            height: 648px;
+            overflow: hidden;
+            zoom: 1;
+        }
+
+        .flexslider .slides li {
+            width: 100%;
+            height: 100%;
+        }
+
+        .flex-direction-nav a {
+            width: 70px;
+            height: 70px;
+            line-height: 99em;
+            overflow: hidden;
+            margin: -35px 0 0;
+            display: block;
+            background: url(images/ad_ctr.png) no-repeat;
+            position: absolute;
+            top: 50%;
+            z-index: 10;
+            cursor: pointer;
+            opacity: 0;
+            filter: alpha(opacity=0);
+            -webkit-transition: all .3s ease;
+            border-radius: 35px;
+        }
+
+        .flex-direction-nav .flex-next {
+            background-position: 0 -70px;
+            right: 0;
+        }
+
+        .flex-direction-nav .flex-prev {
+            left: 0;
+        }
+
+        .flexslider:hover .flex-next {
+            opacity: 0.8;
+            filter: alpha(opacity=25);
+        }
+
+        .flexslider:hover .flex-prev {
+            opacity: 0.8;
+            filter: alpha(opacity=25);
+        }
+
+        .flexslider:hover .flex-next:hover,
+        .flexslider:hover .flex-prev:hover {
+            opacity: 1;
+            filter: alpha(opacity=50);
+        }
+
+        .flex-control-nav {
+            width: 100%;
+            position: absolute;
+            bottom: 10px;
+            text-align: center;
+        }
+
+        .flex-control-nav li {
+            margin: 0 2px;
+            display: inline-block;
+            zoom: 1;
+            *display: inline;
+        }
+
+        .flex-control-paging li a {
+            background: url(images/dot.png) no-repeat 0 -16px;
+            display: block;
+            height: 16px;
+            overflow: hidden;
+            text-indent: -99em;
+            width: 16px;
+            cursor: pointer;
+        }
+
+        .flex-control-paging li a.flex-active,
+        .flex-control-paging li.active a {
+            background-position: 0 0;
+        }
+
+        .flexslider .slides a img {
+            width: 100%;
+            height: 648px;
+            display: block;
+        }
+    </style>
     <title>REVACL润芳可-您的私人护肤专家</title>
 </head>
 <body id="home">
@@ -186,19 +280,34 @@
     </nav>
 </div>
 
-<div>
-    <div class="container4" style="position: relative">
-        <div class="swiper-container" style="height: 684px;overflow: hidden">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="images/zhaopin-banner1.jpg"/></div>
-                <div class="swiper-slide"><img src="images/zhaopin-banner2.jpg"/></div>
-                <div class="swiper-slide"><img src="images/zhaopin-banner3.jpg"/></div>
-            </div>
-        </div>
-        <div class="pagination people-pagination4" style="position: relative;z-index: 100;"></div>
-        <a class="swiper-btn left left4"></a>
-        <a class="swiper-btn right right4"></a>
-    </div>            
+<div id="banner_tabs" class="flexslider">
+    <ul class="slides">
+        <li>
+            <a title="" target="_blank" href="#">
+                <img width="1920" height="648" alt="" style="background: url(images/zhaopin-banner.jpg) no-repeat center;" >
+            </a>
+        </li>
+        <li>
+            <a title="" href="#">
+                <img width="1920" height="648" alt="" style="background: url(images/zhaopin-banner2.jpg) no-repeat center;" >
+            </a>
+        </li>
+        <li>
+            <a title="" href="#">
+                <img width="1920" height="648" alt="" style="background: url(images/zhaopin-banner3.jpg) no-repeat center;" >
+            </a>
+        </li>
+
+    </ul>
+    <ul class="flex-direction-nav">
+        <li><a class="flex-prev" href="javascript:;">Previous</a></li>
+        <li><a class="flex-next" href="javascript:;">Next</a></li>
+    </ul>
+    <ol id="bannerCtrl" class="flex-control-nav flex-control-paging">
+        <li class="active"><a>1</a></li>
+        <li><a>2</a></li>
+        <li><a>3</a></li>
+    </ol>
 </div>
 
 <div class="people1" style="padding-top: 100px;padding-bottom: 30px;display: block;width: 100%">
@@ -352,20 +461,9 @@
 <!--右侧导航 end-->
 
 <script src="js/jquery.min.js" type="text/javascript"></script>
-<script type="text/javascript" language="javascript" src="js/public.js"></script>
 <script src="//cdn.bootcss.com/Swiper/2.7.0/idangerous.swiper.min.js"></script>
-
 <script type="text/javascript">
-    var anquan = new Object();
-    anquan.index = new Object();
-    anquan.zt = new Object();
-    var _hmt = _hmt || [];
-</script>
-<script type="text/javascript">
-    $(document).ready(function(){
-        anquan.index.init();
-    });
-
+    
     var mySwiper = new Swiper('.swiper-container',{
         pagination: '.people-pagination0',
         loop:true,
@@ -441,8 +539,81 @@
         mySwiper4.swipeNext()
     });
 </script>
+
+<script src="js/slider.js"></script>
+<script src="js/scrollReveal.js" type="text/javascript"></script>
+<script>
+    (function($) {
+        'use strict';
+        window.sr= new scrollReveal({
+            reset: true,
+            move: '50px',
+            mobile: true
+        });
+    })();
+</script>
+<script type="text/javascript" language="javascript" src="js/public.js"></script>
+<script type="text/javascript" language="javascript" src="js/jquery.hhService.js"></script>
+<script type="text/javascript">$(function(){$("#sidebar").fix({float:'right',minStatue:false,skin:'green',durationTime:1000})});</script>
+<!--head下拉框和第一个滚动-->
+<script type="text/javascript" src="js/slider1.js"></script>
+<script type="text/javascript" src="js/tab.js"></script>
+<!--end head下拉框-->
+
+<!--banner1 start-->
+<script type="text/javascript">
+    var anquan = new Object();
+    anquan.index = new Object();
+    anquan.zt = new Object();
+    var _hmt = _hmt || [];
+</script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        anquan.index.init();
+    });
+    $(function() {
+        var bannerSlider = new Slider($('#banner_tabs'), {
+            time: 5000,
+            delay: 400,
+            event: 'hover',
+            auto: true,
+            mode: 'fade',
+            controller: $('#bannerCtrl'),
+            activeControllerCls: 'active'
+        });
+        $('#banner_tabs .flex-prev').click(function() {
+            bannerSlider.prev()
+        });
+        $('#banner_tabs .flex-next').click(function() {
+            bannerSlider.next()
+        });
+
+        //打开职位详情
+        $("table tr").click(function(){
+            var nub = $("tr").index(this);  //获取序号
+
+            //$.ajax()
+
+            $("#job").hide();
+            $("#jobDetail" + nub).show();
+        });
+
+        $("#backBtn").click(function(){
+            $(".jobDetail").hide();
+            $("#job").show();
+        })
+    });
+
+    function boxChange(dizhi,ele){
+        $(ele).addClass("active").siblings().removeClass("active");
+        $("#table tr").hide();
+        $(dizhi).show();
+        $("#block").show();
+    }
+
+
+</script>
 <script type="text/javascript" src="js/anquan.js"></script>
-
-
+<!--end banner1-->
 </body>
 </html>
