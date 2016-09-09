@@ -186,6 +186,21 @@
     </nav>
 </div>
 
+<div>
+    <div class="container4" style="position: relative">
+        <div class="swiper-container" style="height: 684px;overflow: hidden">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/zhaopin-banner1.jpg"/></div>
+                <div class="swiper-slide"><img src="images/zhaopin-banner2.jpg"/></div>
+                <div class="swiper-slide"><img src="images/zhaopin-banner3.jpg"/></div>
+            </div>
+        </div>
+        <div class="pagination people-pagination4" style="position: relative;z-index: 100;"></div>
+        <a class="swiper-btn left left4"></a>
+        <a class="swiper-btn right right4"></a>
+    </div>            
+</div>
+
 <div class="people1" style="padding-top: 100px;padding-bottom: 30px;display: block;width: 100%">
     <div class="container">
         <h2 class="people-title"></h2>
@@ -409,6 +424,21 @@
     $('.right3').on('click', function(e){
         e.preventDefault();
         mySwiper3.swipeNext()
+    });
+    
+    var mySwiper4 = new Swiper('.swiper-container4',{
+        pagination: '.people-pagination4',
+        loop:true,
+        grabCursor: true,
+        paginationClickable: true
+    });
+    $('.left4').on('click', function(e){
+        e.preventDefault();
+        mySwiper4.swipePrev()
+    });
+    $('.right4').on('click', function(e){
+        e.preventDefault();
+        mySwiper4.swipeNext()
     });
 </script>
 <script type="text/javascript" src="js/anquan.js"></script>
