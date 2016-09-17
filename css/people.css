@@ -1,10 +1,16 @@
 .people-title{
-    height: 120px;
-    background: url("../images/2016-09/people_03.png") no-repeat;
+    margin-top: 55px;
+    height: 140px;
+    background: url("../images/2016-09/people_03.png") no-repeat center center;
 }
 .people1{
     min-width: 1200px;
-    background-color: #3f4446;
+    background-color: #fff;
+}
+.people-section{
+    margin-top: 10px;
+    border: 1px solid #d1bdac;
+    overflow: hidden;
 }
 .people-section-title{
     height: 157px;
@@ -42,9 +48,4 @@
 .right{
     right: 0;
     background: url("../images/ad_ctr.png") no-repeat 0 -70px;
-}
-.people-bg{
-    height: 10px;
-    width: 100%;
-    background-color: #3f4446;
 }

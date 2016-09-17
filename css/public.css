@@ -262,9 +262,9 @@ nav.toggle .runfangke-header-link>li>a {
 
 /*新的底部*/
 #newFooter{
-    margin-top: 20px;
+    padding-top: 20px;
     text-align: center;
-    background: url("../images/2016-09/footer-bg.jpg") repeat-y center center;
+    background-color: #fff;
 }
 #newFooter .p1{
     font-size: 18px;
@@ -272,18 +272,24 @@ nav.toggle .runfangke-header-link>li>a {
     color: #221815;
     padding: 18px 0 12px 0;
 }
+#newFooter .p2{
+    padding-top: 25px;
+    border-top: 1px solid #dbcbbd;
+    font-size: 20px;
+    font-weight: bold;
+    color: #a47c59;
+}
 #newFooter .p2 a{
     display: inline-block;
     cursor: pointer;
-    font-size: 20px;
-    font-weight: bold;
-    color: #221815;
+    color: #a47c59;
     padding-left: 38px;
-    background: url("../images/2016-09/footer-phone.png") no-repeat left center;
+    margin-left: 30px;
+    background: url("../images/2016-09/footer-phone.png") no-repeat left 3px;
     padding-bottom: 8px;
 }
 #newFooter .p3,#newFooter .p4{
     font-size: 12px;
-    color: #221815;
+    color: #a47c59;
     padding-bottom: 12px;
 }
