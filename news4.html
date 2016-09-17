@@ -390,22 +390,5 @@
     })
 
 </script>
-<script>
-    $(function(){
-        function notebook(){
-            var windowW = $(window).width();
-            var zoom = windowW/1920;
-            if(windowW>=1600){
-                $("body>div:not('#header')").css('zoom',zoom);
-            }else{
-                $("body>div:not('#header')").css('zoom',1600/1920);
-            }
-        }
-        notebook();
-        $(window).resize(function(){
-            notebook();
-        });
-    })
-</script>
 </body>
 </html>

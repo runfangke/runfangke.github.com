@@ -139,11 +139,9 @@
 /*����*/
 
 a.abtn{display:block;height:68px;width:35px;overflow:hidden;background:url(../images/syztleft1222.png) no-repeat; margin-top:65px;}
-a.abtn:hover{background:url(../images/syztleft1222-h.png) no-repeat;}
 a.aleft{float:left; margin-right:12px;}
 a.agrayleft{cursor:default; background:url(../images/syztleft1222.png) no-repeat;}
 a.aright{float:right;background:url(../images/syztrgiht1222.png) no-repeat;}
-a.aright:hover{float:right;background:url(../images/syztrgiht1222-h.png) no-repeat;}
 a.agrayright{cursor:default;background:url(../images/syztrgiht1222.png) no-repeat;}
 .scrolllist{width:1235px;height:184px;margin:50px auto 0;}
 .scrolllist .imglist_w{width:1116px;height:240px;overflow:hidden;float:left;position:relative;/*��ҪԪ��*/ margin-left:24px;}

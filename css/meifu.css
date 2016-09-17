@@ -2,9 +2,19 @@
 .meifu-banner{
     text-align: center;
     min-width: 1200px;
+    position: relative;
+    overflow: hidden;
 }
 .meifu-banner img{
     width: 100%;
+    min-width: 1580px;
+    left: 50%;
+    position: relative;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
 }
 .xueyuan-content{
     margin-top: -6px;

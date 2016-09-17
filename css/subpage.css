@@ -9,7 +9,9 @@
 .logo_r a{ margin-right:20px; font-size:16px; color:#fff; letter-spacing:2px;}
 .logo_r a:hover{color:#be9e7f;}
 
-
+.container{
+    zoom: 1;
+}
 .daohang img{ padding-top:20px; float:left; margin:0 auto; }
 .daohang{ width:127px; margin:0 auto;display:block; line-height:74px; font-size:18px;letter-spacing:2px;}
 a.daohang_a{ width:275px; height:74px; display:block; float:left;text-align:center }
@@ -186,7 +188,7 @@ a.daohang_a{ width:275px; height:74px; display:block; float:left;text-align:cent
     height: 27px;
     background:url(../images/sub-logo.png) no-repeat;background-size:316px 27px; margin-top:10px;
 }
-/*ÄÚÈÝ²¿·Ö*/
+/*ï¿½ï¿½ï¿½Ý²ï¿½ï¿½ï¿½*/
 .sub-section{
     min-width: 1200px;
     background: center top no-repeat;

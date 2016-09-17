@@ -555,15 +555,16 @@
              <style>
             .pifu-fenxiang iframe{
                 margin-left: 80px;
+                margin-top: 80px;
                 display: none;
             }
             .play-ui{
                 position: absolute;
-                left: 590px;
+                left: 658px;
                 width: 260px;
                 height: 498px;
                 background: #262626;
-                top: 0;
+                top: 153px;
                 color: #fff;
             }
             .play-ui ul{
@@ -580,36 +581,36 @@
                 cursor: pointer;
             }
         </style>
-        <div class="pifu-fenxiang" style="margin-top: 12px;background: #262626;overflow: hidden;">
-            
-            <iframe height=498 width=510 src="http://player.youku.com/embed/XMTQ4NjgzOTc2OA==" frameborder=0 allowfullscreen style="display: block"></iframe>
-            <iframe height=498 width=510 src="http://player.youku.com/embed/XMTQ4Njg0NDUwMA==" frameborder=0 allowfullscreen></iframe>
-            <iframe height=498 width=510 src="http://player.youku.com/embed/XMTQ4NjgzNTY4OA==" frameborder=0 allowfullscreen></iframe>
-            <iframe height=498 width=510 src="http://player.youku.com/embed/XMTQ4NjgyNDU5Mg==" frameborder=0 allowfullscreen></iframe>
-            <iframe height=498 width=510 src="http://player.youku.com/embed/XMTQ4NjgwNjEyMA==" frameborder=0 allowfullscreen></iframe>
-            <iframe height=498 width=510 src="http://player.youku.com/embed/XMTQ4Njc4OTM2NA==" frameborder=0 allowfullscreen></iframe>
-            <iframe height=498 width=510 src="http://player.youku.com/embed/XMTQ4NjgxOTYyNA==" frameborder=0 allowfullscreen></iframe>
-            <div class="play-ui">
-                <ul>
-                    <li>分享视频1</li>
-                    <li>分享视频2</li>
-                    <li>分享视频3</li>
-                    <li>分享视频4</li>
-                    <li>分享视频5</li>
-                    <li>分享视频6</li>
-                    <li>分享视频7</li>
-                </ul>
+            <div class="pifu-fenxiang" style="background: #262626;overflow: hidden;height: 670px">
+
+                <iframe height=498 width=510 src="http://player.youku.com/embed/XMTQ4NjgzOTc2OA==" frameborder=0 allowfullscreen style="display: block"></iframe>
+                <iframe height=498 width=510 src="http://player.youku.com/embed/XMTQ4Njg0NDUwMA==" frameborder=0 allowfullscreen></iframe>
+                <iframe height=498 width=510 src="http://player.youku.com/embed/XMTQ4NjgzNTY4OA==" frameborder=0 allowfullscreen></iframe>
+                <iframe height=498 width=510 src="http://player.youku.com/embed/XMTQ4NjgyNDU5Mg==" frameborder=0 allowfullscreen></iframe>
+                <iframe height=498 width=510 src="http://player.youku.com/embed/XMTQ4NjgwNjEyMA==" frameborder=0 allowfullscreen></iframe>
+                <iframe height=498 width=510 src="http://player.youku.com/embed/XMTQ4Njc4OTM2NA==" frameborder=0 allowfullscreen></iframe>
+                <iframe height=498 width=510 src="http://player.youku.com/embed/XMTQ4NjgxOTYyNA==" frameborder=0 allowfullscreen></iframe>
+                <div class="play-ui" style="padding-left: 110px;">
+                    <ul>
+                        <li>分享视频1</li>
+                        <li>分享视频2</li>
+                        <li>分享视频3</li>
+                        <li>分享视频4</li>
+                        <li>分享视频5</li>
+                        <li>分享视频6</li>
+                        <li>分享视频7</li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <script>
-            $(function(){
-                $(".play-ui li").click(function(){
-                    var i = $(this).index();
-                    $(".pifu-fenxiang iframe").hide();
-                    $(".pifu-fenxiang iframe").eq(i).css("display","block");
+            <script>
+                $(function(){
+                    $(".play-ui li").click(function(){
+                        var i = $(this).index();
+                        $(".pifu-fenxiang iframe").hide();
+                        $(".pifu-fenxiang iframe").eq(i).css("display","block");
+                    })
                 })
-            })
-        </script>
+            </script>
         </div>
         <!--合作伙伴-千店展示-->
         <div class="jiameng-section4" id="section4">
@@ -804,22 +805,6 @@
   
 
 </script>
-<script>
-    $(function(){
-        function notebook(){
-            var windowW = $(window).width();
-            var zoom = windowW/1920;
-            if(windowW>=1600){
-                $("body>div:not('#header')").css('zoom',zoom);
-            }else{
-                $("body>div:not('#header')").css('zoom',1600/1920);
-            }
-        }
-        notebook();
-        $(window).resize(function(){
-            notebook();
-        });
-    })
-</script>
+
 </body>
 </html>

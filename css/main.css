@@ -1,0 +1,86 @@
+@charset "UTF-8";
+/* CSS Document */
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote,
+dl, dt, dd, ul, ol, li,
+pre,
+form, fieldset, legend, button, input, textarea,
+th, td {
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal; }
+
+/** 重置表格元素 **/
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body,
+button, input, select, textarea {
+  font: 0.25rem/1 "微软雅黑", "Microsoft YaHei", "Helvetica neue", "Helvetica", Arial, Tahoma, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  position: relative;
+  z-index: 1; }
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block; }
+
+a:link, a:visited, a:focus {
+  text-decoration: none; }
+
+img {
+  outline: none;
+  border: none;
+  vertical-align: middle; }
+
+ul, ol {
+  list-style-type: none; }
+
+input {
+  outline: none; }
+
+/** 重置表单元素 **/
+legend {
+  color: #000; }
+
+/* for ie6 */
+fieldset, img {
+  border: 0; }
+
+/* img 搭车：让链接里的 img 无边框 */
+button, input, select, textarea {
+  font-size: 100%; }
+
+/* 使得表单元素在 ie 下能继承字体大小 */
+.left {
+  text-align: left; }
+
+.right {
+  text-align: right; }
+
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
+.fix {
+  *zoom: 1; }
+
+.fix:after {
+  display: block;
+  content: "clear";
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden; }
+
+.container{
+  width: 1200px;
+  margin: 0 auto;
+  min-width: 1200px;
+  position: relative;
+}

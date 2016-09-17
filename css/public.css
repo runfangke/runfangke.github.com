@@ -293,3 +293,15 @@ nav.toggle .runfangke-header-link>li>a {
     color: #a47c59;
     padding-bottom: 12px;
 }
+@media screen and (max-width: 1400px) {
+    .container{
+        zoom: 0.8;
+    }
+    .container .container{
+        zoom: 1;
+    }
+    .sub-section{
+        zoom: 0.8;
+    }
+}
+
