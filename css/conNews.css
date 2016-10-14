@@ -70,3 +70,16 @@
 .very-gray{
     color:rgba(0,0,0,0.5);
 }
+
+.iframe{
+    border: none;
+}
+
+.pin.pintop{
+    position: fixed;
+    top: 65px;
+}
+.pin.pinbottom{
+    position: absolute;
+    bottom: 30px;
+}

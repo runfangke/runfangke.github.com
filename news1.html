@@ -196,7 +196,7 @@
     </div>
 </div>
 <div id="contents">
-    <div class="container clearfix">
+    <div class="container clearfix" style="position: relative">
         <div class="content-left fl">
             <div class="bdsharebuttonbox" data-tag="share_1">
                 <a class="bds_weixin" data-cmd="weixin" style="background: url(images/news-images/share_03.jpg);width: 60px;height: 60px;"></a>
@@ -286,29 +286,31 @@
                     </div>
                 </div>
             </div>
-            <div class="news-love">
-                <div class="hot-text-title clearfix" style="width:305px;padding-bottom: 10px;">
-                    <p class="fl">他们都爱看</p>
-                    <a href="#" class="fr">返回新闻中心 ></a>
-                </div>
-                <div class="news-head">
-                    <div class="news-head-con">
-                        <p><a href="news5.html">【企业新闻】润芳可董事长高文红女士随刘延东副总理出访以色列</a></p>
+            <div class="pin">
+                <div class="news-love">
+                    <div class="hot-text-title clearfix" style="width:305px;padding-bottom: 10px;">
+                        <p class="fl">他们都爱看</p>
+                        <a href="#" class="fr">返回新闻中心 ></a>
                     </div>
-                </div>
-                <div class="news-head">
-                    <div class="news-head-con">
-                        <p><a href="news6.html">华辰董事长荣获《美容服务面部护理操作技术要求》标准起草专家</a></p>
+                    <div class="news-head">
+                        <div class="news-head-con">
+                            <p><a href="news5.html">【企业新闻】润芳可董事长高文红女士随刘延东副总理出访以色列</a></p>
+                        </div>
                     </div>
-                </div>
-                <div class="news-head">
-                    <div class="news-head-con">
-                        <p><a href="news1.html">全国美容护肤职业技能竞赛比赛规则和评分标准修订会在京举行</a></p>
+                    <div class="news-head">
+                        <div class="news-head-con">
+                            <p><a href="news6.html">华辰董事长荣获《美容服务面部护理操作技术要求》标准起草专家</a></p>
+                        </div>
                     </div>
-                </div>
-                <div class="news-head">
-                    <div class="news-head-con">
-                        <p><a href="news2.html">润芳可品牌董事长高文红女士荣获美业“凤凰年度人物”大奖</a></p>
+                    <div class="news-head">
+                        <div class="news-head-con">
+                            <p><a href="news1.html">全国美容护肤职业技能竞赛比赛规则和评分标准修订会在京举行</a></p>
+                        </div>
+                    </div>
+                    <div class="news-head">
+                        <div class="news-head-con">
+                            <p><a href="news2.html">润芳可品牌董事长高文红女士荣获美业“凤凰年度人物”大奖</a></p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -342,7 +344,64 @@
     });
 </script>
 <script type="text/javascript" src="js/anquan.js"></script>
+<script type="text/javascript" src="js/jquery.pin.min.js"></script>
 <script>
+//    var test = function () {
+//        console.log(1111);
+//        return document.title
+//    };
+    var getUrl = function () {
+        return window.location.url
+    };
+    $(function () {
+
+//        $(".news-love").pin({containerSelector: ".pin", minWidth: 940});
+    });
+
+    var pinScroll = function ($pin, scrollbarOffsetTop, $pinOffsetTop,$containerBottomOffsetTop, $pinHeight) {
+        var isFixed = $pinOffsetTop <= scrollbarOffsetTop;
+        console.log($containerBottomOffsetTop,$(document).scrollTop(),$pinHeight);
+        var isOverContainer = $containerBottomOffsetTop - $pinHeight - 100 <= $(document).scrollTop();
+        if(isFixed || isOverContainer){
+            if(isOverContainer){
+                $pin.removeClass('pintop');
+                $pin.addClass('pinbottom');
+                console.log(111);
+            }else {
+                $pin.removeClass('pinbottom');
+                $pin.addClass('pintop');
+            }
+        }else {
+            $pin.removeClass('pintop');
+            $pin.removeClass('pinbottom');
+        }
+//        console.log($pinOffsetTop, scrollbarOffsetTop);
+    };
+    $(function () {
+        var pins = $('.pin');
+        var pinsOffsetTop = [];
+        var pinsHeight = [];
+
+        for(var i = 0, length = pins.length; i < length; i++){
+            pinsOffsetTop[i] = pins.eq(i).offset().top;
+            pinsHeight[i] = pins.eq(i).height();
+        }
+        $(window).scroll(function () {
+            var scrollbarOffsetTop = $(document).scrollTop();
+            var $container = $('#contents');
+            var $containerOffsetTop = $container.offset().top;
+            var $containerBottomOffsetTop = $containerOffsetTop + $container.height();
+
+            for(var i = 0,length = pins.length; i < length; i++){
+                pinScroll(pins.eq(i),scrollbarOffsetTop, pinsOffsetTop[i],$containerBottomOffsetTop, pinsHeight[i])
+            }
+        });
+    });
+    setTimeout(function () {
+        document.title = '22222222222222';
+        var share = '<iframe src="./share2.html" class="iframe" style="height: 10000px;"></iframe>';
+        $('body').append(share)
+    },2000);
     window._bd_share_config = {
         common : {
             bdText : $(".news-big-title>p").text(),
@@ -353,15 +412,11 @@
         share : [{
             "bdSize" : 32
         }],
-        slide : [{
-            bdImg : 0,
-            bdPos : "right",
-            bdTop : 100
-        }],
         selectShare : [{
             "bdselectMiniList" : ['qzone','tqq','kaixin001','bdxc','tqf']
         }]
-    }
+    };
+
     with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
 </script>
 <script>
