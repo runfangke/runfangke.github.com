@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>222233334444</title>
+    <style>
+        .bdsharebuttonbox.bdshare-button-style0-32 a{
+            width: 60px;
+            height: 60px;
+        }
+        .bdsharebuttonbox.bdshare-button-style0-32 a.x1{
+            background: url(images/news-images/share_03.jpg);
+        }
+        .bdsharebuttonbox.bdshare-button-style0-32 a.x2{
+            background: url(images/news-images/share_06.jpg);
+        }
+        .bdsharebuttonbox.bdshare-button-style0-32 a.x3{
+            background: url(images/news-images/share_08.jpg);
+        }
+        .bdsharebuttonbox.bdshare-button-style0-32 a.x4{
+            background: url(images/news-images/share_10.jpg);
+        }
+        .bdsharebuttonbox.bdshare-button-style0-32 a.x5{
+            background: url(images/news-images/share_12.jpg);
+        }
+        .bdsharebuttonbox.bdshare-button-style0-32 a.small{
+            width: 48px;
+            height: 48px;
+            background-size: cover;
+        }
+        .bdsharebuttonbox.bdshare-button-style0-32 a.x1.small{
+            background: url(images/news-images/share_03.jpg);
+            background-size: cover;
+        }
+        .bdsharebuttonbox.bdshare-button-style0-32 a.x2.small{
+            background: url(images/news-images/share_06.jpg);
+            background-size: cover;
+        }
+        .bdsharebuttonbox.bdshare-button-style0-32 a.x3.small{
+            background: url(images/news-images/share_08.jpg);
+            background-size: cover;
+        }
+        .bdsharebuttonbox.bdshare-button-style0-32 a.x4.small{
+            background: url(images/news-images/share_10.jpg);
+            background-size: cover;
+        }
+        .bdsharebuttonbox.bdshare-button-style0-32 a.x5.small{
+            background: url(images/news-images/share_12.jpg);
+            background-size: cover;
+        }
+    </style>
+    <script src="js/jquery.js"></script>
+
+</head>
+<body>
+<div class="bdsharebuttonbox" data-tag="share_1">
+    <a class="bds_weixin x1" data-cmd="weixin" style=""></a>
+    <a class="bds_weixin x2" data-cmd="weixin" style=""></a>
+    <a class="bds_sqq x3" data-cmd="sqq" style=""></a>
+    <a class="bds_qzone x4" data-cmd="qzone" href="#" style=""></a>
+    <a class="bds_tsina x5" data-cmd="tsina" style=""></a>
+</div>
+<script>
+    var url = window.parent.getUrl();
+    var title = window.parent.getTitle();
+
+    window._bd_share_config = {
+        common : {
+            bdText : title,
+            bdDesc : title,
+            bdUrl : url
+        },
+        share : [{
+            "bdSize" : 32
+        }]
+    };
+    with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+
+    var parentWidth = window.parent.getWidth();
+    if(parentWidth <= 1400){
+        $('.bdsharebuttonbox a').addClass('small');
+    }
+</script>
+</body>
+</html>
